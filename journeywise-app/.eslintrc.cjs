@@ -6,10 +6,10 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { 
+  parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module', // Include sourceType option within parserOptions
   },
@@ -23,6 +23,10 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'react/react-in-jsx-scope': 'off', // Moved react-in-jsx-scope rule here
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }], // Moved jsx-filename-extension rule here
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx'] },
+    ], // Moved jsx-filename-extension rule here
+    'no-unused-vars': ['error', { varsIgnorePattern: '^React$' }],
   },
-};
+}
