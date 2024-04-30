@@ -5,6 +5,10 @@ Welcome to JourneyWise!
 ## About
 JourneyWise Venus Voyagers Spring 2024
 
+JourneyWise is a self improvement tool that helps people who have been laid off positively change their perspective on what soft skills they’ve acquired, different than other mental health apps like Calm because it is more career-focused. 
+
+Our product helps people feel confident about themselves instead of trying to make them fit in a box.
+
 This project is a React web application designed to address impostor syndrome, empowering users to navigate its challenges and build confidence. The project utilizes the following technologies:
 
 ## Tech Stack
