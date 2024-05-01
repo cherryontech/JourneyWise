@@ -9,7 +9,7 @@ const Index = () => {
       <div className="subheading">
         <h6>
           During this time of uncertainty, lets redefine how you tell
-          your story.
+          your story. Test.
         </h6>
       </div>
     </div>
