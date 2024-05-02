@@ -2,6 +2,8 @@ import React from 'react'
 import Collage from './Collage'
 import Buttons from '../Buttons/Buttons'
 
+
+
 const Hero = () => {
   return (
     <header id="hero" className="flex flex-row p-0 mt-80 ml-[138px]">

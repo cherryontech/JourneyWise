@@ -4,7 +4,7 @@ const Collage = () => {
   return (
     <div
       id="collage-container"
-      className="grid grid-cols-3 grid-rows-3 gap-0 border mt-[-126px]"
+      className="grid grid-cols-3 grid-rows-3 gap-0 border mt-[-220px] mr-0"
     >
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
         pic 1
