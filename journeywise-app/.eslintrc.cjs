@@ -4,29 +4,26 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module', // Include sourceType option within parserOptions
+    sourceType: 'module',
   },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'], // Removed 'prettier' from plugins as it's not necessary
+  settings: { react: { version: 'detect' } },
+  plugins: ['react', 'react-hooks', 'prettier'],
   rules: {
-    'prettier/prettier': 'error', // Include prettier rule
+    'prettier/prettier': 'error',
     'react/jsx-no-target-blank': 'off',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
-    'react/react-in-jsx-scope': 'off', // Moved react-in-jsx-scope rule here
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-filename-extension': [
       1,
       { extensions: ['.js', '.jsx'] },
-    ], // Moved jsx-filename-extension rule here
+    ],
     'no-unused-vars': ['error', { varsIgnorePattern: '^React$' }],
+    'react/prop-types': 'off', // Disable prop-types validation
   },
 }
