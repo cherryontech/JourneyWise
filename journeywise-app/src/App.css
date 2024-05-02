@@ -4,4 +4,28 @@ html {
 
 h2 {
   font-family: 'DM Serif Text';
+  position: relative;
+  z-index: 1;
+}
+
+h3 {
+  font-family: 'DM Serif Text'; 
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  font-family: 'DM Sans';
+  position: relative; 
+  z-index: 1; 
+}
+
+#visionrectangle img {
+  position: relative; 
+  z-index: 2; 
+}
+
+#vector img {
+  position: relative; 
+  z-index: -2;
 }
