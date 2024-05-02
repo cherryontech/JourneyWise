@@ -1,5 +1,6 @@
 import React from 'react'
 import Collage from './Collage'
+import Buttons from '../Buttons/Buttons'
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
           During this time of uncertainty, lets redefine how you tell
           your story.
         </h6>
+        <Buttons rounded primary className="w-[223px] h=[45px] text-[14px] px-[60px] py-[13px]">Let's Begin</Buttons>
       </section>
       <section id="collage" className="ml-[172.01px] mr-0">
         <Collage />
