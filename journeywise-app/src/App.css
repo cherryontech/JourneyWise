@@ -29,3 +29,18 @@ p {
   position: relative; 
   z-index: -2;
 }
+
+#image2 img {
+  position: relative; 
+  z-index: 1
+}
+
+#rectangle img {
+  position: relative;
+  z-index: -1; 
+}
+
+#characterlogo img {
+  position: relative; 
+  z-index: 1; 
+}

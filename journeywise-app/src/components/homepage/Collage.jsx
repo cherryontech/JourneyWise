@@ -4,40 +4,45 @@ const Collage = () => {
   return (
     <div
       id="collage-container"
-      className="grid grid-cols-3 grid-rows-3 gap-0 border mt-[-220px] mr-0"
+      className="grid grid-cols-3 grid-rows-3 gap-0 mt-[-220px] mr-0"
     >
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 1
+        <img src="/Union.svg" />
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        <img src=".collage/Union.svg" />
+        <img id="rectangle" src="/Rectangle 261.svg" />
+        <img id="image2" src="/Group 912.svg" className="mt-[-250px]"/>
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 3
+        <img src="/Union (1).svg" />
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 4
+        <img src="/Union (2).svg" />
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 5
+        <img id="rectangle" src="/Rectangle 162.svg" />
+        <img id="characterlogo" src="/Group 906 (1) 1.svg" className="mt-[-215px]" />
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 6
+        <img id="rectangle" src="/Rectangle 260.svg" />
+        <img src="/Subtract.svg" className="mt-[-250px]" />
       </div>
       <div
         id="grid-item"
-        className="shrink-0 w-[234.886px] h-[251.828px]"
+        className="shrink-0 w-[237px] h-[254px]"
       >
-        pic 7
+        <img src="/Rectangle 154.svg" />
+        <img src="/Subtract (1).svg" className="mt-[-250px]" />
       </div>
       <div
         id="grid-item"
-        className="shrink-0 w-[234.886px] h-[251.828px]"
+        className="shrink-0 w-[237px] h-[254px]"
       >
-        pic 8
+        <img src="/Union (3).svg" />
       </div>
       <div id="grid-item" className="shrink-0 w-[237px] h-[254px]">
-        pic 9
+        <img src="/pen-2.svg" />
+        <img src="/Group 910.svg" className="mt-[-250px]" />
       </div>
     </div>
   )
