@@ -6,12 +6,16 @@ import Buttons from '../Buttons/Buttons'
 
 const Hero = () => {
   return (
-    <header id="hero" className="flex flex-row p-0 mt-80 ml-[138px]">
-      <section id="heading-subheading">
+    <header id="hero" className="flex flex-row sm:flex-column p-0 mt-80 ml-[138px] sm:ml-[40px] sm:mr-[30px]">
+      <section id="heading-subheading" className="ml-[138px]">
         <div className="w-[450px] h-[170px]">
         <h2 className="text-[62px] font-['DM Serif Text'] not-italic font-normal leading-normal">
           Finding Your Path & Story
         </h2>
+        <img src="/Vector 921.svg" className="ml-[-150px] mt-[-250px]" /> 
+        <img src="/Vector 922.svg" className="ml-[345px] mt-[-295px]" />
+        <img src="/Vector 923.svg" className="ml-[380px] mt-[-30px]" />
+        <img src="/Vector 924.svg" className="ml-[400px] mt-[20px]" />
         </div>
         <div className="w-[451px] h-[57px]">
         <h6 className="text-[22px] mt-[21px] mr-[104px]">

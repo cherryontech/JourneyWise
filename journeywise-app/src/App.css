@@ -1,3 +1,5 @@
+/* HTML */ 
+
 html {
   background-color: #f9f9f9;
 }
@@ -22,6 +24,8 @@ p {
   position: relative; 
   z-index: 1; 
 }
+
+/* ID */
 
 #visionrectangle img {
   position: relative; 
@@ -52,3 +56,7 @@ p {
   width: 704.658px; 
   height: 755.484px;
 }
+
+
+/* Media */ 
+
