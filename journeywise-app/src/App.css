@@ -14,6 +14,10 @@ h3 {
   z-index: 1;
 }
 
+h4 {
+  font-family: 'DM Serif Text';
+}
+
 p {
   font-family: 'DM Sans';
   position: relative; 
@@ -43,4 +47,9 @@ p {
 #characterlogo img {
   position: relative; 
   z-index: 1; 
+}
+
+#collage img {
+  width: 704.658px; 
+  height: 755.484px;
 }
