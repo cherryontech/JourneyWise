@@ -22,6 +22,8 @@ const Hero = () => {
           During this time of uncertainty, lets redefine how you tell
           your story.
         </h6>
+        <img src="/Vector 926.svg" className="ml-[-55px] mt-[50px]" /> 
+        <img src="/Vector 927.svg" className="ml-[40px] mt-[-5px]" /> 
         </div>
         <Buttons rounded primary className="w-[223px] h=[45px] text-[14px] px-[60px] py-[13px] mt-[30px]">LET'S BEGIN</Buttons>
       </section>
