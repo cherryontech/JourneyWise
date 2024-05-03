@@ -9,7 +9,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'DM Serif Text'; 
+  font-family: 'DM Serif Text';
   position: relative;
   z-index: 1;
 }
@@ -19,7 +19,6 @@ h4 {
 }
 
 p {
-  font-family: 'DM Sans';
   position: relative; 
   z-index: 1; 
 }
