@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import heroSvg from '../../assets/hero.svg'
 import classNames from 'classnames'
 import Buttons from '../Buttons/Buttons'
+import SecurityCollage from './SecurityCollage'
 
 function SecContent() {
   const [isChecked, setIschecked] = useState(false)
@@ -29,11 +29,7 @@ function SecContent() {
     >
       <div className="mb-6 flex justify-center">
         <div className=" max-w-80vw mt-[20rem]">
-          <img
-            className="h-auto max-h-[17.4rem] w-full"
-            src={heroSvg}
-            alt="Security Notice"
-          />
+          <SecurityCollage /> 
         </div>
       </div>
       <div className="w-295 h-146 text-container mt-4 md:mt-[4.8rem]">
