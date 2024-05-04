@@ -2,7 +2,13 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+
+      letterSpacing: {
+        '-1.68': '-1.68px',
+        '2': '2px'
+      },
+    },
   },
   plugins: [],
 }
