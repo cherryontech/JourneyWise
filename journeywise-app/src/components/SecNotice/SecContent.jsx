@@ -14,18 +14,18 @@ function SecContent() {
     setIschecked(event.target.checked)
   }
   const renderBtn = isChecked ? (
-    <Buttons primary rounded>
-      Let's Begin Assessment
+    <Buttons primary rounded className="w-[339px] h-[45]">
+      LET'S BEGIN ASSESSMENT
     </Buttons>
   ) : (
-    <Buttons alternate rounded>
-      Let's Begin Assessment
+    <Buttons alternate rounded className="w-[339px] h-[45]">
+      LET'S BEGIN ASSESSMENT
     </Buttons>
   )
   return (
     <section
       className="md:-w-[33.3rem] md:m-15 md:-h-[14.37rem] 
-    m-4 flex flex-col justify-center overflow-y-auto rounded-lg bg-white p-6 text-center md:mx-auto"
+    m-4 flex flex-col justify-center overflow-y-auto rounded-lg bg-white p-6 text-center md:mx-auto relative z-10]"
     >
       <div className="mb-6 flex justify-center">
         <div className=" max-w-80vw mt-[20rem]">

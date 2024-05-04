@@ -6,31 +6,18 @@ html {
 
 h2 {
   font-family: 'DM Serif Text';
-  position: relative;
-  z-index: 1;
 }
 
 h3 {
-  font-family: 'DM Serif Text';
-  position: relative;
-  z-index: 1;
+  font-family: 'DM Serif Text'
 }
 
 h4 {
   font-family: 'DM Serif Text';
 }
 
-p {
-  position: relative; 
-  z-index: 1; 
-}
 
 /* ID */
-
-#visionrectangle img {
-  position: relative; 
-  z-index: 2; 
-}
 
 #vector img {
   position: relative; 
@@ -40,11 +27,6 @@ p {
 #image2 img {
   position: relative; 
   z-index: 1
-}
-
-#rectangle img {
-  position: relative;
-  z-index: -1; 
 }
 
 #characterlogo img {

@@ -9,7 +9,7 @@ const Hero = () => {
     <header id="hero" className="flex flex-row sm:flex-column p-0 mt-80 ml-[138px] sm:ml-[40px] sm:mr-[30px]">
       <section id="heading-subheading" className="ml-[138px]">
         <div className="w-[450px] h-[170px]">
-        <h2 className="text-[62px] font-['DM Serif Text'] not-italic font-normal leading-normal">
+        <h2 className="text-[62px] font-['DM Serif Text'] not-italic font-normal leading-normal relative z-[]">
           Finding Your Path & Story
         </h2>
         <img src="/Vector 921.svg" className="ml-[-150px] mt-[-250px]" alt="A swirly decoration behind the text." /> 
