@@ -1,10 +1,12 @@
 import React from 'react'
 import Collage from './Collage'
 import Buttons from '../Buttons/Buttons'
+import useShowSecNotice from '../../Hook/useShowSecNotice'
 
 
 
 const Hero = () => {
+     const [handleClick , ShowSecNotice] = useShowSecNotice();
   return (
     <header id="hero" className="flex flex-row sm:flex-column p-0 mt-80 ml-[138px] sm:ml-[40px] sm:mr-[30px]">
       <section id="heading-subheading" className="ml-[138px]">
@@ -25,7 +27,8 @@ const Hero = () => {
         <img src="/Vector 926.svg" className="ml-[-55px] mt-[50px]" alt="A line decoration behind the button." /> 
         <img src="/Vector 927.svg" className="ml-[40px] mt-[-5px]" alt="A line decoration below the button." /> 
         </div>
-        <Buttons rounded primary className="w-[223px] h=[45px] text-[14px] px-[60px] py-[13px] mt-[30px]">LET'S BEGIN</Buttons>
+        <Buttons rounded primary className="w-[223px] h=[45px] text-[14px] px-[60px] py-[13px] mt-[30px]" onClick= {handleClick}>LET'S BEGIN</Buttons>
+        <ShowSecNotice/>
       </section>
       <section id="collage" className="ml-[172.01px] mr-0">
         <Collage />
