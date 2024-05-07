@@ -18,8 +18,8 @@ function Navbar() {
 
     const btnStyle = (language) => {
         return classNames(
-            "font-dm-sans text-base tracking-2 font-semibold uppercase px-2",
-            { 'bg-black text-white rounded': active === language }
+            "font-dm-sans text-[14px] tracking-2 font-semibold uppercase px-[3px]",
+            { 'bg-black text-white rounded-3xl m-[5px]': active === language }
         );
     };
 
@@ -27,10 +27,10 @@ function Navbar() {
     return (
         <>
             <li>
-                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/About Us">About Us</NavLink>
+                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/About Us">ABOUT US</NavLink>
             </li>
             <li>
-                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/">Begin Journey</NavLink>
+                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/">BEGIN JOURNEY</NavLink>
             </li>
         </>
     );
@@ -40,11 +40,11 @@ return (
     <>
         <nav className="flex">
             {/* Buttons for language selection */}
-            <ul className="flex gap-10">
-                <ul className="gap-10 w-full p-2items-center border border-black rounded-full md:flex">
+            <ul className="flex">
+                <ul className="gap-[17px] lg:w-[300px] lg:h-[54px] p-2items-center border border-black rounded-full md:flex lg:mt-[-10px] lg:mr-[50px]">
                     <button className={btnStyle("English")} onClick={() => handleClick("English")}>English</button>
-                    <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>Spanish</button>
-                    <button className={btnStyle("French")} onClick={() => handleClick("French")}>French</button>
+                    <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>Español</button>
+                    <button className={btnStyle("French")} onClick={() => handleClick("French")}>Français</button>
                 </ul>
                 {/* Hidden on mobile, visible on larger screens */}
                 <div className="hidden flex-grow w-full gap-10 md:flex">
