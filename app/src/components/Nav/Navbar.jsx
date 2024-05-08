@@ -18,7 +18,7 @@ function Navbar() {
 
     const btnStyle = (language) => {
         return classNames(
-            "font-dm-sans text-[14px] tracking-2 font-semibold uppercase px-[3px]",
+            "font-dm-sans lg:text-[14px] tracking-2 font-semibold uppercase lg:px-[3px]",
             { 'bg-black text-white rounded-3xl m-[5px]': active === language }
         );
     };
@@ -41,7 +41,7 @@ return (
         <nav className="flex">
             {/* Buttons for language selection */}
             <ul className="flex">
-                <ul className="gap-[17px] lg:w-[300px] lg:h-[54px] p-2items-center border border-black rounded-full md:flex lg:mt-[-10px] lg:mr-[50px]">
+                <ul className="gap-[17px] lg:w-[300px] sm:w-[119px] lg:h-[54px] sm:h-[45px] p-2items-center border border-black rounded-full md:flex lg:mt-[-10px] lg:mr-[50px]">
                     <button className={btnStyle("English")} onClick={() => handleClick("English")}>English</button>
                     <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>Español</button>
                     <button className={btnStyle("French")} onClick={() => handleClick("French")}>Français</button>
