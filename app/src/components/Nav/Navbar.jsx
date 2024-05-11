@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { X, Menu } from "lucide-react";
+import { getBtnText } from "../../util/getBtnText";
 import classNames from "classnames";
 
 function Navbar() {
@@ -15,6 +16,7 @@ function Navbar() {
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
+
 
     const btnStyle = (language) => {
         return classNames(
@@ -40,11 +42,11 @@ return (
     <>
         <nav className="flex">
             {/* Buttons for language selection */}
-            <ul className="flex">
-                <ul className="gap-[17px] lg:w-[300px] sm:w-[119px] lg:h-[54px] sm:h-[45px] p-2items-center border border-black rounded-full md:flex lg:mt-[-10px] lg:mr-[50px]">
-                    <button className={btnStyle("English")} onClick={() => handleClick("English")}>English</button>
-                    <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>Español</button>
-                    <button className={btnStyle("French")} onClick={() => handleClick("French")}>Français</button>
+            <ul className="flex gap-10">
+                <ul className="gap-10 w-full p-2items-center border border-black rounded-full md:flex">
+                    <button className={btnStyle("English")} onClick={() => handleClick("English")}>{getBtnText("English")}</button>
+                    <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>{getBtnText("Spanish")}</button>
+                    <button className={btnStyle("French")} onClick={() => handleClick("French")}>{getBtnText("French")}</button>
                 </ul>
                 {/* Hidden on mobile, visible on larger screens */}
                 <div className="hidden flex-grow w-full gap-10 md:flex">
