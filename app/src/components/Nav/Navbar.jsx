@@ -6,11 +6,11 @@ import classNames from "classnames";
 
 function Navbar() {
 
-    const [active, setIsActive] = useState(null);
+    const [active, setIsActive] = useState("English");
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = (language) => {
-        setIsActive(language === active ? null : language);
+        setIsActive(language === active ? "English" : language);
     };
 
     const toggleNavbar = () => {
