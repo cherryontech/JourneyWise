@@ -1,0 +1,24 @@
+{
+    "archetype":[
+        
+        { "id":1,
+            "title":"The Perfectionist a", 
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam et illo\nimpedit culpa alias magni nulla libero porro, assumenda excepturi hic vel similique natus dignissimos qui modi",
+    
+            "image":"src/assets/archetype.svg"
+        },
+
+        { "id":2,
+            "title":"The Perfectionist b", 
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam et illo\nimpedit culpa alias magni nulla libero porro, assumenda excepturi hic vel similique natus dignissimos qui modi",
+    
+            "image":"src/assets/archetype.svg"
+        },
+        { "id":3,
+        "title":"The Perfectionist c", 
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam et illo\nimpedit culpa alias magni nulla libero porro, assumenda excepturi hic vel similique natus dignissimos qui modi",
+
+        "image":"src/assets/archetype.svg"
+    }
+    ]
+}
