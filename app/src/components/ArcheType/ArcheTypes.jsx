@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { X } from "lucide-react";
 import Img from "../../assets/ArchetypeBg.png";
 import ShowArcheType from "./ShowArcheType";
 import data from "../../../Data/data.json"
@@ -32,8 +33,8 @@ function ArcheTypes() {
         {data.archetype.map((el, index) => (
           <button
             key={index}
-            className={`mx-1 w-3 h-3 rounded-full bg-gray-500 cursor-pointer ${
-              activeIndex === index ? "bg-gray-900" : ""
+            className={`mx-1 mb-[200px] w-3 h-3 rounded-full bg-black cursor-pointer ${
+              activeIndex === index ? "bg-white" : ""
             }`}
             onClick={() => handleDotClick(index)}
           ></button>
@@ -46,13 +47,19 @@ function ArcheTypes() {
   return (
     <section>
       <div
-        className="bg-cover bg-center h-full  w-fullbg-no-repeat"
+        className="bg-cover bg-center h-full  w-fullbg-no-repeat relative"
         style={{ backgroundImage: `url(${Img})` }}
       >
+        <div className="absolute top-4 right-4">
+          <button className="bg-white rounded-full p-2"><X className="text-gray-600" /></button>
+        </div>
+      <div>
       <div className = "flex ">
        {render}
        </div>
        {renderDotSection()}
+       </div>
+      
       </div>
     </section>
   );
