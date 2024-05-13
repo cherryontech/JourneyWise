@@ -8,7 +8,7 @@ import Header from '../components/Nav/Header'
 const Index = () => {
   return (
     <>
-     <Header/>
+      <Header/>
       <Hero />
       <OurVision />
       <HomepageGuide />
