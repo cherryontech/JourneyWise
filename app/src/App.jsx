@@ -7,12 +7,12 @@ import ArcheTypes from './components/ArcheType/ArcheTypes'
 
 function App() {
   return (
-  <Router>
-    <Routes>
-      <Route path= "/" element= {<Index/>}/>
-      <Route path = "/archetypes" element = {<ArcheTypes/>}/> 
+    <Router>
+      <Routes>
+        <Route path= "/" element= {<Index/>}/>
+        <Route path = "/archetypes" element = {<ArcheTypes/>}/> 
       </Routes>
-      </Router>
+     </Router>
   )
 }
 
