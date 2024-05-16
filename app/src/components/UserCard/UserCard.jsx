@@ -5,9 +5,9 @@ import React, { Children } from "react"
 function UseCard ({children, Img}){
 
     return(<>
-      <section className = "h-screen ">
+      <section className = "h-screen">
       <div
-        className="bg-cover bg-center h-full  w-fullbg-no-repeat absolute inset-0 "
+        className="bg-cover bg-center bg-no-repeat absolute inset-0 w-[661px]"
         style={{ backgroundImage: `url(${Img})` }}
       >
         {
