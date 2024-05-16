@@ -2,8 +2,7 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import Index from './navigation/Index'
-import Header from './components/Nav/Header'
-
+import ArcheTypes from './components/ArcheTypes/ArcheTypes'
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
     <Router>
      <Routes>
       <Route path = "/" element = { <Index />}/>
+      <Route path = "/archetypes" element = {<ArcheTypes/>}/>
      </Routes>
 
     </Router>
