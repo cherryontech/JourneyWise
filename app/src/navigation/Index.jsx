@@ -3,7 +3,8 @@ import Hero from '../components/homepage/Hero'
 import OurVision from '../components/homepage/OurVision'
 import HomepageGuide from '../components/homepage/HomepageGuide'
 import Storytelling from '../components/homepage/Storytelling'
-import  Header from "../components/Nav/Header"
+import Header from "../components/Nav/Header"
+import Footer from "../components/Footer/Footer"
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <OurVision />
       <HomepageGuide />
       <Storytelling /> 
+    <Footer />
     </>
   )
 }
