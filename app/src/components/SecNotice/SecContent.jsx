@@ -1,11 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import classNames from 'classnames'
 import Buttons from '../Buttons/Buttons'
 import SecurityCollage from './SecurityCollage'
 
 function SecContent() {
   const [isChecked, setIschecked] = useState(false)
+  const navgate = useNavigate();
   const paragraph = classNames(
     'font-normal text-base leading-17 font-normal mb-8 ml-[87px] mr-[128px] text-[18px]'
   )
@@ -13,8 +15,13 @@ function SecContent() {
   const handleChange = (event) => {
     setIschecked(event.target.checked)
   }
+
+  const handleClick = ()=>{
+     navgate("./archetypes")
+    
+  }
   const renderBtn = isChecked ? (
-    <Buttons primary rounded className="w-[339px] h-[45]">
+    <Buttons onClick = {handleClick} primary rounded className="w-[339px] h-[45]">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   ) : (
