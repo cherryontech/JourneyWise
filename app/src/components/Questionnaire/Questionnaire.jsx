@@ -7,6 +7,17 @@ import { questionData } from '../../Data/questionData'
 const Questionnaire = ({currentQuestion, setCurrentQuestion, handleNextQuestion}) => {
   const { questions } = questionData 
   const { number, question, answerChoices, answerValues } = questions[currentQuestion]
+
+  // const handleAnswerClick = (answerValue) => {
+  //   const result = answerValues.indexOf(answerValue) + 1;
+  //   handleNextQuestion(result)
+  // }
+
+  // const nextQuestion = currentQuestion + 1;
+  // if (nextQuestion < questions.length) {
+  //   setCurrentQuestion(nextQuestion);
+  // }
+
   
   return (
     <div className="bg-[#E5F0F7] lg:w-[779px]">
@@ -26,7 +37,7 @@ const Questionnaire = ({currentQuestion, setCurrentQuestion, handleNextQuestion}
 }
       <div className="ml-[200px] pb-[442px] mt-[103px]">
         <Buttons primary rounded className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
-        <Buttons alternate rounded className="px-[33px] py-[17px]" >NEXT</Buttons>
+        <Buttons onClick={handleAnswerClick} alternate rounded className="px-[33px] py-[17px]" >NEXT</Buttons>
       </div>
     </div>
   )
