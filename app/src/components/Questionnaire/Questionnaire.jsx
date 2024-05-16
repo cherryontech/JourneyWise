@@ -5,22 +5,17 @@ import { questionData } from '../../Data/questionData'
 
 
 const Questionnaire = ({currentQuestion, setCurrentQuestion, handleNextQuestion}) => {
+
   const { questions } = questionData 
-  const { number, question, answerChoices, answerValues } = questions[currentQuestion]
+  const { number, question, answerChoices } = questions[currentQuestion]
 
-  // const handleAnswerClick = (answerValue) => {
-  //   const result = answerValues.indexOf(answerValue) + 1;
-  //   handleNextQuestion(result)
-  // }
+  const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    }
 
-  // const nextQuestion = currentQuestion + 1;
-  // if (nextQuestion < questions.length) {
-  //   setCurrentQuestion(nextQuestion);
-  // }
-
-  
   return (
-    <div className="bg-[#E5F0F7] lg:w-[779px]">
+    <div className="bg-[#E5F0F7] lg:w-[779px] px-[25px]">
       <ProgressBar />
       <header>
         <p className="text-[18px]">QUESTION {number}/8</p>
@@ -35,9 +30,9 @@ const Questionnaire = ({currentQuestion, setCurrentQuestion, handleNextQuestion}
         </div>
       ))
 }
-      <div className="ml-[200px] pb-[442px] mt-[103px]">
+      <div className="ml-[200px] pb-[0px] mt-[103px]">
         <Buttons primary rounded className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
-        <Buttons onClick={handleAnswerClick} alternate rounded className="px-[33px] py-[17px]" >NEXT</Buttons>
+        <Buttons onClick={nextQuestion} alternate rounded className="px-[33px] py-[17px]" >NEXT</Buttons>
       </div>
     </div>
   )

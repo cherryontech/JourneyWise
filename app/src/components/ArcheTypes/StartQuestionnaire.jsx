@@ -8,7 +8,7 @@ const StartQuestionnaire = () => {
 
     return (
         <div className="h-screen">
-        <div className="flex flex-row ml-[700px]">
+        <div className="flex flex-row ml-[655px]">
             <LearnArchetypes />
             <Questionnaire currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} />
         </div>
