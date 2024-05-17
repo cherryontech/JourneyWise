@@ -5,7 +5,7 @@ const ProgressBar = ({currentQuestion}) => {
   const continuedProgressImage = "/Updated Progress Bar (1).svg"
 
   return (
-    <div className="my-[50px]">
+    <div className="mt-[100px] mb-[50px]">
       <img src={currentQuestion === 0 ? startProgressImage : continuedProgressImage} alt="Progress Bar" /> 
     </div>
   )

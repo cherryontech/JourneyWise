@@ -1,8 +1,6 @@
 import React, { Children } from "react"
 
-
-
-function UseCard ({children, Img}){
+const UseCard = ({children, Img}) => {
 
     return(<>
       <section className = "h-screen">
