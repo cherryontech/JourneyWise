@@ -4,13 +4,13 @@ import LearnArchetypes from "../Questionnaire/LearnArchetypes"
 import Footer from '../Footer/Footer'
 
 const StartQuestionnaire = () => {
-    const [currentQuestion, setCurrentQuestion] = useState(0)
+   
 
     return (
         <div className="h-screen">
         <div className="flex flex-row ml-[655px]">
             <LearnArchetypes />
-            <Questionnaire currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} />
+            <Questionnaire />
         </div>
         <Footer /> 
         </div>
