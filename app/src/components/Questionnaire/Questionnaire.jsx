@@ -34,7 +34,7 @@ const Questionnaire = ({currentQuestion, setCurrentQuestion}) => {
 
   return (
     <div className="bg-[#E5F0F7] lg:w-[779px] px-[25px]">
-      <ProgressBar />
+      <ProgressBar currentQuestion={currentQuestion} />
       <header>
         <p className="text-[18px]">QUESTION {number}/8</p>
         <h3 className="mt-[21px] mb-[56px] text-[48px]">{question}</h3>
