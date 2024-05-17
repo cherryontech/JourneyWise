@@ -16,6 +16,13 @@ const Questionnaire = ({currentQuestion, setCurrentQuestion}) => {
     }
   }
 
+  const handlePreviousQuestion = () => {
+    const previousQuestion = currentQuestion - 1; 
+    if (previousQuestion >= 0) {
+      setCurrentQuestion(previousQuestion);
+    }
+  }
+
   return (
     <div className="bg-[#E5F0F7] lg:w-[779px] px-[25px]">
       <ProgressBar />
@@ -33,7 +40,7 @@ const Questionnaire = ({currentQuestion, setCurrentQuestion}) => {
       ))
 }
       <div className="ml-[200px] pb-[0px] mt-[103px]">
-        <Buttons primary rounded className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
+        <Buttons onClick={handlePreviousQuestion} disabled={currentQuestion === 0} primary rounded className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
         <Buttons onClick={handleNextQuestion} alternate rounded className="px-[33px] py-[17px]" >NEXT</Buttons>
       </div>
     </div>
