@@ -17,7 +17,7 @@ function SecContent() {
   }
 
   const handleClick = ()=>{
-     navgate("./archetypes")
+     navgate("./questionnaire")
     
   }
   const renderBtn = isChecked ? (
