@@ -3,8 +3,7 @@
         
         { "id":1,
             "title":"The Perfectionist", 
-            "text": "As a Perfectionist, you constantly strive for flawlessness, setting exceptionally high standards for yourself and feeling intense pressure to meet or exceed these standards in every aspect of your work and life." ,
-    
+            "text": "As a Perfectionist, you constantly strive for flawlessness, setting exceptionally high standards for yourself and feeling intense pressure to meet or exceed these standards in every aspect of your work and life.", 
             "image":"src/assets/archetypes/perfectionist.svg"
         },
 

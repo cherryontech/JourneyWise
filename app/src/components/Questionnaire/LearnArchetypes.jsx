@@ -5,6 +5,7 @@ import ImageTextCard from "../ImageTextCard/ImageTextCard";
 import archData from "../../Data/archetypesData.json";
 import Img from "../../assets/archetypes/arcetypebg.png";
 import { X } from "lucide-react";
+import { questionData } from "../../Data/questionData";
 
 const LearnArcheTypes = () => {
     const [activeIndex, setActiveIndex] = useState(0);

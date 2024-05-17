@@ -9,7 +9,7 @@ const StartQuestionnaire = () => {
     return (
         <div className="h-screen">
         <div className="flex flex-row ml-[655px]">
-            <LearnArchetypes />
+            <LearnArchetypes setCurrentQuestion={currentQuestion} />
             <Questionnaire currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion} />
         </div>
         <Footer /> 
