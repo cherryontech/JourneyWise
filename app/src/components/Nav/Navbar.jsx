@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { X, Menu } from "lucide-react";
 import { getBtnText } from "../../util/getBtnText";
 import classNames from "classnames";
+import Buttons from "../Buttons/Buttons"
+import useShowSecNotice from '../../Hook/useShowSecNotice'
 
-function Navbar() {
+const Navbar = () => {
 
     const [active, setIsActive] = useState("English");
     const [isOpen, setIsOpen] = useState(false);
+    const [handleSecNotice , ShowSecNotice] = useShowSecNotice();
 
     const handleClick = (language) => {
         setIsActive(language === active ? "English" : language);
@@ -25,18 +28,17 @@ function Navbar() {
         );
     };
 
-   const NavLinks = () => {
-    return (
-        <>
-            <li>
-                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/About Us">ABOUT US</NavLink>
-            </li>
-            <li>
-                <NavLink className="font-dm-sans text-base tracking-2 font-normal leading-35" to="/">BEGIN JOURNEY</NavLink>
-            </li>
-        </>
-    );
-};
+    const NavLinks = () => {
+        return (
+            <>
+                <li>
+                    <NavLink onClick={handleSecNotice} className="font-dm-sans text-base tracking-2 font-normal leading-35" >BEGIN JOURNEY</NavLink>
+                    <ShowSecNotice /> 
+                </li>
+            </>
+        );
+    };
+
 
 return (
     <>
@@ -50,7 +52,8 @@ return (
                 </ul>
                 {/* Hidden on mobile, visible on larger screens */}
                 <div className="hidden flex-grow w-full gap-10 md:flex">
-                    <NavLinks />
+                    <Buttons onClick= {handleSecNotice} primary rounded className="px-[60px] ">BEGIN JOURNEY</Buttons>
+                    <ShowSecNotice />
                 </div>
             </ul>
             {/* Button for toggling mobile menu */}
@@ -63,7 +66,7 @@ return (
         {isOpen && (
             <div className="flex flex-col items-center">
                 <ul className="text-center">
-                    <NavLinks />
+                    <NavLinks /> 
                 </ul>
             </div>
         )}
