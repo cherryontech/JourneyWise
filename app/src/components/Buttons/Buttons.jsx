@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-function Buttons({ children, primary, rounded, alternate, ...res }) {
+function Buttons({ children, primary, rounded, alternate , ...res }) {
   const classes = classNames(
     res.className,
     ' border cursor-pointer',
@@ -9,13 +9,16 @@ function Buttons({ children, primary, rounded, alternate, ...res }) {
       'border-2 border-black bg-[#F5FF82]  text-black  hover:bg-[#F6FF99]':
         primary,
       'rounded-full': rounded,
+
+      
     },
 
     {
       'border-2 border-black bg-[##7A7A7A) bg-gray-300 text-gray-500  cursor-not-allowed opacity-50':
         alternate,
       'rounded-full': rounded,
-    }
+    },
+    
   )
 
   return (
