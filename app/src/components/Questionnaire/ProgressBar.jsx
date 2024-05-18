@@ -1,10 +1,13 @@
 import React from 'react'
 
-const ProgressBar = () => {
+const ProgressBar = ({index}) => {
+  const startProgressImage = "/Updated Progress Bar.svg"
+  const continuedProgressImage = "/Updated Progress Bar (1).svg"
+
   return (
-    <>
-    <p className="pt-[103px] pb-[53px]">Insert progress bar here!</p>
-    </>
+    <div className="mt-[100px] mb-[50px]">
+      <img src={index === 0 ? startProgressImage : continuedProgressImage} alt="Progress Bar" /> 
+    </div>
   )
 }
 
