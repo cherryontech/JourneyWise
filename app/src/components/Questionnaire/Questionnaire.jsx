@@ -53,7 +53,7 @@ const Questionnaire = () => {
         <p className="text-[18px]">QUESTION{ numberQuestion}/{questions.questions.length}</p>
         <h3 className="mt-[21px] mb-[56px] text-[48px]">{(questions.questions[index].question)}</h3>
       </header>
-      <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected}/>
+      <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected} selectedId={selectedId} />
       <div className="ml-[200px] pb-[0px] mt-[103px]">
         <Buttons  onClick = {handleBack}primary rounded  alternate={index === 0} className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
         <Buttons onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded  className="px-[33px] py-[17px]" >NEXT</Buttons>
