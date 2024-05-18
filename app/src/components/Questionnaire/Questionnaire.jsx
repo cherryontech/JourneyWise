@@ -48,7 +48,7 @@ const Questionnaire = () => {
 
   return (
     <div className="bg-[#E5F0F7] lg:w-[779px] px-[25px]">
-      <ProgressBar />
+      <ProgressBar index={index} />
       <header>
         <p className="text-[18px]">QUESTION{ numberQuestion}/{questions.questions.length}</p>
         <h3 className="mt-[21px] mb-[56px] text-[48px]">{(questions.questions[index].question)}</h3>
