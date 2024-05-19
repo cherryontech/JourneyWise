@@ -1,5 +1,6 @@
 import React from "react";
 import ResultHero from "../components/Result/ResultHero";
+import Content from "../components/Result/Content";
 import Navbar from "../components/Nav/Navbar";
 
 function ResultIndex (){
@@ -8,9 +9,10 @@ return (
 
     <>
      <Navbar/>
-     <section className="container min-w-[375px] mx-auto px-[40px] lg-w-[1440px] py-8">
+     <main className="container min-w-[375px] mx-auto px-[40px] py-8">
     <ResultHero/>
-    </section>
+    <Content/>
+    </main>
     </>
    
 )

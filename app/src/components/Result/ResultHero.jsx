@@ -2,7 +2,7 @@ import React from "react"
 function ResultHero(){
 
     return (
-<div className="mb-12">
+<section>
     <div className = "grid-cols-1 md:grid md:grid-cols-[1fr_2fr] gap-4 md:gap-[138px]">
 
     <div className = "min-w-[295px]">
@@ -21,7 +21,7 @@ function ResultHero(){
           </div>
     </div>
       
-        </div>
+        </section>
         
     )
 }
