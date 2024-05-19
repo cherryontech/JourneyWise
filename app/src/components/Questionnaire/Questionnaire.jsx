@@ -5,10 +5,8 @@ import ProgressBar from './ProgressBar'
 import { questionData } from '../../Data/questionData'
 
 
-const Questionnaire = () => {
+const Questionnaire = ({index, setIndex}) => {
   const [questions , setQuestions] = useState( questionData )
-  
-  const [index , setIndex ]= useState(0)
   const [selected, setSelected] = useState(null);
   const [selectedId , setSelectedId ]= useState(null)
   const [count, setCount] = useState({})
@@ -26,7 +24,7 @@ const Questionnaire = () => {
 
   
    
-  const numberQuestion = index+1 
+  const numberQuestion = index + 1 
 
   const handleNext = () => {
     if (index < questions.questions.length - 1) {
