@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import Buttons from '../Buttons/Buttons'
 import Options from './Options'
 import ProgressBar from './ProgressBar'
 import { questionData } from '../../Data/questionData'
+
 
 
 const Questionnaire = () => {
@@ -12,6 +14,7 @@ const Questionnaire = () => {
   const [selected, setSelected] = useState(null);
   const [selectedId , setSelectedId ]= useState(null)
   const [count, setCount] = useState({})
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (selected !== null) {
@@ -33,6 +36,9 @@ const Questionnaire = () => {
       setIndex(index + 1);
       setSelected(null)
       setSelectedId(null)
+    }else{
+    navigate("/result")
+
     }
   }
   const handleBack = ()=>{
