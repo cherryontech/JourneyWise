@@ -11,14 +11,14 @@
     
         { "id":2,
         "title":"The Recluse", 
-        "text": "As a Perfectionist, you constantly strive for flawlessness, setting exceptionally high standards for yourself and feeling intense pressure to meet or exceed these standards in every aspect of your work and life." ,
+        "text": "As the Recluse, you experience constant pressure to appear effortlessly competent, fearing any indication of struggle or imperfection. You avoid challenges and unfamiliar tasks to uphold the illusion of innate capability, often isolating yourself from opportunities for growth and development." ,
         "image":"src/assets/archetypes/recluse.svg"
     },
 
 
     { "id":3,
     "title":"The Soloist", 
-    "text": "As a Perfectionist, you constantly strive for flawlessness, setting exceptionally high standards for yourself and feeling intense pressure to meet or exceed these standards in every aspect of your work and life. " ,
+    "text": "As the Soloist, you may feel a strong compulsion to handle tasks independently, avoiding dependency on others and struggling with delegation or collaboration. You prefer to work alone, fearing that relying on others will lead to feelings of burden and isolation, ultimately contributing to burnout." ,
     "image":"src/assets/archetypes/soloist.svg"
 }
     ]
