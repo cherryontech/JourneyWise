@@ -49,7 +49,7 @@ const Questionnaire = ({index, setIndex}) => {
       <ProgressBar index={index} />
       <header>
         <p className="text-[18px]">QUESTION { numberQuestion}/{questions.questions.length}</p>
-        <h3 className="mt-[21px] mb-[56px] text-[48px]">{(questions.questions[index].question)}</h3>
+        <h3 className="mt-[21px] mb-[20px] text-[48px]">{(questions.questions[index].question)}</h3>
       </header>
       <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected} selectedId={selectedId} />
       <div className="ml-[200px] pb-[35px] mt-[15px]">
