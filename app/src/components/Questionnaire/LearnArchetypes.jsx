@@ -4,7 +4,6 @@ import Dots from "../Dots/Dots";
 import ImageTextCard from "../ImageTextCard/ImageTextCard";
 import archData from "../../Data/archetypesData.json";
 import Img from "../../assets/archetypes/arcetypebg.png";
-import { X } from "lucide-react";
 
 const LearnArcheTypes = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -30,11 +29,7 @@ const LearnArcheTypes = () => {
                 </div>
             
                 </UseCard>
-                <div className="absolute top-4 right-4">
-                    <button className="bg-white rounded-full p-2">
-                        <X className="text-gray-600" />
-                    </button>
-                </div>
+                
             </div>
         </div>
     );

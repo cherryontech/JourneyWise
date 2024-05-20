@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 function Modal({ children, onClose, ...res }) {
   return ReactDOM.createPortal(
     <div className="fixed inset-0 flex items-center justify-center overflow-y-auto bg-black bg-opacity-50">
-      <div className="mb-2 ml-2 mr-2 mt-4 max-w-full rounded-lg bg-white p-4 shadow-lg ">
+      <div className="mb-2 ml-2 mr-2 mt-4 rounded-lg bg-white p-4 shadow-lg ">
         <button
           onClick={onClose}
           className="absolute right-0 top-0 p-2"
