@@ -25,7 +25,7 @@ function Skills (){
                 id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut purus.</p>
                   </div>
                 </div>
-                <figure className = "min-w-[331px] min-h-[1452px] bg-green-500 mt-[91px] mr-[23px] mb-[58px] md:w-[1164px]  md:min-h-[722px] md: grid  md:grid-cols-3 md:grid-rows-3 md:mx-[138px] ">
+                <figure className = "min-w-[331px] min-h-[1452px] bg-white mt-[91px] mr-[23px] mb-[58px] md:w-[1164px]  md:min-h-[722px] md: grid  md:grid-cols-3 md:grid-rows-3 md:mx-[138px] ">
                     <div className = "relative">
                         <img src={BlueSquare} alt=" blue square" className = "min-w-[268px] min-h-[242px] pt-[33px] pl-[33px] pr-[30px] md:pr-[0] md:pl-[51px] md:pt-[54px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px]">

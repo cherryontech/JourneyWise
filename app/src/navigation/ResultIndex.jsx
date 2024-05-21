@@ -3,7 +3,9 @@ import ResultHero from "../components/Result/ResultHero";
 import Content from "../components/Result/Content";
 import Skills from "../components/Result/Skills";
 import Characteristics from "../components/Result/Characteristics ";
+import EmailResult from "../components/Result/EmailResult";
 import Navbar from "../components/Nav/Navbar";
+import Footer from "../components/Footer/Footer";
 
 function ResultIndex (){
 
@@ -16,8 +18,10 @@ return (
     <Content/>
     <Skills/>
     <Characteristics/>
+    <EmailResult/>
 
     </main>
+    <Footer/>
     </>
    
 )
