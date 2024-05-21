@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import Index from './navigation/Index'
 import StartQuestionnaire from './components/ArcheTypes/StartQuestionnaire'
+import ResultIndex from './navigation/ResultIndex'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
      <Routes>
       <Route path = "/" element = { <Index />}/>
       <Route path = "/questionnaire" element = {<StartQuestionnaire/>}/>
+      <Route path= "/result" element = {<ResultIndex/>}/>
      </Routes>
     </Router>
   )
