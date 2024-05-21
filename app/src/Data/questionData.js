@@ -2,7 +2,7 @@ export const questionData = {
   "questions": [
     {
       "id": 1,
-      "question": "What type of hero are you?",
+      "question": "What Type Of Hero Are You?",
       "options": [
         {
           "id": "a",
@@ -23,7 +23,7 @@ export const questionData = {
     },
     {
       "id": 2,
-      "question": "How has your career break positively impacted your personal growth or skill development?",
+      "question": "How Has Your Career Break Positively Impacted Your Personal Growth Or Skill Development?",
       "options": [
         {
           "id": "a",
@@ -45,11 +45,12 @@ export const questionData = {
           "answer": "Taking time",
           "softSkills": ["Patience", "Flexibility", "Self-reflection"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232.svg"
     },
     {
       "id": 3,
-      "question": "What challenges did you encounter during your career break that hindered your professional advancement?",
+      "question": "What Challenges Did You Encounter During Your Career Break That Hindered Your Professional Advancement?",
       "options": [
         {
           "id": "a",
@@ -71,11 +72,12 @@ export const questionData = {
           "answer": "Volunteering or community involvement",
           "softSkills": ["Empathy", "Emotional Intelligence", "Passionate"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232 (1).svg"
     },
     {
       "id": 4,
-      "question": "What really motivates me in my work?",
+      "question": "What Really Motivates Me In My Work?",
       "options": [
         {
           "id": "a",
@@ -97,11 +99,12 @@ export const questionData = {
           "answer": "Feeling a sense of purpose and alignment with my values.",
           "softSkills": ["Autonomy", "Integrity"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232 (2).svg"
     },
     {
       "id": 5,
-      "question": "Which one of these do you identify with most?",
+      "question": "Which One Of These Do You Identify With Most?",
       "options": [
         {
           "id": "a",
@@ -123,11 +126,12 @@ export const questionData = {
           "answer": "I can’t take credit for my achievements.",
           "softSkills": ["Integrity", "Critical thinking", "Creativity"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232 (3).svg"
     },
     {
       "id": 6,
-      "question": "When working with a team, I work best when:",
+      "question": "When Working With A Team, I Work Best When:",
       "options": [
         {
           "id": "a",
@@ -149,11 +153,12 @@ export const questionData = {
           "answer": "I work independently to check in when necessary.",
           "softSkills": ["Resilience", "Autonomy", "Initiative"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232 (4).svg"
     },
     {
       "id": 7,
-      "question": "When managing my time, I work best when:",
+      "question": "When Managing My Time, I Work Best When:",
       "options": [
         {
           "id": "a",
@@ -175,11 +180,12 @@ export const questionData = {
           "answer": "I review and adjust priorities as I go.",
           "softSkills": ["Autonomy", "Self-motivation", "Adaptability"]
         }
-      ]
+      ],
+      "image": "/Rectangle 232 (5).svg"
     },
     {
   "id": 8,
-  "question": "When there’s a conflict",
+  "question": "When There’s A Conflict I Resolve It By:",
   "options": [
     {
       "id": "a",
@@ -201,7 +207,8 @@ export const questionData = {
       "answer": "Analyzing the problem to think of different scenarios.",
       "softSkills": ["Critical thinking", "Creativity", "Analytical thinking"]
     }
-  ]
+  ],
+  "image": "/Rectangle 232 (6).svg"
 }
   ]
 }
