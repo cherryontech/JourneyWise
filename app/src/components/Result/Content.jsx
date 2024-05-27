@@ -1,6 +1,8 @@
 import React from "react";
 import Img  from "../../assets/archetypes/perfectionist.svg"
-function Content (){
+
+
+const Content = () => {
 
 
     return (
