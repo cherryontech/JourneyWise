@@ -59,8 +59,8 @@ const Questionnaire = ({index, setIndex}) => {
       </header>
       <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected} selectedId={selectedId} />
       <div className="ml-[200px] pb-[35px] mt-[15px]">
-        <Buttons  onClick = {handleBack}primary rounded  alternate={index === 0} className="mr-[50px] px-[33px] py-[17px]" >BACK</Buttons>
-        <Buttons onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded  className="px-[33px] py-[17px]" >NEXT</Buttons>
+        <Buttons  onClick = {handleBack}primary rounded  alternate={index === 0} className="text-[14px] mr-[8px] px-[60px] py-[13px]" >BACK</Buttons>
+        <Buttons onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded  className="text-[14px] px-[60px] py-[13px]" >NEXT</Buttons>
       </div>
     </div>
   )

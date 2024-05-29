@@ -6,7 +6,7 @@ function Buttons({ children, primary, rounded, alternate , ...res }) {
     res.className,
     ' border cursor-pointer',
     {
-      'border-2 border-black bg-[#F5FF82]  text-black  hover:bg-[#F6FF99]':
+      'border-[1px] border-black bg-[#F5FF82]  text-black  hover:bg-[#F6FF99]':
         primary,
       'rounded-full': rounded,
 
@@ -14,7 +14,7 @@ function Buttons({ children, primary, rounded, alternate , ...res }) {
     },
 
     {
-      'border-2 border-black bg-[##7A7A7A) bg-gray-300 text-gray-500  cursor-not-allowed opacity-50':
+      'border-[1px] border-black bg-[##7A7A7A) bg-gray-300 text-gray-500  cursor-not-allowed opacity-50':
         alternate,
       'rounded-full': rounded,
     },

@@ -5,27 +5,27 @@ import BlackSemiCircle from "../../assets/result/Skills-Collage-Black-Semi-Circl
 import BlackSemiCircleRight from "../../assets/result/Skill-Collage-Semi-Circle-right.png"
 import YellowCircle from "../../assets/result/Skills-Collage-Yellow-Circle.png"
 
-function Skills (){
+const Skills = () => {
 
     return (
-        <section className = "text-center font-features font-serifTex font-normal leading-normal">
+        <section className = "text-left font-features font-serifTex font-normal leading-normal">
                 <div>
                 <div className= "pt-[29px] md:flex md:gap-[138px] md:pt-[91px] ">
 
                  <div className = "">
-                  <h4 className = "font-semibold text-[16px] min-w-[244px]  mr-[86px] mb-[15px] md:w-[234px] md:text[18px] md:leading-[0.36px] captilize md:mb-[21px] md:ml-[141px]">
+                  <p className = "text-[18px] min-w-[244px] mr-[86px] mb-[15px] md:w-[234px] md:text[18px] md:leading-[0.36px] md:mb-[21px] md:ml-[141px]">
                   YOUR TOP SOFT SKILLS
-                  </h4>
-                  <h2 className = "text-[48px] capitalize text-[#2C2B2B] mr-[36px]  pb-[58px] min-w-[295px] md:w-[454px] md:ml-[138px]">
+                  </p>
+                  <h3 className = "text-[48px] text-[#2C2B2B] mr-[200px] md:ml-[138px]">
                   Soft Skills All Around
-                  </h2>
+                  </h3>
                   </div>
                   <div className ="min-w-[291px] min-h-[244px]  text-[18px] leading-[35px] md:w-[572px] md:h-[139px]">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. Donec 
                 id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut purus.</p>
                   </div>
                 </div>
-                <figure className = "min-w-[331px] min-h-[1452px] bg-white mt-[91px] mr-[23px] mb-[58px] md:w-[1164px]  md:min-h-[722px] md: grid  md:grid-cols-3 md:grid-rows-3 md:mx-[138px] ">
+                <figure className = "min-w-[331px] min-h-[1452px] bg-white mt-[51px] mb-[58px] md:w-[1164px]  md:min-h-[722px] md: grid  md:grid-cols-3 md:grid-rows-3">
                     <div className = "relative">
                         <img src={BlueSquare} alt=" blue square" className = "min-w-[268px] min-h-[242px] pt-[33px] pl-[33px] pr-[30px] md:pr-[0] md:pl-[51px] md:pt-[54px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px]">
@@ -43,7 +43,7 @@ function Skills (){
                     <div className = "relative">
                         <img src={BlackSemiCircle} alt="Black Semi Circle" className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pt-[54px] md:pl-[0] md:pr-[49px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px] mt-[0]">
-                            <h3 className="tex-[32px] text-white capitalize">Orgnization</h3>
+                            <h3 className="tex-[32px] text-white capitalize">Organization</h3>
                         </div>
                     </div>
 

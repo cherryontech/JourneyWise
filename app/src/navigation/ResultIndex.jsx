@@ -7,7 +7,7 @@ import EmailResult from "../components/Result/EmailResult";
 import Header from "../components/Nav/Header";
 import Footer from "../components/Footer/Footer";
 
-function ResultIndex (){
+const ResultIndex = () => {
 
 return (
 

@@ -1,4 +1,6 @@
 import React from "react"
+import './radio-custom.css'
+
 
 const Options = ({answerChoices, handleSelected, selectedId}) => {
 
@@ -16,7 +18,7 @@ const Options = ({answerChoices, handleSelected, selectedId}) => {
             id={`choice${i}`}
             name="answerChoicee" 
             value={choice}
-            className="mr-[20px] w-[20px] h-[20px]" 
+            className="mr-[20px] w-[20px] h-[20px] custom-radio"
             onChange = {() => handleChange(i, choice.id)} 
             />
           <label htmlFor={`choice${i}`} >{choice.answer}</label>

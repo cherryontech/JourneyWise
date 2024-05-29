@@ -12,6 +12,7 @@
     "format": "prettier --write \"src/**/*.+(js|jsx)\""
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "classnames": "^2.5.1",
     "localforage": "^1.10.0",
     "lucide-react": "^0.378.0",

@@ -21,11 +21,11 @@ function SecContent() {
     
   }
   const renderBtn = isChecked ? (
-    <Buttons onClick = {handleClick} primary rounded className="w-[339px] h-[45]">
+    <Buttons onClick = {handleClick} primary rounded className="w-[339px] h-[45] px-[60px] py-[13px]">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   ) : (
-    <Buttons alternate rounded className="w-[339px] h-[45]">
+    <Buttons alternate rounded className="w-[339px] h-[45] px-[60px] py-[13px]">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   )
