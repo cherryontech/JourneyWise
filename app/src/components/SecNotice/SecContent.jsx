@@ -62,6 +62,7 @@ function SecContent() {
           id="agree"
           checked={isChecked}
           onChange={handleChange}
+          className="w-[30px] h=[30px]"
         />
         <label htmlFor="agree" className="ml-2">
           I agree to the terms and conditions. 
