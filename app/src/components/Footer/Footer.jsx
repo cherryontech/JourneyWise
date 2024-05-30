@@ -7,7 +7,7 @@ const Footer = () => {
   const style = (listStyle, iconStyle) => {
     return classNames (
       {"w-[35px] h-[35px] rounded-full bg-[#F5FF82] flex items-center justify-center": listStyle},
-      {"text-black w-[20px] h-[20px] ": iconStyle}
+      {"text-black w-[20px] h-[20px] fill-current": iconStyle}
     )
   }
 
