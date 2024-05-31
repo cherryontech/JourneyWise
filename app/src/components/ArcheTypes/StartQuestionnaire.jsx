@@ -10,7 +10,7 @@ const StartQuestionnaire = () => {
     const [index, setIndex] = useState(0)
    
     return (
-        <div className="h-screen">
+        <div className="h-screen bg-[#E5F0F7]">
             <CloseQuestionnaire /> 
             <div className="flex flex-row ml-[655px]">
                 {index === 0 ? <LearnArchetypes /> : <QuestionnairePhotos index={index} questionData={questionData} />}

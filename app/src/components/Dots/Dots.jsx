@@ -6,11 +6,11 @@ function Dots({ arch, handleClick, activeIndex }) {
     };
 
     return (
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-[30px]">
             {arch.map((el, index) => (
                 <button
                     key={el.id}
-                    className={`mx-1 mb-2 w-3 h-3 rounded-full ${activeIndex === index ? "bg-black":"bg-white" } cursor-pointer`}
+                    className={`mx-1 mb-2 w-3 h-3 rounded-full border-[1px] border-white ${activeIndex === index ? " bg-white":"bg-transparent" } cursor-pointer`}
                     onClick={() => handleDotClick(index)}
                 ></button>
             ))}
