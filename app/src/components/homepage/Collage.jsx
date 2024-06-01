@@ -2,7 +2,7 @@ import React from 'react'
 
 const Collage = () => {
   return (
-    <div className="lg:mt-[-195px] sm:mr-[50px]">
+    <div className="lg:mt-[-100px] sm:mr-[50px]">
     <img 
     id="collage"
     src="/journeywise-hero.png" 

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import classNames from 'classnames'
 import Buttons from '../Buttons/Buttons'
 import SecurityCollage from './SecurityCollage'
+import './checkbox-custom.css'
 
 function SecContent() {
   const [isChecked, setIschecked] = useState(false)
@@ -62,7 +63,7 @@ function SecContent() {
           id="agree"
           checked={isChecked}
           onChange={handleChange}
-          className="w-[30px] h=[30px]"
+          className="custom-checkbox"
         />
         <label htmlFor="agree" className="ml-2">
           I agree to the terms and conditions. 
