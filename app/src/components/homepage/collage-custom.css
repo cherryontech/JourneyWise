@@ -1,0 +1,11 @@
+#collage img {
+  width: 702px; 
+  height: 753px;  
+}
+
+@media (max-width: 480px) {
+  #collage img {
+    width: 333px; 
+    height: 372px; 
+  }
+}

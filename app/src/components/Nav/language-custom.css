@@ -1,0 +1,17 @@
+ul {
+  display: flex;
+  width: 289px;
+  height: 45px; 
+  margin-right: 8px; 
+  padding-top: 2px; 
+  padding-left: 3px; 
+}
+
+@media (max-width: 480px) {
+  ul {
+    display: flex; 
+    width: 119px; 
+    height: 45px; 
+  }
+}
+
