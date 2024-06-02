@@ -1,0 +1,90 @@
+#storytelling {
+  display: flex; 
+  flex-direction: row;
+  margin-top: 100px; 
+  margin-bottom: 113px; 
+}
+
+#storytellingRectangle {
+  width: 710px; 
+  height: 810px; 
+  position: relative;
+  z-index: 0;
+}
+
+#storysection {
+  margin-left: 138px; 
+}
+
+#storypjourney {
+  font-size: 18px; 
+  margin-top: 150px;
+  margin-right: 200px; 
+}
+
+#storyh3 {
+  font-size: 48px; 
+  margin-top: 21px; 
+  margin-right: 700px; 
+  position: relative; 
+  z-index: 0; 
+}
+
+#storyptext {
+  font-size: 18px; 
+  margin-right: 600px; 
+  margin-top: 21px; 
+  position: relative; 
+  z-index: 0; 
+}
+
+#storyvector {
+  width: 995px; 
+  height: 686px; 
+  margin-left: -1550px; 
+  margin-top: 10px; 
+  position: relative; 
+  z-index: -2;
+}
+
+@media (max-width: 480px) {
+
+  #storytelling {
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  #storytellingRectangle {
+    width: 335px; 
+    height: 469px; 
+    margin-top: -135px;
+  }
+
+  #storysection {
+    margin-left: 40px; 
+  }
+
+  #storypjourney {
+    font-size: 16px; 
+    margin-right: 0px; 
+    margin-top: 10px; 
+  }
+
+  #storyh3 {
+    font-size: 36px; 
+    margin-left: 0px; 
+    margin-right: 40px; 
+  }
+
+  #storyptext {
+    font-size: 16px; 
+    margin-right: 65px; 
+  }
+
+  #storyvector {
+    width: 583px; 
+    height: 402px; 
+    margin-left: 0px; 
+    margin-top: -450px; 
+  }
+}
