@@ -8,7 +8,7 @@ const CloseQuestionnaire = () => {
 
   return (
     <div className="absolute top-4 right-4">
-      <button onClick= {handleClick} className="bg-white rounded-full p-2">
+      <button onClick= {handleClick} className="bg-white rounded-full p-2 border-[1px] border-gray-500">
         <X className="text-gray-600" />
         <ShowClosePopup />
       </button>

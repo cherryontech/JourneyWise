@@ -1,0 +1,29 @@
+#quizdiv {
+  background-color: #E5F0F7;
+  width: fit-content; 
+  padding-top: 23px; 
+  padding-bottom: 23px; 
+  margin-left: 69px; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+#quizheader {
+  margin-left: -10px;
+}
+
+#quizheader h3 {
+  margin-left: -120px; 
+  margin-right: 200px; 
+}
+
+#quizheader p {
+  font-size: 18px; 
+  margin-left: -120px; 
+  margin-right: 150px;
+}
+
+#quizheader header {
+  display: flex; 
+  flex-direction: column; 
+}

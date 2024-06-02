@@ -33,6 +33,14 @@
   font-size: 32px; 
 }
 
+#engage2 {
+  margin-left: 400px; 
+}
+
+#unlock3 {
+  margin-left: 400px; 
+}
+
 @media (max-width: 480px) {
   #homepageHeader {
     display: flex; 
@@ -93,19 +101,32 @@
   }
 
   #discover {
-    margin-top: 70px; 
+    margin-top: -128px; 
     margin-left: 50px; 
-    margin-right: 50px; 
+    margin-right: 90px; 
   }
 
   #engage {
     margin-left: 50px; 
-    margin-right: 50px;  
+    margin-right: 88px; 
+    margin-top: 35px;  
+    margin-bottom: 10px; 
   }
 
   #unlock {
     margin-left: 50px; 
-    margin-right: 50px; 
+    margin-right: 75px; 
+    margin-top: 35px; 
+  }
+
+  #engage2 {
+    margin-left: 0px; 
+    margin-top: 150px;  
+  }
+
+  #unlock3 {
+    margin-left: 0px; 
+    margin-top: 150px; 
   }
 
 }

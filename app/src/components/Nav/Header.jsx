@@ -5,7 +5,7 @@ import './navbar-custom.css'
 
 const Header = () => {
     return (
-        <header className="navbar-custom">
+        <header id="navheader" className="navbar-custom">
             <img src="/JourneyWise-Logo-1.svg" /> 
             <Navbar />
         </header>
