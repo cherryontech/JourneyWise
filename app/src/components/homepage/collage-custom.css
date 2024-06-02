@@ -7,5 +7,6 @@
   #collage img {
     width: 333px; 
     height: 372px; 
+    margin-left: -1000px; 
   }
 }

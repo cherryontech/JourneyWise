@@ -10,7 +10,7 @@ import './hero-custom.css'
 const Hero = () => {
   const [handleClick , ShowSecNotice] = useShowSecNotice();
   return (
-    <header className="hero-custom">
+    <header id="heroheader" className="hero-custom">
       <section id="heading-subheading">
         <div>
           <h2>

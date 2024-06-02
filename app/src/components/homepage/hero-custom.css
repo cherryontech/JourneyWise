@@ -1,16 +1,16 @@
-h2 {
+#heroheader h2 {
   font-size: 62px; 
   margin-right: 400px; 
   margin-top: 100px;
   position: relative; 
 }
 
-h6 {
+#heroheader h6 {
   font-size: 22px; 
   margin-top: -40px; 
 }
 
-header {
+#heroheader {
   margin-left: 138px; 
   display: flex; 
   flex-direction: row; 
@@ -23,22 +23,23 @@ header {
 }
 
 @media (max-width: 480px) {
-  h2 {
+  #heroheader h2 {
     font-size: 52px; 
-    margin-right: 100px;
-    margin-left: -30px;
+    margin-right: 40px;
+    margin-left: 0px;
   }
 
   #heading-subheading {
     margin-left: 48px; 
   }
 
-  header {
+  #heroheader {
     display: flex; 
     flex-direction: column-reverse;
+    margin-left: 0px; 
   }
 
-  h6 {
+  #heroheader h6 {
     margin-left: -30px;
     margin-right: 195px; 
   }
