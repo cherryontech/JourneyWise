@@ -39,7 +39,7 @@ return (
             
             {/* Button for toggling mobile menu */}
             <div>
-                <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X /> : <Menu />}</button>
+                <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X /> : <Menu className="mt-[5px]" />}</button>
             </div>
         </nav>
 

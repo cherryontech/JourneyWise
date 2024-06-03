@@ -13,9 +13,9 @@ const HomepageGuide = () => {
       </header>
       <section className="pb-[150px]">
         <div id="question-vectors" className="flex flex-row">
-          <img id="discover1" src="/journeywise-icon-1.svg" alt="A yellow circle with a black number 1 in the center." /> 
-          <img id="engage2" src="/journeywise-icon-2.svg" alt="A yellow circle with a black number 2 in the center." />
-          <img id="unlock3" src="/journeywise-icon-3.svg" alt="A yellow circle with a black number 3 in the center." /> 
+          <img id="discover1" src="/journeywise-icon-1.svg" alt="Step 1" /> 
+          <img id="engage2" src="/journeywise-icon-2.svg" alt="Step 2" />
+          <img id="unlock3" src="/journeywise-icon-3.svg" alt="Step 3" /> 
         </div>
         <div id="instructions" className="flex flex-row">
           <div id="discover" className="ml-[138px] mt-[48.67px]">

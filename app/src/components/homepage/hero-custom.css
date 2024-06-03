@@ -25,8 +25,8 @@
 @media (max-width: 480px) {
   #heroheader h2 {
     font-size: 52px; 
-    margin-right: 40px;
-    margin-left: 0px;
+    margin-right: 50px;
+    margin-left: -20px;
   }
 
   #heading-subheading {
@@ -42,6 +42,10 @@
   #heroheader h6 {
     margin-left: -30px;
     margin-right: 195px; 
+  }
+
+  #subheading {
+    margin-top: 100px; 
   }
 
   #lets-begin {

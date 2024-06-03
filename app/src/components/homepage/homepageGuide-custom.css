@@ -119,14 +119,23 @@
     margin-top: 35px; 
   }
 
+  #discover1 {
+    width: 29px; 
+    height: 29px;
+  }
+
   #engage2 {
     margin-left: 0px; 
     margin-top: 150px;  
+    width: 29px;
+    height: 29px; 
   }
 
   #unlock3 {
     margin-left: 0px; 
     margin-top: 150px; 
+    width: 29px; 
+    height: 29px; 
   }
 
 }
