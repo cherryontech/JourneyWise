@@ -13,7 +13,7 @@ const Footer = () => {
   return (
       <footer className="footer-custom">
           <p id="copyright">© CherryOnTech Venus Voyagers | All Rights Reserved.</p>
-          <ul>
+          <section id="footerlinks">
             <a href="https://www.linkedin.com/company/cherry-on-tech/posts/?feedView=all">
               <li className ={style("listStyle")}><img src="/LinkedIn-Icon-PH.svg" alt="LinkedIn Logo, link to Cherry on Tech's LinkedIn" /></li>
             </a>
@@ -23,7 +23,7 @@ const Footer = () => {
             <a href="">
               <li className ={style("listStyle")}><img src="Youtube-Icon-PH.svg" alt="Youtube Logo, link to Cherry on Tech's Youtube Channel" /></li>
             </a>
-          </ul>
+          </section>
       </footer>
   )
 }

@@ -10,7 +10,7 @@ footer {
   width: 100vw; 
 }
 
-ul {
+#footerlinks {
   display: flex; 
   flex-direction: row; 
   justify-content: center;
@@ -39,5 +39,11 @@ ul {
   #copyright {
     font-size: 16px; 
     margin-left: -20px; 
+  }
+
+  #footerlinks {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-evenly; 
   }
 }

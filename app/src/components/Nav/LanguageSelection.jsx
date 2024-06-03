@@ -17,8 +17,8 @@ const LanguageSelection = () => {
     };
 
   return (
-    <ul className="language-custom">
-      <ul className="p-2 items-center border border-black rounded-full md:flex">
+    <ul id="languagecontainer" className="language-custom">
+      <ul id="language" className="p-2 items-center border border-black rounded-full md:flex">
         <button id="english" className={btnStyle("English")} onClick={() => handleClick("English")}>
           <span className="block md:hidden">EN</span>
           <span className="hidden md:block">ENGLISH</span>
