@@ -1,23 +1,16 @@
 import { useWindowSize } from "../Hook/useWindowSize";
 
-export const getBtnText = (language) => {
-    const [windowSize] = useWindowSize()
+const languageMap = {
+    English: { short: "EN", full: "English" }, 
+    Spanish: { short: "ES", full: "Español" }, 
+    French: { short: "FR", full: "Français" },
+}
 
-    if (windowSize <= 480){
-        switch(language) {
-            case "English":
-                return "En";
-            case "Spanish":
-                return "Es";
-            case "French":
-                return "Fr";
-            default:
-                return language;
-        }
-    } else {
-        return language;
-    }
+export const getBtnText = (language, windowSize) => {
+    const isSmallScreen = windowSize <= 480; 
+    const languageData = languageMap[language]; 
 
+    return languageData ? (isSmallScreen ? languageData.short : languageData.full) : language;
     }
 
 
