@@ -57,15 +57,15 @@ const Questionnaire = ({index, setIndex}) => {
       <div id="quizheader" >
       <header>
         <p>QUESTION { numberQuestion}/{questions.questions.length}</p>
-        <h3 className="mt-[21px] mb-[20px] text-[48px]">{(questions.questions[index].question)}</h3>
+        <h3>{(questions.questions[index].question)}</h3>
         <p>While you may not fit perfectly into a single archetype, choosing one helps us understand your experiences and preferences better. This helps us give you a personalized experience. Let's begin!
         </p>
       </header>
       </div>
       <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected} selectedId={selectedId} />
-      <div className="ml-[200px] pb-[35px] mt-[15px]">
-        <Buttons onClick = {handleBack}primary rounded  alternate={index === 0} className="text-[14px] mr-[8px] px-[60px] py-[13px]" >BACK</Buttons>
-        <Buttons onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded  className="text-[14px] px-[60px] py-[13px]" >NEXT</Buttons>
+      <div id="backnext">
+        <Buttons id="back" onClick = {handleBack}primary rounded  alternate={index === 0} >BACK</Buttons>
+        <Buttons id="next" onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded >NEXT</Buttons>
       </div>
     </div>
   )
