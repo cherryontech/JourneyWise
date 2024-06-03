@@ -6,10 +6,10 @@ import Buttons from '../Buttons/Buttons'
 
 
 const ClosePopup = () => {
-  const navgate = useNavigate();
+  const navigate = useNavigate();
 
   const handleClose = () => {
-    navgate("/")
+    navigate("/")
   }
 
   return (
