@@ -1,0 +1,15 @@
+#swirl1 {
+  width: 374px;
+  height: 295px;
+  margin-top: -250px; 
+  margin-left: -120px; 
+}
+
+@media (max-width: 480px) {
+  #swirl1 {
+    width: 148px; 
+    height: 116px; 
+    margin-top: -175px;
+    margin-left: -75px; 
+  }
+}

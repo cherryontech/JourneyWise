@@ -1,0 +1,28 @@
+header {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  margin-left: 138px; 
+  margin-top: 28px; 
+  margin-bottom: 75px; 
+} 
+
+img {
+  width: 168px;
+  height: 37px; 
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 33.21px; 
+  }
+
+  img {
+    width: 114px; 
+    height: 25px; 
+  }
+}

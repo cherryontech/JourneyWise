@@ -1,0 +1,69 @@
+#ourvision {
+  display: flex; 
+  flex-direction: row;
+  margin-top: 100px; 
+}
+
+#visionrectangle {
+  width: 710px; 
+  height: 810px; 
+}
+
+#visiontext {
+  display: flex; 
+  flex-direction: column; 
+  margin-left: 150px; 
+}
+
+h3 {
+  font-size: 48px; 
+  margin-right: 50px; 
+  margin-top: 21px; 
+  position: relative; 
+  z-index: 1;
+}
+
+#visionVector {
+  width: 1035px; 
+  height: 685px; 
+  position: relative; 
+  z-index: -2; 
+  margin-top: -600px; 
+}
+
+
+@media (max-width: 480px) {
+  #ourvision {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 50px; 
+  }
+
+  #visionrectangle {
+    width: 339px; 
+    height: 469px; 
+  }
+
+  h3 {
+    font-size: 36px; 
+    margin-left: -120px; 
+  }
+
+  #ourVisionp {
+    font-size: 16px; 
+    margin-left: -120px; 
+    margin-top: -10px; 
+    margin-bottom: -10px; 
+  }
+
+  #ourVisionBody {
+    margin-left: -120px; 
+    margin-right: 50px; 
+  }
+
+  #visionVector {
+    width: 583px; 
+    height: 402px; 
+    margin-top: -500px; 
+  }
+}

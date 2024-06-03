@@ -1,0 +1,54 @@
+#heroheader h2 {
+  font-size: 62px; 
+  margin-right: 400px; 
+  margin-top: 100px;
+  position: relative; 
+}
+
+#heroheader h6 {
+  font-size: 22px; 
+  margin-top: -40px; 
+}
+
+#heroheader {
+  margin-left: 138px; 
+  display: flex; 
+  flex-direction: row; 
+}
+
+#subheading {
+  width: 451px; 
+  height: 57px; 
+  margin-top: 200px; 
+}
+
+@media (max-width: 480px) {
+  #heroheader h2 {
+    font-size: 52px; 
+    margin-right: 40px;
+    margin-left: 0px;
+  }
+
+  #heading-subheading {
+    margin-left: 48px; 
+  }
+
+  #heroheader {
+    display: flex; 
+    flex-direction: column-reverse;
+    margin-left: 0px; 
+  }
+
+  #heroheader h6 {
+    margin-left: -30px;
+    margin-right: 195px; 
+  }
+
+  #lets-begin {
+    margin-top: 60px;
+    width: 295px; 
+    height: 45px; 
+    margin-left: -35px; 
+  }
+
+}

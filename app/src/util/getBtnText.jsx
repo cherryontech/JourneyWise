@@ -1,10 +1,9 @@
 import { useWindowSize } from "../Hook/useWindowSize";
 
-export const getBtnText = (language)=>{
+export const getBtnText = (language) => {
+    const [windowSize] = useWindowSize()
 
-    const [windowSize]= useWindowSize()
-
-    if(windowSize<=768){
+    if (windowSize <= 480){
         switch(language) {
             case "English":
                 return "En";

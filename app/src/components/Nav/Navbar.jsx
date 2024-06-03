@@ -1,32 +1,20 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { X, Menu } from "lucide-react";
-import { getBtnText } from "../../util/getBtnText";
-import classNames from "classnames";
 import Buttons from "../Buttons/Buttons"
 import useShowSecNotice from '../../Hook/useShowSecNotice'
+import LanguageSelection from "./LanguageSelection";
 
 const Navbar = () => {
 
-    const [active, setIsActive] = useState("English");
     const [isOpen, setIsOpen] = useState(false);
     const [handleSecNotice , ShowSecNotice] = useShowSecNotice();
 
-    const handleClick = (language) => {
-        setIsActive(language === active ? "English" : language);
-    };
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
 
-
-    const btnStyle = (language) => {
-        return classNames(
-            "font-dm-sans lg:text-[14px] tracking-2 font-semibold uppercase lg:px-[3px]",
-            { 'bg-black text-white rounded-3xl m-[5px]': active === language }
-        );
-    };
 
     const NavLinks = () => {
         return (
@@ -42,20 +30,13 @@ const Navbar = () => {
 
 return (
     <>
-        <nav className="flex">
-            {/* Buttons for language selection */}
-            <ul className="flex gap-10">
-                <ul className="gap-10 w-full p-2items-center border border-black rounded-full md:flex">
-                    <button className={btnStyle("English")} onClick={() => handleClick("English")}>{getBtnText("English")}</button>
-                    <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>{getBtnText("Español")}</button>
-                    <button className={btnStyle("French")} onClick={() => handleClick("French")}>{getBtnText("Français")}</button>
-                </ul>
-                {/* Hidden on mobile, visible on larger screens */}
-                <div className="hidden flex-grow w-full gap-10 md:flex">
+        <nav className="flex flex-row">
+            <LanguageSelection /> 
+            <div className="hidden flex-grow w-full gap-10 md:flex">
                     <Buttons onClick= {handleSecNotice} primary rounded className="px-[60px] ">BEGIN JOURNEY</Buttons>
                     <ShowSecNotice />
-                </div>
-            </ul>
+            </div>
+            
             {/* Button for toggling mobile menu */}
             <div>
                 <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X /> : <Menu />}</button>
