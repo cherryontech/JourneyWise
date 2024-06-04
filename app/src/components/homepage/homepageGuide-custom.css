@@ -16,6 +16,7 @@
 #headerText h3 {
   font-size: 48px; 
   margin-right: 20px; 
+  line-height: normal; 
 }
 
 #guideRectangle {
@@ -31,6 +32,10 @@
 
 #instructions h4 {
   font-size: 32px; 
+}
+
+#instructions {
+  line-height: normal; 
 }
 
 #engage2 {
@@ -60,6 +65,7 @@
   #headerText h3 {
     font-size: 36px; 
     margin-left: 1px; 
+    line-height: normal; 
   }
 
   #guideContainer section {
@@ -91,13 +97,15 @@
   #instructions h4 {
     font-size: 20px; 
     margin-left: 0px; 
-    margin-right: 0px; 
+    margin-right: 0px;
+    line-height: normal;  
   }
 
   #instructions p {
     font-size: 16px; 
     margin-left: 0px; 
     margin-right: 0px; 
+    line-height: 27.2px; 
   }
 
   #discover {
