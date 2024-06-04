@@ -47,6 +47,8 @@ h3 {
   h3 {
     font-size: 36px; 
     margin-left: -120px; 
+    position: relative; 
+    z-index: 0;
   }
 
   #ourVisionp {
