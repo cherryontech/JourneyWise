@@ -23,3 +23,23 @@
   text-align: center; 
   line-height: normal; 
 }
+
+#securitytext p {
+  font-size: 18px; 
+  text-align: center; 
+  line-height: 35px; 
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+
+#intro {
+  margin-bottom: 50px; 
+}
+
+#securitycontainer label {
+  font-size: 18px; 
+}
+
+@media (max-width: 480px) {
+  
+}
