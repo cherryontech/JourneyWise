@@ -1,0 +1,16 @@
+#progresscontainer {
+  margin-top: 100px; 
+  margin-bottom: 50px; 
+}
+
+@media (max-width: 480px) {
+  #progresscontainer {
+    margin-top: 60px; 
+    margin-bottom: 20px; 
+  }
+
+  #progresscontainer img {
+    width: 400px; 
+    height: 38px; 
+  }
+}

@@ -18,12 +18,14 @@
   font-size: 48px; 
   margin-top: 21px; 
   margin-bottom: 20px; 
+  line-height: normal; 
 }
 
 #quizheader p {
   font-size: 18px; 
   margin-left: -120px; 
   margin-right: 150px;
+  line-height: 35px; 
 }
 
 #quizheader header {
@@ -62,19 +64,21 @@
   #quizheader h3 {
     font-size: 36px; 
     margin-left: 40px;
-    margin-right: 150px; 
+    margin-right: 50px; 
+    margin-bottom: -30px; 
   }
 
   #quizheader p {
     font-size: 16px;
     margin-left: 40px; 
-    margin-right: 163px; 
+    margin-right: 50px; 
+    line-height: 27.2px; 
   }
 
  #backnext {
   display: flex; 
   flex-direction: column; 
-  margin-left: 30px; 
+  margin-left: 55px; 
   width: 293px; 
   height: 45px; 
   margin-bottom: 100px; 
