@@ -13,7 +13,7 @@ const ClosePopup = () => {
   }
 
   return (
-    <div className="flex flex-col w-[808px] h-[520px]">
+    <div className="flex flex-col w-[1000px] h-[520px]">
       <Modal />
       <img src="/Vector (1).svg" className="w-[51px] h-[68px] mt-[63px] ml-[378px]" /> 
       <h3 className="text-[48px] text-center ml-[100px] mr-[100px] mt-[20px]">Would You Like To Exit Out Of This Quiz?</h3>
