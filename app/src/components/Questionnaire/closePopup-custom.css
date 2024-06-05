@@ -1,0 +1,27 @@
+#closecontainer {
+  display: flex; 
+  flex-direction: column;
+  width: 1000px; 
+  height: 520px; 
+  justify-content: center;
+  align-items: center;
+}
+
+#closecontainer h3 {
+  font-size: 48px; 
+  text-align: center; 
+  margin-left: 200px; 
+  margin-right: 200px;
+  margin-top: 20px; 
+  line-height: normal; 
+}
+
+#closecontainer p {
+  font-size: 22px;
+  line-height: 39px; 
+  text-align: center; 
+  margin-top: 30px; 
+  margin-left: 150px; 
+  margin-right: 150px; 
+  margin-bottom: 42px; 
+}
