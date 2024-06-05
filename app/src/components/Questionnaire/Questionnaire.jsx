@@ -108,7 +108,7 @@ const Questionnaire = ({index, setIndex}) => {
       <ProgressBar index={index} />
       <div id="quizheader" >
       <header>
-        <p>QUESTION { numberQuestion}/{questions.questions.length}</p>
+        <p id="questionnumber">QUESTION { numberQuestion}/{questions.questions.length}</p>
         <h3>{(questions.questions[index].question)}</h3>
         <p>While you may not fit perfectly into a single archetype, choosing one helps us understand your experiences and preferences better. This helps us give you a personalized experience. Let's begin!
         </p>

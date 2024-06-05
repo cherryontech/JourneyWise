@@ -75,6 +75,10 @@
     line-height: 27.2px; 
   }
 
+  #questionnumber p {
+    margin-bottom: -10px; 
+  }
+
  #backnext {
   display: flex; 
   flex-direction: column; 

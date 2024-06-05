@@ -5,7 +5,7 @@ const QuestionnairePhotos = ({ index, questionData }) => {
     const imageSrc = currentQuestion.image
 
     return (
-        <div className="ml-[-700px] w-[661px]">
+        <div className="ml-[-700px] w-[661px] h-[1169px] z-[0]">
             <img src={imageSrc} alt={`Question ${index + 1}`} /> 
         </div>
     );
