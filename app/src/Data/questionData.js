@@ -28,17 +28,17 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Completing a significant personal project",
-          "softSkills": ["Passionate", "Strong work ethic", "Goal setting"]
+          "softSkills": ["Passionate", "Goal setting"]
         },
         {
           "id": "b",
           "answer": "Acquiring new skills or certifications",
-          "softSkills": ["Adaptability", "Time management", "Initiative"]
+          "softSkills": ["Adaptability"]
         },
         {
           "id": "c",
           "answer": "Contributing to a meaningful cause through volunteering",
-          "softSkills": ["Empathy", "Emotional intelligence", "Passionate"]
+          "softSkills": ["Empathy", "Emotional intelligence"]
         },
         {
           "id": "d",
@@ -65,12 +65,12 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Personal projects or creative pursuits",
-          "softSkills": ["Goal setting", "Reliable"]
+          "softSkills": ["Goal setting"]
         },
         {
           "id": "d",
           "answer": "Volunteering or community involvement",
-          "softSkills": ["Empathy", "Emotional Intelligence", "Passionate"]
+          "softSkills": ["Empathy", "Emotional intelligence", "Passionate"]
         }
       ],
       "image": "/Rectangle 232 (1).svg"
@@ -92,12 +92,12 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Being recognized and appreciated for my hard work and contributions.",
-          "softSkills": ["Goal setting", "Reliable"]
+          "softSkills": ["Goal setting"]
         },
         {
           "id": "d",
           "answer": "Feeling a sense of purpose and alignment with my values.",
-          "softSkills": ["Autonomy", "Integrity"]
+          "softSkills": ["Integrity"]
         }
       ],
       "image": "/Rectangle 232 (2).svg"
@@ -109,7 +109,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "I worry about the success of my project.",
-          "softSkills": ["Goal setting", "Attention to detail", "Reliable"]
+          "softSkills": ["Goal setting"]
         },
         {
           "id": "b",
@@ -146,12 +146,12 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Performing tasks that are assigned to me.",
-          "softSkills": ["Time management", "Independence", "Reliable"]
+          "softSkills": [ "Independence"]
         },
         {
           "id": "d",
           "answer": "I work independently to check in when necessary.",
-          "softSkills": ["Resilience", "Autonomy", "Initiative"]
+          "softSkills": ["Resilience"]
         }
       ],
       "image": "/Rectangle 232 (4).svg"
@@ -163,7 +163,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "I have to-do lists, schedules, personalized deadlines, and more.",
-          "softSkills": ["Attention to detail", "Organized", "Reliable"]
+          "softSkills": ["Goal setting" , "Independence"]
         },
         {
           "id": "b",
@@ -173,43 +173,44 @@ export const questionData = {
         {
           "id": "c",
           "answer": "I preferred working alone but made sure to meet all my deadlines.",
-          "softSkills": ["Strong work ethic", "Independence", "Time management"]
+          "softSkills": ["Independence"]
         },
         {
           "id": "d",
           "answer": "I review and adjust priorities as I go.",
-          "softSkills": ["Autonomy", "Self-motivation", "Adaptability"]
+          "softSkills": ["Adaptability"]
         }
       ],
       "image": "/Rectangle 232 (5).svg"
     },
     {
-  "id": 8,
-  "question": "When There’s A Conflict I Resolve It By:",
-  "options": [
-    {
-      "id": "a",
-      "answer": "Assessing the situation and dealing with it at the moment.",
-      "softSkills": ["Self-reflection", "Problem-solving ability", "Decision-making"]
-    },
-    {
-      "id": "b",
-      "answer": "Speaking with my team and collaboratively finding a solution.",
-      "softSkills": ["Empathy", "Collaboration", "Communication"]
-    },
-    {
-      "id": "c",
-      "answer": "Gathering information and reporting to someone else.",
-      "softSkills": ["Delegation", "Communication", "Critical thinking"]
-    },
-    {
-      "id": "d",
-      "answer": "Analyzing the problem to think of different scenarios.",
-      "softSkills": ["Critical thinking", "Creativity", "Analytical thinking"]
+      "id": 8,
+      "question": "When There’s A Conflict I Resolve It By:",
+      "options": [
+        {
+          "id": "a",
+          "answer": "Assessing the situation and dealing with it at the moment.",
+          "softSkills": ["Self-reflection", "Decision-making"]
+        },
+        {
+          "id": "b",
+          "answer": "Speaking with my team and collaboratively finding a solution.",
+          "softSkills": ["Empathy", "Collaboration", "Communication"]
+        },
+        {
+          "id": "c",
+          "answer": "Gathering information and reporting to someone else.",
+          "softSkills": ["Delegation", "Communication", "Critical thinking"]
+        },
+        {
+          "id": "d",
+          "answer": "Analyzing the problem to think of different scenarios.",
+          "softSkills": ["Critical thinking", "Creativity"]
+        }
+      ],
+      "image": "/Rectangle 232 (6).svg"
     }
-  ],
-  "image": "/Rectangle 232 (6).svg"
-}
   ]
 }
+
 
