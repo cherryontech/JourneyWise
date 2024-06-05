@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 import './language-custom.css'
-import { getBtnText } from '../../util/getBtnText'
 
 const LanguageSelection = () => {
-  const [active, setIsActive] = useState("English");
+  const [active, setIsActive] = useState("English");  
 
   const handleClick = (language) => {
     setIsActive(language);
@@ -12,17 +11,26 @@ const LanguageSelection = () => {
 
   const btnStyle = (language) => {
     return classNames(
-      " lg:text-[14px] tracking-2 font-semibold uppercase lg:px-[3px]",
-      { 'bg-black text-white rounded-3xl m-[5px]': active === language }
+      "tracking-2 lg:px-[3px]",
+      { 'bg-black text-white rounded-3xl m-[3px] py-[8px] px-[3px]': active === language }
       );
     };
 
   return (
-    <ul className="language-custom">
-      <ul className="p-2items-center border border-black rounded-full md:flex">
-        <button className={btnStyle("English")} onClick={() => handleClick("English")}>{getBtnText("English")}</button>
-        <button className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>{getBtnText("Español")}</button>
-        <button className={btnStyle("French")} onClick={() => handleClick("French")}>{getBtnText("Français")}</button>
+    <ul id="languagecontainer" className="language-custom">
+      <ul id="language" className="p-2 items-center border border-black rounded-full md:flex">
+        <button id="english" className={btnStyle("English")} onClick={() => handleClick("English")}>
+          <span className="block md:hidden">EN</span>
+          <span className="hidden md:block">ENGLISH</span>
+        </button>
+        <button id="spanish" className={btnStyle("Spanish")} onClick={() => handleClick("Spanish")}>
+          <span className="block md:hidden">ES</span>
+          <span className="hidden md:block">ESPAÑOL</span>
+        </button>
+        <button id="french" className={btnStyle("French")} onClick={() => handleClick("French")}>
+          <span className="block md:hidden">FR</span>
+          <span className="hidden md:block">FRANÇAIS</span>
+        </button>
       </ul>    
     </ul>
   )

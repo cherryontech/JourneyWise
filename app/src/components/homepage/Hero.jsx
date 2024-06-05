@@ -28,7 +28,7 @@ const Hero = () => {
         <img src="/Vector 926.svg" className="ml-[-55px] mt-[25px]" alt="A line decoration behind the button." /> 
         <img src="/Vector 927.svg" className="ml-[40px] mt-[-5px]" alt="A line decoration below the button." /> 
         </div>
-        <Buttons id="lets-begin" rounded primary className="w-[223px] h=[45px] text-[14px] px-[60px] py-[13px] mt-[30px]" onClick= {handleClick}>LET'S BEGIN</Buttons>
+        <Buttons id="lets-begin" rounded primary className="w-[223px] h=[45px] text-[14px] px-[58px] py-[13px] mt-[30px]" onClick= {handleClick}>LET'S BEGIN</Buttons>
         <ShowSecNotice/>
       </section>
       <section id="collage">

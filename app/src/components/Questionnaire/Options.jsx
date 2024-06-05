@@ -1,7 +1,6 @@
 import React from "react"
 import './radio-custom.css'
 
-
 const Options = ({answerChoices, handleSelected, selectedId}) => {
 
     const handleChange = (i,id)=>{
@@ -25,7 +24,7 @@ const Options = ({answerChoices, handleSelected, selectedId}) => {
         </div>
         </div>
       ))
-}
+          }
         </div>
     )
 }

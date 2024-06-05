@@ -5,14 +5,15 @@ import QuestionnairePhotos from "../Questionnaire/QuestionnairePhotos";
 import Footer from '../Footer/Footer'
 import { questionData } from "../../Data/questionData";
 import CloseQuestionnaire from "../Questionnaire/CloseQuestionnaire";
+import './start-custom.css'
 
 const StartQuestionnaire = () => {
     const [index, setIndex] = useState(0)
    
     return (
-        <div className="h-screen bg-[#E5F0F7]">
+        <div id="startdiv" className="start-custom">
             <CloseQuestionnaire /> 
-            <div className="flex flex-row ml-[655px]">
+            <div id="startcontainer" className="flex flex-row ml-[655px]">
                 {index === 0 ? <LearnArchetypes /> : <QuestionnairePhotos index={index} questionData={questionData} />}
                 <Questionnaire index={index} setIndex={setIndex} />
             </div>

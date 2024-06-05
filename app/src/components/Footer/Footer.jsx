@@ -1,28 +1,30 @@
 import React from 'react'
 import classNames from 'classnames'
+import './footer-custom.css'
 
 const Footer = () => {
   
-  const style = (listStyle, iconStyle) => {
+  const style = (listStyle) => {
     return classNames (
-      {"w-[35px] h-[35px] rounded-full bg-[#F5FF82] flex items-center justify-center": listStyle},
-      {"text-black w-[20px] h-[20px] fill-current": iconStyle}
+      {"w-[35px] h-[35px] rounded-full bg-[#F5FF82] flex": listStyle},
     )
   }
 
   return (
-    <>
-      <footer>
-        <div className = "flex flex-col gap-[37px] items-center lg:flex-row  lg: justify-between bg-[#2C2B2B] text-white py-[32px] pr-[25px]">
-          <h3 className= "text-center font-sans lg:text-[18px] text-[16px] leading-[27px] font-normal mt-[22px] mr-[10px ml-[12px]  lg:leading-[35px]lg:mt-[25px] lg:ml-[20px]">CherryOnTech Venus Voyagers | All Rights Reserved.</h3>
-          <ul className = "flex gap-[16px]">
-            <li className ={style("listStyle")}><img src="/LinkedIn-Icon-PH.svg" /></li>
-            <li className ={style("listStyle")}><img src="Notion-Icon-PH.svg" /></li>
-            <li className ={style("listStyle")}><img src="Youtube-Icon-PH.svg" /></li>
-          </ul>
-        </div>
+      <footer className="footer-custom">
+          <p id="copyright">© CherryOnTech Venus Voyagers | All Rights Reserved.</p>
+          <section id="footerlinks">
+            <a href="https://www.linkedin.com/company/cherry-on-tech/posts/?feedView=all">
+              <li className ={style("listStyle")}><img src="/LinkedIn-Icon-PH.svg" alt="LinkedIn Logo, link to Cherry on Tech's LinkedIn" /></li>
+            </a>
+            <a href="https://cherryon.tech/">
+              <li className ={style("listStyle")}><img src="Cherry-Icon-PH.svg" alt="Cherry Logo, link to Cherry on Tech's Website" /></li>
+            </a>
+            <a href="https://www.youtube.com/@cherryontech">
+              <li className ={style("listStyle")}><img src="Youtube-Icon-PH.svg" alt="Youtube Logo, link to Cherry on Tech's Youtube Channel" /></li>
+            </a>
+          </section>
       </footer>
-    </>
   )
 }
 

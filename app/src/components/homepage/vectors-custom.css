@@ -5,6 +5,21 @@
   margin-left: -120px; 
 }
 
+#line1 {
+  margin-left: 345px;
+  margin-top: -295px; 
+}
+
+#line2 {
+  margin-left: 380px; 
+  margin-top: -30px; 
+}
+
+#line3 {
+  margin-left: 400px; 
+  margin-top: 20px;
+}
+
 @media (max-width: 480px) {
   #swirl1 {
     width: 148px; 

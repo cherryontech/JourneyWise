@@ -3,8 +3,9 @@ import { useState } from 'react'
 import Modal from '../Modal/Modal'
 import SecContent from './SecContent'
 import Buttons from '../Buttons/Buttons'
+import CloseSecNotice from './CloseSecNotice'
 
-function SecNotice() {
+const SecNotice = () => {
   const [isClosed, setIsclosed] = useState(false)
   const handleClick = () => {
     setIsclosed(!isClosed)

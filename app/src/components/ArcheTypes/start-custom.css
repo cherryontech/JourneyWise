@@ -1,0 +1,17 @@
+#startdiv {
+  background-color: #E5F0F7;
+  height: 100vh; 
+}
+
+#startcontainer {
+  display: flex; 
+  flex-direction: row; 
+}
+
+@media (max-width: 480px) {
+  #startcontainer {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 40px; 
+  }
+}

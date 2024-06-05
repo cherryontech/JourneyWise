@@ -1,0 +1,45 @@
+#paragraph p {
+  font-size: 18px; 
+  line-height: normal; 
+
+}
+
+#securitycontainer {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  width: 1000px; 
+  margin-bottom: 0px;   
+}
+
+#securitytext h3 {
+  font-size: 48px; 
+  margin-top: 42px;
+  margin-bottom: 50px;  
+  text-align: center; 
+  line-height: normal; 
+}
+
+#securitytext p {
+  font-size: 18px; 
+  text-align: center; 
+  line-height: 35px; 
+  margin-left: 100px; 
+  margin-right: 100px; 
+}
+
+#intro {
+  margin-bottom: 50px; 
+}
+
+#securitycontainer label {
+  font-size: 18px; 
+}
+
+@media (max-width: 480px) {
+  
+}

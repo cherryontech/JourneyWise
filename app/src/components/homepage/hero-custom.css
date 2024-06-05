@@ -3,11 +3,13 @@
   margin-right: 400px; 
   margin-top: 100px;
   position: relative; 
+  line-height: 137.827%;
 }
 
 #heroheader h6 {
   font-size: 22px; 
   margin-top: -40px; 
+  line-height: normal;
 }
 
 #heroheader {
@@ -25,8 +27,9 @@
 @media (max-width: 480px) {
   #heroheader h2 {
     font-size: 52px; 
-    margin-right: 40px;
-    margin-left: 0px;
+    margin-right: 50px;
+    margin-left: -20px;
+    line-height: normal; 
   }
 
   #heading-subheading {
@@ -42,6 +45,11 @@
   #heroheader h6 {
     margin-left: -30px;
     margin-right: 195px; 
+    line-height: normal; 
+  }
+
+  #subheading {
+    margin-top: 100px; 
   }
 
   #lets-begin {
