@@ -20,18 +20,18 @@ const SecContent = () => {
     
   }
   const renderBtn = isChecked ? (
-    <Buttons onClick = {handleClick} primary rounded className="w-[339px] h-[45] px-[30px] py-[13px]">
+    <Buttons onClick = {handleClick} primary rounded id="buttongroup">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   ) : (
-    <Buttons alternate rounded className="w-[339px] h-[45] px-[30px] py-[13px]">
+    <Buttons alternate rounded id="buttongroup">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   )
   return (
     <section id="securitycontainer" className="securityContent-custom"> 
       <div className="flex justify-center">
-          <SecurityCollage /> 
+          <SecurityCollage id="collage" /> 
       </div>
       <div id="securitytext">
         <h3>

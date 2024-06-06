@@ -40,6 +40,47 @@
   font-size: 18px; 
 }
 
+#collage {
+  width: 339px; 
+  height: 242px; 
+}
+
+#buttongroup {
+  width: 339px; 
+  height: 45px; 
+  padding-left: 30px; 
+  padding-right: 30px; 
+  padding-top: 13px; 
+  padding-bottom: 13px; 
+}
+
 @media (max-width: 480px) {
+  #securitycontainer {
+    width: 333px; 
+    height: 1000px; 
+  }
+
+  #securitytext h3 {
+    font-size: 36px;
+    margin-top: 60px; 
+  }
+
+  #securitytext p {
+    font-size: 16px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+
+  #collage {
+    width: 243px; 
+    height: 210px; 
+    margin-top: 104px; 
+  }
   
+  #buttongroup {
+    width: 288px; 
+    height: 45px; 
+    font-size: 12px; 
+    margin-bottom: 35px; 
+  }
 }
