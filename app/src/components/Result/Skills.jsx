@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import BlueSquare from "../../assets/result/skill-collage-blue-square.png"
 import YellowFlower from "../../assets/result/Skills-Collage-Yellow-Flower.png"
 import BlackSemiCircle from "../../assets/result/Skills-Collage-Black-Semi-Circle.png"
@@ -6,7 +7,15 @@ import BlackSemiCircleRight from "../../assets/result/Skill-Collage-Semi-Circle-
 import YellowCircle from "../../assets/result/Skills-Collage-Yellow-Circle.png"
 
 const Skills = () => {
-
+    const location = useLocation();
+    const {count}= location.state
+     const entryArray = Object.entries(count);
+     entryArray.sort((a,b)=>
+        b[1]-a[1])
+     const topSkills= entryArray.slice(0,6)
+    const newtopSkills = topSkills.map((skill)=>skill[0])
+   
+   
     return (
         <section className = "text-left font-features font-serifTex font-normal leading-normal">
                 <div>
@@ -29,42 +38,42 @@ const Skills = () => {
                     <div className = "relative">
                         <img src={BlueSquare} alt=" blue square" className = "min-w-[268px] min-h-[242px] pt-[33px] pl-[33px] pr-[30px] md:pr-[0] md:pl-[51px] md:pt-[54px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px]">
-                            <h3 className="tex-[30px]">Time  Management</h3>
+                            <h3 className="tex-[30px]">{newtopSkills[0]}</h3>
                         </div>
                     </div>
 
                     <div className = "relative">
                         <img src={YellowFlower} alt="yellow flower" className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pt-[54px] md:pl-[0] md:pr-[0] "/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px] mt-[0]">
-                            <h3 className="tex-[33px] capitalize">Reliable</h3>
+                            <h3 className="tex-[33px] capitalize">{newtopSkills[1]}</h3>
                         </div>
                     </div>
 
                     <div className = "relative">
                         <img src={BlackSemiCircle} alt="Black Semi Circle" className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pt-[54px] md:pl-[0] md:pr-[49px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px] mt-[0]">
-                            <h3 className="tex-[32px] text-white capitalize">Organization</h3>
+                            <h3 className="tex-[32px] text-white capitalize">{newtopSkills[2]}</h3>
                         </div>
                     </div>
 
                     <div className = "relative">
                         <img src={BlackSemiCircleRight} alt="Black Semi Circle " className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pr-[0] md:pl-[49px]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[266px] min-h-[67px] mt-[0]">
-                            <h3 className="tex-[32px] text-white capitalize">Empathy</h3>
+                            <h3 className="tex-[32px] text-white capitalize">{newtopSkills[3]}</h3>
                         </div>
                     </div>
 
                     <div className = "relative">
                         <img src={YellowCircle} alt="yellow flower" className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pl-[0] md:pr-[0]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[187px] min-h-[28px] mt-[0]">
-                            <h3 className="tex-[32px] capitalize">Adaptablity</h3>
+                            <h3 className="tex-[32px] capitalize">{newtopSkills[4]}</h3>
                         </div>
                     </div>
 
                     <div className = "relative mb-[33px]">
                         <img src={BlueSquare} alt="Blue square" className = "min-w-[268px] min-h-[225px] pl-[33px] pr-[30px] md:pl-[0]"/>
                         <div className="absolute inset-0 flex items-center justify-center min-w-[187px] min-h-[28px] mt-[0]">
-                            <h3 className="tex-[32px] capitalize">Communication</h3>
+                            <h3 className="tex-[32px] capitalize">{newtopSkills[5]}</h3>
                         </div>
                     </div>
 
