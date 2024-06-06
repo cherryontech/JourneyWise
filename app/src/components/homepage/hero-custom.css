@@ -24,12 +24,18 @@
   margin-top: 200px; 
 }
 
+#collage {
+ width: 333px; 
+ height: 372px; 
+}
+
 @media (max-width: 480px) {
   #heroheader h2 {
     font-size: 52px; 
     margin-right: 50px;
-    margin-left: -20px;
+    margin-left: -10px;
     line-height: normal; 
+    margin-top: -90px; 
   }
 
   #heading-subheading {
@@ -43,13 +49,13 @@
   }
 
   #heroheader h6 {
-    margin-left: -30px;
+    margin-left: -10px;
     margin-right: 195px; 
     line-height: normal; 
   }
 
   #subheading {
-    margin-top: 100px; 
+    margin-top: 190px; 
   }
 
   #lets-begin {
