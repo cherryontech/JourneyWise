@@ -35,7 +35,7 @@
     margin-right: 50px;
     margin-left: -10px;
     line-height: normal; 
-    margin-top: -90px; 
+    margin-top: -110px; 
   }
 
   #heading-subheading {
@@ -55,14 +55,14 @@
   }
 
   #subheading {
-    margin-top: 190px; 
+    margin-top: 170px; 
   }
 
   #lets-begin {
     margin-top: 60px;
     width: 295px; 
     height: 45px; 
-    margin-left: -35px; 
+    margin-left: -10px; 
   }
 
 }
