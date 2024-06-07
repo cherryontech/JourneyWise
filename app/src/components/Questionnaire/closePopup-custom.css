@@ -25,3 +25,30 @@
   margin-right: 150px; 
   margin-bottom: 42px; 
 }
+
+#closecontainer img {
+  width: 51px; 
+  height: 68px; 
+  margin-top: 63px; 
+}
+
+@media (max-width: 480px) {
+  #closecontainer {
+    width: 315px; 
+    height: 452px;  
+  }
+
+  #closecontainer h3 {
+    font-size: 36px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    line-height: normal; 
+  }
+
+  #closecontainer p {
+    font-size: 18px; 
+    line-height: 27.2px; 
+    margin-left: 27px; 
+    margin-right: 28px; 
+  }
+}
