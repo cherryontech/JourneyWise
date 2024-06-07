@@ -4,7 +4,7 @@ import Buttons from '../Buttons/Buttons'
 import Vectors from './Vectors'
 import useShowSecNotice from '../../Hook/useShowSecNotice'
 import './hero-custom.css'
-
+import './collage-custom.css'
 
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
         <Buttons id="lets-begin" rounded primary className="w-[223px] h=[45px] text-[14px] px-[58px] py-[13px] mt-[30px]" onClick= {handleClick}>LET'S BEGIN</Buttons>
         <ShowSecNotice/>
       </section>
-      <section id="collage">
+      <section id="collage" className="collage-custom">
         <Collage />
       </section>
     </header>

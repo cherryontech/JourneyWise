@@ -14,7 +14,7 @@ const LearnArcheTypes = () => {
 
     const render = archData.archetype.map((arch, i) => {
         return (
-            <ImageTextCard key={arch.id} img={arch.image} title={arch.title} text={arch.text} isActive={activeIndex === i} />
+            <ImageTextCard key={arch.id} img={arch.image} title={arch.title} text={arch.text} alt={arch.alt} isActive={activeIndex === i} />
         );
     });
 
@@ -24,7 +24,7 @@ const LearnArcheTypes = () => {
                 <UseCard Img={Img}>
                 {render}
 
-                <div>
+                <div className="mt-[250px]">
                     <Dots arch={archData.archetype} handleClick={handleClick} activeIndex={activeIndex} />
                 </div>
             

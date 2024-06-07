@@ -8,6 +8,9 @@ footer {
   padding-bottom: 32px; 
   padding-right: 25px; 
   width: 100vw; 
+  position: relative; 
+  z-index: 1; 
+  margin-top: auto; 
 }
 
 #footerlinks {

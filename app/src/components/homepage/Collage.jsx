@@ -1,9 +1,8 @@
 import React from 'react'
-import './collage-custom.css'
 
 const Collage = () => {
   return (
-    <div className="collage-custom">
+    <div>
     <img 
     id="collage"
     src="/journeywise-hero.png" 

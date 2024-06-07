@@ -2,7 +2,7 @@ import React from 'react'
 
 const SecurityCollage = () => {
   return (
-    <img src="Security-Notice.svg" className="w-[339px] h-[242px]" alt="A collage of various images and shapes, including an arrow and a security camera." /> 
+    <img src="Security-Notice.svg" alt="A collage of various images and shapes, including an arrow and a security camera." /> 
   )
 }
 

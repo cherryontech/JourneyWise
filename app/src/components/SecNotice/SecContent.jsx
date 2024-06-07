@@ -20,18 +20,18 @@ const SecContent = () => {
     
   }
   const renderBtn = isChecked ? (
-    <Buttons onClick = {handleClick} primary rounded className="w-[339px] h-[45] px-[30px] py-[13px]">
+    <Buttons onClick = {handleClick} primary rounded id="buttongroup">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   ) : (
-    <Buttons alternate rounded className="w-[339px] h-[45] px-[30px] py-[13px]">
+    <Buttons alternate rounded id="buttongroup">
       LET'S BEGIN ASSESSMENT
     </Buttons>
   )
   return (
     <section id="securitycontainer" className="securityContent-custom"> 
       <div className="flex justify-center">
-          <SecurityCollage /> 
+          <SecurityCollage id="collage" /> 
       </div>
       <div id="securitytext">
         <h3>
@@ -53,7 +53,7 @@ const SecContent = () => {
         Your trust is important to us, and we're committed to maintaining the highest standards of privacy and data protection. If you have any questions or concerns about our privacy practices, please don't hesitate to contact us.
         </p>
       </div>
-      <div className="mb-8 mt-[50px]  flex justify-center">
+      <div id="checkbox" className="mb-8 mt-[50px]  flex justify-center">
         <input
           type="checkbox"
           id="agree"
