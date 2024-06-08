@@ -1,6 +1,15 @@
+#collagecontainer {
+  width: 705px; 
+  height: 753px; 
+  margin-right: 0px; 
+  margin-left: -300px; 
+  margin-top: -50px; 
+}
+
 #collage img {
-  width: 702px; 
+  width: 705px; 
   height: 753px;  
+  object-fit: cover; 
 }
 
 @media (max-width: 480px) {

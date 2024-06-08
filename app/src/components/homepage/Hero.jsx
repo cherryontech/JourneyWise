@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <header id="heroheader" className="hero-custom">
       <section id="heading-subheading">
-        <div>
+        <div id="heading-container">
           <h2>
           Finding Your Path & Story
           </h2>
