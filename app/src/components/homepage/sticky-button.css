@@ -1,3 +1,9 @@
+@media (min-width: 481px) {
+  #stickycontainer {
+    display: none; 
+  }
+}
+
 @media (max-width: 480px) {
   #stickycontainer {
     position: fixed; 

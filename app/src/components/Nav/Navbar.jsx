@@ -32,26 +32,26 @@ const Navbar = () => {
 return (
     <>
         <nav id="navigation" className="navbar-custom">
-            <LanguageSelection /> 
+            {/* <LanguageSelection />  */}
             <div className="hidden md:flex">
                     <Buttons onClick= {handleSecNotice} primary rounded className="px-[60px]">BEGIN JOURNEY</Buttons>
                     <ShowSecNotice />
             </div>
             
             {/* Button for toggling mobile menu */}
-            <div>
+            {/* <div>
                 <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X id="navxbutton" /> : <Menu className="mt-[5px]" />}</button>
-            </div>
+            </div> */}
         </nav>
 
         {/* Render NavLinks in mobile version if isOpen is true */}
-        {isOpen && (
+        {/* {isOpen && (
             <div id="mobilemenu">
                 <ul className="text-center">
                     <NavLinks />
                 </ul>
             </div>
-        )}
+        )} */}
     </>
 );
 }
