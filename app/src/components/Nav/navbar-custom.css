@@ -1,0 +1,25 @@
+#navigation {
+  display: flex; 
+  flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  #mobilemenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #mobilemenu li {
+    width: 300px; 
+  }
+
+  #navxbutton {
+    border: 1px solid gray; 
+    border-radius: 9999px; 
+    background-color: white; 
+    width: 33px; 
+    height: 33px; 
+  }
+}

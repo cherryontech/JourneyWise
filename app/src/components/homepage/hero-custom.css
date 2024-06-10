@@ -7,7 +7,7 @@
 #heroheader h2 {
   font-size: 62px; 
   margin-right: 600px; 
-  margin-top: 100px;
+  margin-top: 80px;
   position: relative; 
   line-height: 137.827%;
 }
@@ -21,7 +21,7 @@
 
 #heroheader h6 {
   font-size: 22px; 
-  margin-top: -40px; 
+  margin-top: -185px; 
   line-height: normal;
 }
 
@@ -46,6 +46,11 @@
 #collage {
  width: 333px; 
  height: 372px; 
+}
+
+#lets-begin {
+  margin-top: -150px; 
+  margin-bottom: 250px; 
 }
 
 @media (max-width: 480px) {

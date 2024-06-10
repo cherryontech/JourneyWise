@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  #stickycontainer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    padding: 1rem; 
+    background-color: #F5FF82;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+    border: 1px solid black; 
+  }
+  
+  #stickybutton {
+    width: 100%; 
+    padding: 1rem; 
+    background-color: #F5FF82; 
+    color: black; 
+  }
+}

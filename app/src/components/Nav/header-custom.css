@@ -19,7 +19,7 @@ header {
     display: flex; 
     flex-direction: row; 
     justify-content: start;
-    gap: 49px; 
+    gap: 5px; 
     margin-left: 20px; 
     margin-top: 20px; 
     margin-bottom: 33.21px; 

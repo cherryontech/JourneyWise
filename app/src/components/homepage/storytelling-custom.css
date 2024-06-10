@@ -3,6 +3,7 @@
   flex-direction: row;
   margin-top: 100px; 
   margin-bottom: 113px; 
+  margin-right: 0px; 
 }
 
 #storytellingRectangle {
@@ -64,6 +65,8 @@
 
   #storysection {
     margin-left: 40px; 
+    width: 0px; 
+    height: 0px;
   }
 
   #storypjourney {
@@ -75,13 +78,13 @@
   #storyh3 {
     font-size: 36px; 
     margin-left: 0px; 
-    margin-right: 40px; 
+    margin-right: 0px; 
     line-height: normal; 
   }
 
   #storyptext {
     font-size: 16px; 
-    margin-right: 65px; 
+    margin-right: 0px; 
     line-height: 27.2px; 
   }
 
@@ -89,6 +92,7 @@
     width: 583px; 
     height: 402px; 
     margin-left: 0px; 
-    margin-top: -450px; 
+    margin-top: 0px; 
+    margin-right: 0px; 
   }
 }
