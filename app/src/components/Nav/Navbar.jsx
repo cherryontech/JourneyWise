@@ -33,8 +33,8 @@ return (
     <>
         <nav id="navigation" className="navbar-custom">
             {/* <LanguageSelection />  */}
-            <div className="hidden md:flex">
-                    <Buttons onClick= {handleSecNotice} primary rounded className="px-[60px]">BEGIN JOURNEY</Buttons>
+            <div className="md:flex">
+                    <Buttons id="navbutton" onClick= {handleSecNotice} primary rounded>BEGIN JOURNEY</Buttons>
                     <ShowSecNotice />
             </div>
             
