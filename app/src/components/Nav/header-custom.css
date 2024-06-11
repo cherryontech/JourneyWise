@@ -15,7 +15,7 @@ header {
 
 
 @media (max-width: 480px) {
-  header {
+ header {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
@@ -27,7 +27,7 @@ header {
 
   #navheader img {
     width: 114px; 
-    height: 25px; 
+    height: 25px;  
   }
 
   #navstyle {
