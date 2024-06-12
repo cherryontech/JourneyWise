@@ -92,11 +92,11 @@ const Questionnaire = ({index, setIndex}) => {
 
     }
   }
-  const handleBack = ()=>{
-    if (index > 0 ) {
-      setIndex(index -1);
-    }
-  }
+  // const handleBack = ()=>{
+  //   if (index > 0 ) {
+  //     setIndex(index -1);
+  //   }
+  // }
 
   const handleSelected = (i, id)=>{
     setSelected(i)
@@ -110,14 +110,12 @@ const Questionnaire = ({index, setIndex}) => {
       <header>
         <p id="questionnumber">QUESTION { numberQuestion}/{questions.questions.length}</p>
         <h3>{(questions.questions[index].question)}</h3>
-        <p>While you may not fit perfectly into a single archetype, choosing one helps us understand your experiences and preferences better. This helps us give you a personalized experience. Let's begin!
-        </p>
       </header>
       </div>
       <Options answerChoices={questions.questions[index].options} handleSelected = {handleSelected} selectedId={selectedId} />
       <div id="backnext">
-        <Buttons id="back" onClick = {handleBack}primary rounded  alternate={index === 0} >BACK</Buttons>
-        <Buttons id="next" onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null}rounded >NEXT</Buttons>
+        {/* <Buttons id="back" onClick = {handleBack}primary rounded  alternate={index === 0} >BACK</Buttons> */}
+        <Buttons id="next" onClick = {handleNext} alternate = {selectedId === null} primary = {selectedId !=null} rounded disabled={selectedId === null} >NEXT</Buttons>
       </div>
     </div>
   )

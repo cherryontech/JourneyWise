@@ -7,8 +7,12 @@ footer {
   padding-top: 32px; 
   padding-bottom: 32px; 
   padding-right: 25px; 
-  width: 100vw; 
-  position: relative; 
+  width: auto; 
+  height: auto; 
+  position: relative;
+  bottom: 0; 
+  left: 0;
+  right: 0;
   z-index: 1; 
   margin-top: auto; 
 }
@@ -32,11 +36,13 @@ footer {
 @media (max-width: 480px) {
   footer {
     display: flex; 
+    position: relative; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
-    width: 100vw; 
+    width: auto; 
+    height: auto; 
   }
 
   #copyright {
