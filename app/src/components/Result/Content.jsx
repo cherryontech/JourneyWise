@@ -11,7 +11,7 @@ import soloist from "../../assets/archetypes/soloist.svg"
 const Content = () => {
     const [active , setAcive]  = useState("Iam"); 
     const location = useLocation();
-    const {arcTypeCount:{skils, archeType}} = location.state
+    const {arcTypeCount:{archeType}} = location.state
     const archsplit = archeType.split(" ")
      const archToLowerCasea = archsplit[1].toLowerCase();
     
