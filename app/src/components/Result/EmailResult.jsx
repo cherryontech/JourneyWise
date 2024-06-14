@@ -1,21 +1,100 @@
-import React from "react";
-import Buttons from "../Buttons/Buttons";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
+import axios from 'axios';
+import Buttons from '../Buttons/Buttons';
 
-function EmailResult(){
+const EmailResult = () => {
+  const [email, setEmail] = useState('');
 
-    return (
-        <>
-        <section className="flex justify-center items-center mb-[63px] mt-[108px] md:mb[69px]">
-           <div >
-            <h3 className = "min-w-375px  text-center font-serif text-[36px] capitalize mb-[30px] md:min-w-[1115px] md:ml-[151px] md:mr-[154px] md:mb-[40px]">
-            Want to Save this?
-            </h3>
-            <Buttons primary  className= "inline-flex px-[60px] py-[13px] text-center gap-10 rounded-full border border-black bg-accent md:ml-[582px] md:mr-[579px]">Email Me Result</Buttons>
-           </div>
-        </section>
-        </>
-    )
- 
-}
+  const capturePdf = async (element) => {
+    const canvas = await html2canvas(element);
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    pdf.addImage(canvas.toDataURL('image/jpeg'), 'JPEG', 0, 0, pdf.internal.pageSize.getWidth(), 
+    pdf.internal.pageSize.getHeight());
+    return pdf;
+  };
 
-export default EmailResult
+  const uploadFileToCloudinary = async (file) => {
+    try {
+      const url = `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUD_NAME}/upload`;
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('upload_preset', 'doctyxnj');
+      formData.append('tags', 'browser_upload');
+      formData.append('resource_type', 'auto');  // Ensures Cloudinary auto-detects the file type
+      
+      const response = await axios.post(url, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+
+      return response.data.secure_url;
+    } catch (error) {
+      console.error('Error uploading file to Cloudinary:', error);
+      throw new Error('Failed to upload file to Cloudinary');
+    }
+  };
+
+  const handleEmailResult = async (e) => {
+    e.preventDefault();
+    const element = document.getElementById('result-container');
+
+    try {
+      const pdf = await capturePdf(element);
+      const pdfBlob = pdf.output('blob');
+
+      // Upload the PDF to Cloudinary
+      const fileUrl = await uploadFileToCloudinary(new File([pdfBlob], 'result.pdf', { type: 'application/pdf' }));
+      console.log('File URL:', fileUrl);
+
+      // Send the email with the PDF link
+      const templateParams = {
+        user_email: email,
+        message: 'Here is your result',
+        link: fileUrl
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_PUBLIC_ID,
+      );
+      console.log('Email sent successfully');
+    } catch (error) {
+      console.error('Error generating or sending email:', error);
+      alert('Failed to generate or send email.');
+    }
+  };
+
+  return (
+    <div className = "">
+      <form onSubmit={handleEmailResult}>
+        <div className ="flex flex-col itesm-center justify-center gap-5">
+        <div className = "px-[20px]">
+          <div className ="mb-[20px] flex justify-center items-center">
+        <label>
+          Enter your email </label>
+          </div>
+          <div>
+          <input className ="border border-black"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          /> 
+         </div>
+        </div >
+        <div className="flex justify-center">
+            <Buttons className="w-[100px]" primary rounded type="submit">
+              Send
+            </Buttons>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default EmailResult;
