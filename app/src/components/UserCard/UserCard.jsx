@@ -3,7 +3,7 @@ import './userCard-custom.css'
 
 
 
-function UseCard ({children, Img}){
+const UseCard = ({children, Img}) => {
 
     return(<>
       <section id="cardcontainer" className = "userCard-custom">

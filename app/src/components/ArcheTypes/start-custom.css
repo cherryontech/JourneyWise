@@ -6,6 +6,7 @@
 #startcontainer {
   display: flex; 
   flex-direction: row; 
+  gap: 500px; 
 }
 
 @media (max-width: 480px) {
