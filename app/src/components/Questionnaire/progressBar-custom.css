@@ -3,14 +3,23 @@
   margin-bottom: 50px; 
 }
 
+#mobile {
+  display: none; 
+}
+
 @media (max-width: 480px) {
   #progresscontainer {
     margin-top: 60px; 
     margin-bottom: 20px; 
   }
 
-  #progresscontainer img {
+  #desktop {
+    display: none; 
+  }
+
+  #mobile img {
     width: 400px; 
     height: 38px; 
   }
+
 }

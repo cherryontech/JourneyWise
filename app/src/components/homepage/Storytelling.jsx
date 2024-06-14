@@ -15,7 +15,6 @@ const Storytelling = () => {
         <Buttons rounded primary className="w-[277px] h=[45px] text-[14px] px-[60px] py-[13px] mt-[30px] relative z-0"  onClick = {handleClick}>LET'S BEGIN</Buttons> 
         <ShowSecNotice/>
       </section>
-      <img id="storyvector" src="/Vector 929.svg" alt="A swirly decoration behind the text." />
     </div>
   )
 }

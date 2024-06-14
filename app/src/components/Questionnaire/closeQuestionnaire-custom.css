@@ -1,0 +1,25 @@
+#closecomponent {
+  position: absolute; 
+  top: 16px; 
+  right: 16px; 
+  z-index: 1;
+}
+
+#closecomponent button {
+  background-color: white;
+  border-radius: 9999px; 
+  padding: 8px; 
+  border: 1px solid gray; 
+}
+
+@media (max-width: 480px) {
+  #closecomponent {
+    position: absolute; 
+    top: 15px; 
+    right: 25px; 
+  }
+
+  #closecomponent button {
+    padding: 3px;
+  }
+}

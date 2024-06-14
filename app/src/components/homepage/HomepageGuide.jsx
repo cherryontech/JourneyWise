@@ -11,26 +11,28 @@ const HomepageGuide = () => {
         </div>
         <img id="guideRectangle" src="/Rectangle 304.svg" alt="A laptop with a pair of hands pointing towards the screen." /> 
       </header>
-      <section className="pb-[150px]">
-        <div id="question-vectors" className="flex flex-row">
-          <img id="discover1" src="/journeywise-icon-1.svg" alt="Step 1" /> 
-          <img id="engage2" src="/journeywise-icon-2.svg" alt="Step 2" />
-          <img id="unlock3" src="/journeywise-icon-3.svg" alt="Step 3" /> 
-        </div>
-        <div id="instructions" className="flex flex-row">
-          <div id="discover" className="ml-[138px] mt-[48.67px]">
-          <h4 className="mr-[100px]">Discover Your Archetype</h4>
-          <p className="mt-[13px] mr-[100px]">Are you The Perfectionist, The Expert, or The Soloist? Select the one that reflects your journey best.</p>
+        <section id="instructions">
+          <div id="discover">
+            <img id="discover1" src="/journeywise-icon-1.svg" alt="Step 1" />
+            <div id="discovertext">
+              <h4>Discover Your Archetype</h4>
+              <p>Are you The Perfectionist, The Expert, or The Soloist? Select the one that reflects your journey best.</p>
+            </div>
           </div>
-          <div id="engage" className="mt-[48.67px]" >
-            <h4 className="mr-[150px] ml-[50px]" >Engage With Our Assessment</h4>
-            <p className="mt-[13px] ml-[50px] mr-[200px]" >Answer a few questions to reflect on your journey. Remember, to be honest as that helps us curate results crafted exclusively for you.</p>
+          <div id="engage">
+            <img id="engage2" src="/journeywise-icon-2.svg" alt="Step 2" />
+            <div id="engagetext">
+            <h4 >Engage With Our Assessment</h4>
+            <p >Answer a few questions to reflect on your journey. Remember, to be honest as that helps us curate results crafted exclusively for you.</p>
+            </div>
           </div>
-          <div id="unlock" className="mt-[48.67px] mr-[144px] ml-[-100px]" >
-            <h4 className="mr-[100px]" >Unlock Your Results</h4>
-            <p className="mt-[13px]" >That's all there is to it! You are done. Use these results to redefine how you tell your story.</p>
+          <div id="unlock">
+            <img id="unlock3" src="/journeywise-icon-3.svg" alt="Step 3" /> 
+            <div id="unlocktext">
+              <h4>Unlock Your Results</h4>
+              <p>That's all there is to it! You are done. Use these results to redefine how you tell your story.</p>
+            </div>
           </div>
-        </div>
       </section>
     </div>
   )

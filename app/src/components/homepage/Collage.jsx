@@ -2,7 +2,7 @@ import React from 'react'
 
 const Collage = () => {
   return (
-    <div>
+    <div id="collagecontainer">
     <img 
     id="collage"
     src="/journeywise-hero.png" 

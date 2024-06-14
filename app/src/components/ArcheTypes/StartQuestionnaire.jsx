@@ -13,7 +13,7 @@ const StartQuestionnaire = () => {
     return (
         <div id="startdiv" className="start-custom">
             <CloseQuestionnaire /> 
-            <div id="startcontainer" className="flex flex-row ml-[655px]">
+            <div id="startcontainer">
                 {index === 0 ? <LearnArchetypes /> : <QuestionnairePhotos index={index} questionData={questionData} />}
                 <Questionnaire index={index} setIndex={setIndex} />
             </div>

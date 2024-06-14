@@ -1,9 +1,10 @@
 #quizdiv {
   background-color: #E5F0F7;
-  width: fit-content; 
+  width: auto; 
+  height: auto; 
   padding-top: 23px; 
   padding-bottom: 23px; 
-  margin-left: 69px; 
+  padding-left: 0px; 
   display: flex; 
   flex-direction: column; 
 }
@@ -14,10 +15,9 @@
 
 #quizheader h3 {
   margin-left: -120px; 
-  margin-right: 200px; 
+  margin-right: 150px; 
   font-size: 48px; 
-  margin-top: 21px; 
-  margin-bottom: 20px; 
+  margin-top: 21px;  
   line-height: normal; 
 }
 

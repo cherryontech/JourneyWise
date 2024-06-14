@@ -15,7 +15,7 @@
 
 #headerText h3 {
   font-size: 48px; 
-  margin-right: 20px; 
+  padding-right: 150px; 
   line-height: normal; 
 }
 
@@ -24,33 +24,89 @@
   height: 414px; 
 }
 
-#question-vectors {
-  display: flex; 
-  flex-direction: row; 
-  margin-left: 138px; 
-}
-
 #instructions h4 {
   font-size: 32px; 
 }
 
 #instructions {
+  display: flex; 
+  flex-direction: row; 
   line-height: normal; 
+  padding-bottom: 100px;
+}
+
+#discover {
+  display: flex; 
+  flex-direction: column; 
+  margin-left: 138px; 
+}
+
+#discover1 {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 37px; 
+}
+
+#discovertext h4 {
+  margin-right: 200px; 
+}
+
+#discovertext p {
+  margin-right: 180px;
+  margin-top: 11px; 
+}
+
+#engage {
+  display: flex; 
+  flex-direction: column; 
 }
 
 #engage2 {
-  margin-left: 400px; 
+  width: 44px; 
+  height: 44px; 
+  margin-bottom: 37px; 
+}
+
+#engagetext h4 {
+  margin-right: 0px; 
+}
+
+#engagetext p {
+  margin-right: 450px; 
+  margin-top: 11px; 
+}
+
+#unlock {
+  display: flex; 
+  flex-direction: column; 
+  margin-left: -300px;
 }
 
 #unlock3 {
-  margin-left: 400px; 
+  width: 44px; 
+  height: 44px; 
+  margin-bottom: 37px; 
+}
+
+#unlocktext h4 {
+  margin-right: 200px; 
+}
+
+#unlocktext p {
+  margin-right: 130px; 
+  margin-top: 11px; 
 }
 
 @media (max-width: 480px) {
+  #guidecontainer {
+    margin-top: 0px; 
+  }
+
   #homepageHeader {
     display: flex; 
     flex-direction: column-reverse; 
-    padding-top: 0px; 
+    padding: 0px; 
+    margin-top: 0px; 
   }
 
   #guideRectangle {
@@ -74,76 +130,73 @@
     flex-direction: column; 
   }
 
-  #question-vectors {
-    display: flex; 
-    flex-direction: column; 
-    margin-left: -30px; 
-    position: relative; 
-    z-index: 0; 
-  }
-
-  #question-vectors p {
-    margin-left: 0px;
-    position: relative; 
-    z-index: 1; 
-  }
-
   #instructions {
     display: flex; 
     flex-direction: column; 
-    margin-top: -250px; 
   }
 
   #instructions h4 {
     font-size: 20px; 
-    margin-left: 0px; 
-    margin-right: 0px;
     line-height: normal;  
   }
 
   #instructions p {
     font-size: 16px; 
-    margin-left: 0px; 
-    margin-right: 0px; 
     line-height: 27.2px; 
   }
 
   #discover {
-    margin-top: -128px; 
-    margin-left: 50px; 
-    margin-right: 90px; 
-  }
-
-  #engage {
-    margin-left: 50px; 
-    margin-right: 88px; 
-    margin-top: 35px;  
-    margin-bottom: 10px; 
-  }
-
-  #unlock {
-    margin-left: 50px; 
-    margin-right: 75px; 
-    margin-top: 35px; 
+    display: flex; 
+    flex-direction: row;
+    margin-left: 0px; 
+    padding-left: 20px; 
   }
 
   #discover1 {
     width: 29px; 
     height: 29px;
+    margin-right: 8px; 
   }
 
-  #engage2 {
-    margin-left: 0px; 
-    margin-top: 150px;  
+  #discovertext h4 {
+    margin-right: 0px; 
+  }
+
+  #discovertext p {
+    margin-bottom: 15px; 
+  }
+
+  #engage {
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 0px;  
+    margin-right: 0px; 
+    padding-left: 20px; 
+    padding-right: 0px; 
+  }
+
+  #engage2 { 
     width: 29px;
     height: 29px; 
+    margin-right: 8px;
+  }
+
+  #engagetext h4 {
+    padding-right: 0px;  
+  }
+
+
+  #unlock {
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 0px; 
+    padding-left: 20px; 
   }
 
   #unlock3 {
-    margin-left: 0px; 
-    margin-top: 150px; 
     width: 29px; 
     height: 29px; 
+    margin-right: 8px; 
   }
 
 }

@@ -4,6 +4,7 @@ import { X, Menu } from "lucide-react";
 import Buttons from "../Buttons/Buttons"
 import useShowSecNotice from '../../Hook/useShowSecNotice'
 import LanguageSelection from "./LanguageSelection";
+import './navbar-custom.css'; 
 
 const Navbar = () => {
 
@@ -30,27 +31,27 @@ const Navbar = () => {
 
 return (
     <>
-        <nav className="flex flex-row">
-            <LanguageSelection /> 
-            <div className="hidden flex-grow w-full gap-10 md:flex">
-                    <Buttons onClick= {handleSecNotice} primary rounded className="px-[60px] ">BEGIN JOURNEY</Buttons>
+        <nav id="navigation" className="navbar-custom">
+            {/* <LanguageSelection />  */}
+            <div className="md:flex">
+                    <Buttons id="navbutton" onClick= {handleSecNotice} primary rounded>BEGIN JOURNEY</Buttons>
                     <ShowSecNotice />
             </div>
             
             {/* Button for toggling mobile menu */}
-            <div>
-                <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X /> : <Menu className="mt-[5px]" />}</button>
-            </div>
+            {/* <div>
+                <button className="md:hidden" onClick={toggleNavbar}>{isOpen ? <X id="navxbutton" /> : <Menu className="mt-[5px]" />}</button>
+            </div> */}
         </nav>
 
         {/* Render NavLinks in mobile version if isOpen is true */}
-        {isOpen && (
-            <div className="flex flex-col items-center">
+        {/* {isOpen && (
+            <div id="mobilemenu">
                 <ul className="text-center">
-                    <NavLinks /> 
+                    <NavLinks />
                 </ul>
             </div>
-        )}
+        )} */}
     </>
 );
 }

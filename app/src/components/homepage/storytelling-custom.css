@@ -3,6 +3,7 @@
   flex-direction: row;
   margin-top: 100px; 
   margin-bottom: 113px; 
+  margin-right: 0px; 
 }
 
 #storytellingRectangle {
@@ -19,13 +20,14 @@
 #storypjourney {
   font-size: 18px; 
   margin-top: 150px;
-  margin-right: 200px; 
+  margin-right: 0px; 
 }
 
 #storyh3 {
   font-size: 48px; 
   margin-top: 21px; 
-  margin-right: 750px; 
+  margin-right: 0px; 
+  padding-right: 300px; 
   position: relative; 
   z-index: 0;
   line-height: normal;  
@@ -33,8 +35,9 @@
 
 #storyptext {
   font-size: 18px; 
-  margin-right: 700px; 
+  margin-right: 0px; 
   margin-top: 21px; 
+  padding-right: 270px; 
   position: relative; 
   z-index: 0;
   line-height: 35px;
@@ -64,6 +67,8 @@
 
   #storysection {
     margin-left: 40px; 
+    width: 0px; 
+    height: 0px;
   }
 
   #storypjourney {
@@ -75,20 +80,13 @@
   #storyh3 {
     font-size: 36px; 
     margin-left: 0px; 
-    margin-right: 40px; 
+    margin-right: 0px; 
     line-height: normal; 
   }
 
   #storyptext {
     font-size: 16px; 
-    margin-right: 65px; 
+    margin-right: 0px; 
     line-height: 27.2px; 
-  }
-
-  #storyvector {
-    width: 583px; 
-    height: 402px; 
-    margin-left: 0px; 
-    margin-top: -450px; 
   }
 }

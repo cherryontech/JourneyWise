@@ -1,0 +1,26 @@
+#cardcontainer {
+  height:fit-content; 
+}
+
+#bgimage {
+  width: 600px;
+  height: 1170px; 
+  position: absolute; 
+  z-index: 0;
+  inset: 0; 
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 480px) {
+  #cardcontainer {
+    width: 375px; 
+    height: 900px; 
+  }
+
+  #bgimage {
+    width: 375px;
+    height: 900px; 
+  }
+}

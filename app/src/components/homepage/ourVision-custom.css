@@ -13,27 +13,31 @@
   display: flex; 
   flex-direction: column; 
   margin-left: 150px; 
+  padding-top: 170px; 
 }
 
 #visiontext h3 {
   font-size: 48px; 
-  margin-right: 150px; 
-  margin-top: 21px; 
+  padding-right: 250px; 
   position: relative; 
   z-index: 1;
   line-height: normal; 
 }
 
-#visionVector {
+#visiontext p {
+  font-size: 18px; 
+  padding-right: 200px; 
+}
+
+/* #visionVector {
   width: 1035px; 
   height: 685px; 
   position: relative; 
   z-index: -2; 
   margin-top: -600px; 
-}
+} */
 
-#ourVisionBody {
-  margin-right: 130px; 
+#ourVisionBody { 
   line-height: 35px; 
 }
 
@@ -58,7 +62,7 @@
     line-height: normal; 
   }
 
-  #ourVisionp {
+  #visiontext p {
     font-size: 16px; 
     margin-left: -120px; 
     margin-top: -10px; 
@@ -67,13 +71,13 @@
 
   #ourVisionBody {
     margin-left: -120px; 
-    margin-right: 50px; 
+    margin-right: 0px; 
     line-height: 35px; 
   }
 
-  #visionVector {
+  /* #visionVector {
     width: 583px; 
     height: 402px; 
     margin-top: -500px; 
-  }
+  } */
 }

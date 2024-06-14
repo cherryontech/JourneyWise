@@ -1,13 +1,27 @@
+#collagecontainer {
+  width: 705px; 
+  height: 753px; 
+  margin-right: 0px; 
+  margin-left: -380px; 
+  margin-top: -50px; 
+}
+
 #collage img {
-  width: 702px; 
+  width: 705px; 
   height: 753px;  
+  object-fit: cover; 
 }
 
 @media (max-width: 480px) {
+  #collagecontainer {
+    width: 333px; 
+    height: 372px;
+  }
+
   #collage img {
     width: 333px; 
     height: 372px; 
-    margin-left: 20px; 
+    margin-left: 400px;
     margin-top: -100px; 
 }
 }

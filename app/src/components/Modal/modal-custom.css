@@ -3,6 +3,7 @@
   inset: 0px; 
   display: flex; 
   justify-content: center; 
+  z-index: 1;
 }
 
 #popup {
@@ -18,7 +19,7 @@
 }
 
 #xbutton {
-  position: absolute; 
+  position: fixed; 
   right: 230px; 
   top: 105px; 
   padding: 8px; 

@@ -1,11 +1,13 @@
 #startdiv {
   background-color: #E5F0F7;
-  height: 100vh; 
+  height: auto; 
+  display: grid; 
+  grid-template-rows: auto auto;
 }
 
 #startcontainer {
-  display: flex; 
-  flex-direction: row; 
+  display: grid; 
+  grid-template-columns: 700px auto;
 }
 
 @media (max-width: 480px) {

@@ -12,7 +12,7 @@ const Options = ({answerChoices, handleSelected, selectedId}) => {
         <div className="options-custom">
             {answerChoices.map((choice, i) => (
         <div  key = {choice.answer} id="choicecontainer">
-        <div id="individualchoice" className={`border border-[#7A7A7A] ${selectedId === choice.id ? 'bg-[#F5FF82]' : ''}`}>
+        <div id="individualchoice" className={`border border-[#7A7A7A] ${selectedId === choice.id ? 'bg-[#F5FF82]' : 'bg-[#E5F0F7]'}`}>
           <input 
             type="radio" 
             id={`choice${i}`}

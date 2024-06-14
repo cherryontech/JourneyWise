@@ -5,6 +5,7 @@ header {
   margin-left: 138px; 
   margin-top: 28px; 
   margin-bottom: 75px; 
+  padding-right: 50px; 
 } 
 
 #navheader img {
@@ -14,11 +15,11 @@ header {
 
 
 @media (max-width: 480px) {
-  header {
+ header {
     display: flex; 
     flex-direction: row; 
-    justify-content: start;
-    gap: 49px; 
+    justify-content: space-between;
+    gap: 5px; 
     margin-left: 20px; 
     margin-top: 20px; 
     margin-bottom: 33.21px; 
@@ -26,7 +27,7 @@ header {
 
   #navheader img {
     width: 114px; 
-    height: 25px; 
+    height: 25px;  
   }
 
   #navstyle {
