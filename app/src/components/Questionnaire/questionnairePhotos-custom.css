@@ -1,5 +1,5 @@
 #photoContainer {
   width: 700; 
-  height: 1700;
+  height: fit-content;
   z-index: 0;
 }
