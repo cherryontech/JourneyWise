@@ -17,7 +17,7 @@ const StartQuestionnaire = () => {
                 {index === 0 ? <LearnArchetypes /> : <QuestionnairePhotos index={index} questionData={questionData} />}
                 <Questionnaire index={index} setIndex={setIndex} />
             </div>
-            {/* <Footer />  */}
+            <Footer /> 
         </div>
     )
 }

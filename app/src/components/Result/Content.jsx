@@ -49,50 +49,18 @@ const Content = () => {
               alt={active === "Iam" ? "pioneer" : "archetype"} />
                     </div>
                 
-<<<<<<< HEAD
-                <div className = "text-blackCustom font-features font-serifTex font-normal leading-normal min-w-[295px] min-h-[336px] bg-[#F5FF82] md:max-w-[574px] md:max-h-[519px] flex:1 rounded-r-[29px] text-wrap">
-                    <h3 className = "text-[48px] mt-[84px] mb-[8px] md:min-w-[402px] md:text-[48px] md:mt[126px] md:ml-[59px] md:mr-[112px] md:mb-[27px]" >{active === "Iam" ? "pioneer" : archeType}</h3>
-=======
                 <div className = "text-blackCustom font-features font-serifTex font-normal leading-normal min-w-[295px] min-h-[336px] bg-[#E5F0F7] md:max-w-[574px] md:max-h-[519px] flex:1 rounded-r-[29px] text-wrap">
                     <h3 className = "text-[48px] mt-[84px] mb-[8px] md:min-w-[402px] md:text-[48px] md:mt[126px] md:ml-[59px] md:mr-[112px] md:mb-[27px]" >The Pioneer</h3>
->>>>>>> 18e5f86 (removed blue background from questionnaire and switched to off white, added blue background to answer choices)
                     <p className = "text-[18px] leading-[27px] min-w-[250px] min-h-[217px] mr-[21px] md:ml-[59px] mb-[35px] md:w-[432px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis viverra tempor. Vivamus laoreet varius tellus, quis dapibus ligula. Sed vitae metus sed tellus finibus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
                     </p>
                 </div>
                 </div>
             </figure>
-<<<<<<< HEAD
-
-            <div
-        className="w-[204px] h-[45px] flex-shrink-0 rounded-[55px] border border-black mt-5 mx-auto flex items-center justify-center space-x-2"
-        
-      >
-         <button
-          className={`w-[112px] h-[37px]flex items-center justify-center font-dmSans text-[14px] tracking-[2px] ${
-            active === "Iam" ? "bg-black  text-white  rounded-[55px] border border-black " : "text-black"
-          }`}
-          onClick={() => handleClick("Iam")}
-        >
-          I AM
-        </button>
-        <button
-          className={`w-[87px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px] ${
-            active === "Iwas"
-              ? "bg-black text-white rounded-[55px] border border-black"
-              : ""
-          }`}
-          onClick={() => handleClick("Iwas")}
-        >
-          I WAS
-        </button>
-      </div>
-=======
             <div className="w-[204px] h-[45px] flex-shrink-0 rounded-[55px] border border-black mt-5 mx-auto flex items-center justify-center space-x-2">
                 <button className="w-[112px] h-[37px] flex-shrink-0 rounded-[55px] border border-black bg-black text-white flex items-center justify-center font-dmSans text-[14px] tracking-[2px]">I AM</button>
                 <button className="w-[87px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px]">I WAS</button>
             </div>
->>>>>>> 18e5f86 (removed blue background from questionnaire and switched to off white, added blue background to answer choices)
         </section>
 
     )

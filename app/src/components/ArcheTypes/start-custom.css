@@ -1,12 +1,13 @@
 #startdiv {
-  background-color: #f9f9f9;
+  background-color: #E5F0F7;
   height: auto; 
+  display: grid; 
+  grid-template-rows: auto auto;
 }
 
 #startcontainer {
-  display: flex; 
-  flex-direction: row; 
-  gap: 500px; 
+  display: grid; 
+  grid-template-columns: 700px auto;
 }
 
 @media (max-width: 480px) {
