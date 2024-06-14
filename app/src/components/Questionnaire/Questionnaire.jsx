@@ -51,12 +51,12 @@ const Questionnaire = ({index, setIndex}) => {
     if (selected !== null) {
       const selectedOption = questions.questions[index].options[selected];
       const newSoftSkillCount = { };
-      const newArchTypeCount = {}
+      const newArchTypeCount = {skills:{}}
       
       selectedOption.softSkills.forEach((skill, i) => {
         if( index === 0){
 
-         newArchTypeCount[skill]= archeTypeData[skill] 
+         newArchTypeCount.skills[skill]= archeTypeData[skill] 
          newArchTypeCount["archeType"]=questions.questions[index].options[selected].answer
         }else{
           
