@@ -58,8 +58,8 @@ const Content = () => {
                 </div>
             </figure>
             <div className="w-[204px] h-[45px] flex-shrink-0 rounded-[55px] border border-black mt-5 mx-auto flex items-center justify-center space-x-2">
-                <button className="w-[112px] h-[37px] flex-shrink-0 rounded-[55px] border border-black bg-black text-white flex items-center justify-center font-dmSans text-[14px] tracking-[2px]">I AM</button>
-                <button className="w-[87px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px]">I WAS</button>
+                <button className={`w-[112px] h-[37px] flex-shrink-0 text-black flex items-center justify-center font-dmSans text-[14px] tracking-[2px] ${active ==="Iam" &&  "rounded-[55px] border border-black bg-black text-white"}`} onClick = {()=>handleClick("Iam")}>I AM</button>
+                <button className={`w-[87px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px] ${active ==="Iwas" &&  "rounded-[55px] border border-black bg-black text-white"}`} onClick = {()=>handleClick("Iwas")}>I WAS</button>
             </div>
         </section>
 
