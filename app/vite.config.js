@@ -1,7 +1,7 @@
 export default {
     build: {
       rollupOptions: {
-        external: ['emailjs-com', 'html2canvas', 'axios', 'jspdf']
+        external: ['emailjs-com', 'html2canvas', 'jspdf']
       }
     }
   }
