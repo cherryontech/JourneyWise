@@ -4,8 +4,15 @@ import goals from "../../assets/topSkills/goals.svg"
 import lightbulb from "../../assets/topSkills/lightbulb.svg"
 import gear from "../../assets/topSkills/gear.svg"
 import { Check } from 'lucide-react';
+<<<<<<< HEAD
 function TopSoftSkills(){
    const [active, setActive] = useState("TopSkills")
+=======
+import './topSoftSkills-custom.css'
+
+
+const TopSoftSkills = () => {
+>>>>>>> b273192 (committing to rebase)
     const location = useLocation();
     const {arcTypeCount:{skills}}= location.state
 
@@ -17,15 +24,14 @@ function TopSoftSkills(){
 
     return(
         <>
-        <section  className = "mt-[49px]">
-            <div className= "bg-[#E5F0F7] min-w-[375px]">
+        <section id="topContainer"  className = "topSoftSkills-custom">
+            <div>
                     <div>
-                        <div>
-                        <h2 className =" text-[36px] 
-                        capitalize text-center text-black mt-[56px] mx-[40px]">Your  Top Soft  Skills </h2>
-                        <h3 className = "text-[30px] text-black text-center">  
-                        Toggle Below to explore your Unique Profile
-                        </h3>
+                        <div id="topHeader">
+                         <h2>Your Top Soft Skills</h2>
+                         <h3 className = "text-[30px] text-black text-center">  
+                         Toggle Below to explore your Unique Profile
+                         </h3>
                         </div>
                         <div className="mt-[30px] flex justify-center items-center border border-black rounded-[36px]">
                                 <button className={`relative min-w-[100px] min-h-[45px] text-center text-[14px] font-bold tracking-wide uppercase ${active === "TopSkills" && "bg-black text-white border rounded-full"}`} onClick = {()=>handleClick("TopSkills")}>
