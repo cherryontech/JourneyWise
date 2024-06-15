@@ -15,17 +15,23 @@ const Content = () => {
     const archsplit = archeType.split(" ")
      const archToLowerCasea = archsplit[1].toLowerCase();
     
-    let archetypeImage
+    let archetypeImage;
+    let oldArchtype
 
     switch (archToLowerCasea ) {
         case "soloist":
           archetypeImage = soloist;
+          oldArchtype= "The TrailBlazer"
+
           break;
         case "perfectionist":
           archetypeImage = perfectionist;
+          oldArchtype= "The Pioneer"
+
           break;
         case "recluse":
           archetypeImage = recluse;
+          oldArchtype="The Seer"
           break
         default:
           archetypeImage = null;
@@ -50,7 +56,7 @@ const Content = () => {
                     </div>
                 
                 <div className = "text-blackCustom font-features font-serifTex font-normal leading-normal min-w-[295px] min-h-[336px] bg-[#E5F0F7] md:max-w-[574px] md:max-h-[519px] flex:1 rounded-r-[29px] text-wrap">
-                    <h3 className = "text-[48px] mt-[84px] mb-[8px] md:min-w-[402px] md:text-[48px] md:mt[126px] md:ml-[59px] md:mr-[112px] md:mb-[27px]" >The Pioneer</h3>
+                    <h3 className = "text-[48px] mt-[84px] mb-[8px] md:min-w-[402px] md:text-[48px] md:mt[126px] md:ml-[59px] md:mr-[112px] md:mb-[27px]" >{active==="Iam"?oldArchtype:archeType}</h3>
                     <p className = "text-[18px] leading-[27px] min-w-[250px] min-h-[217px] mr-[21px] md:ml-[59px] mb-[35px] md:w-[432px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis viverra tempor. Vivamus laoreet varius tellus, quis dapibus ligula. Sed vitae metus sed tellus finibus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
                     </p>
