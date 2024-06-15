@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import { useLocation } from "react-router-dom";
 import goals from "../../assets/topSkills/goals.svg"
+import lightbulb from "../../assets/topSkills/lightbulb.svg"
+import gear from "../../assets/topSkills/gear.svg"
 import { Check } from 'lucide-react';
 function TopSoftSkills(){
+   const [active, setActive] = useState("TopSkills")
     const location = useLocation();
     const {arcTypeCount:{skills}}= location.state
-    console.log(Object.keys(skills))
+
+    const handleClick = (skills)=>{
+        setActive(skills)
+
+    }
+    
 
     return(
         <>
@@ -20,13 +28,13 @@ function TopSoftSkills(){
                         </h3>
                         </div>
                         <div className="mt-[30px] flex justify-center items-center border border-black rounded-[36px]">
-                                <button className="relative min-w-[100px] min-h-[45px] text-center text-[14px] font-bold tracking-wide uppercase">
+                                <button className={`relative min-w-[100px] min-h-[45px] text-center text-[14px] font-bold tracking-wide uppercase ${active === "TopSkills" && "bg-black text-white border rounded-full"}`} onClick = {()=>handleClick("TopSkills")}>
                                     TOP SKILLS
                                 </button>
-                                <button className="relative min-w-[100px] min-h-[45px] mx-[16px] text-center text-[14px] font-bold tracking-wide uppercase">
+                                <button className={`relative min-w-[100px] min-h-[45px] mx-[16px] text-center text-[14px] font-bold tracking-wide uppercase ${active === "Strengths" &&  "bg-black text-white border rounded-full"}`} onClick = {()=>handleClick("Strengths")}>
                                     STRENGTHS
                                 </button>
-                                <button className="relative min-w-[100px] min-h-[45px] text-center text-[14px] font-bold tracking-wide uppercase bg-black text-white border rounded-full ">
+                                <button className={`relative min-w-[100px] min-h-[45px] text-center text-[14px] font-bold tracking-wide uppercase ${active === "Goals" && "bg-black text-white border rounded-full"}`} onClick = {()=>handleClick("Goals")}>
                                     GOALS
                                 </button>
                             
@@ -37,10 +45,10 @@ function TopSoftSkills(){
                     Object.keys(skills).map((el, i)=>(
 
 
-                    <figure key = {skills} className ={ `mt-[56px] w-[295px] h-[472px] mx-[40px] border-29px shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] rounded ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
+                    <figure key = {el} className ={ `mt-[56px] w-[295px] h-[472px] mx-[40px] border-29px shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] rounded ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
                     <div>
                        <div>
-                    <img  className ="fill-current text-black"src={goals} alt="goals" />
+                    <img  className ={`fill-current text-black ${active === "TopSkills" && i === 2 ? "fill-white" : "fill-black"} ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active ==="TopSkills" && lightbulb) || (active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
                        </div>
                        <div className ="mt-[51px] ">
                        <div className ="ml-[21px] mr-[150px]">
