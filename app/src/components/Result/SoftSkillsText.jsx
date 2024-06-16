@@ -1,28 +1,18 @@
 import React from "react";
+import './softSkillsText-custom.css'
 
-function SoftSkillsText(){
+const SoftSkillsText = () => {
 
     return (
-
-        <section className ="mt-[58px] mb-[56px]">
-            <div>
-              
-                    <h3>
-                    YOUR TOP SKILLS
-                    </h3>
-
-                    <h2>
-                    soft skills All Around 
-                    </h2>
-                    <div>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. 
-                        Donec id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut 
-                        </p>
-                    </div>
-                
+        <section id="sectioncontainer">
+            <div id="skillstextheading">
+                <p>YOUR TOP SKILLS</p>
+                <h3>Soft Skills All Around</h3>
             </div>
-
+            <p id="skillsdescription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. 
+                Donec id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut 
+            </p>
         </section>
     )
 }

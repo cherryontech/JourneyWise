@@ -1,0 +1,94 @@
+#topContainer {
+  background-color: #E5F0F7; 
+  margin-top: 49px; 
+  width: auto; 
+  padding-left: 138px; 
+  padding-right: 138px; 
+}
+
+#topHeader h3 {
+  font-size: 48px; 
+  padding-top: 56px; 
+  text-align: center;
+}
+
+#topHeader h4 {
+  font-size: 32px; 
+  justify-content: center;
+  text-align: center;
+}
+
+#togglebutton {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 36px; 
+  border: 1px solid black; 
+  border-radius: 36px; 
+  width: 1164px; 
+  height: 49px;  
+}
+
+#skills {
+  font-size: 14px; 
+  letter-spacing: 2px;
+  padding-left: 149px; 
+  padding-right: 150px; 
+  border-right: 1px solid black; 
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+#strengths {
+  font-size: 14px; 
+  letter-spacing: 2px; 
+  border-right: 1px solid black; 
+  padding-right: 150px;
+  padding-left: 153px; 
+}
+
+#goals {
+  font-size: 14px; 
+  letter-spacing: 2px; 
+  padding-left: 153px; 
+  padding-right: 150px; 
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+#cardcontainer {
+  display: flex;
+  flex-direction: row; 
+  gap: 19px; 
+}
+
+#skillcards {
+  width: 375px; 
+  height: 584px; 
+  border-radius: 29px; 
+  margin-top: 48px; 
+  padding-left: 39px; 
+  padding-right: 40px; 
+  padding-top: 33px; 
+  margin-bottom: 83px; 
+}
+
+#cardheadings {
+  padding-top: 84px; 
+}
+
+#cardheadings p {
+  font-size: 18px; 
+}
+
+#cardheadings h3 {
+  font-size: 32px; 
+}
+
+#bulletpointcontainer {
+  margin-top: 21px; 
+  display: flex; 
+  flex-direction: column;
+  gap: 20px; 
+  font-size: 18px; 
+}

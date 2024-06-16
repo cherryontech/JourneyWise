@@ -1,7 +1,7 @@
 #quizdiv {
   background-color: #E5F0F7;
   width: auto; 
-  height: auto; 
+  height: fit-content; 
   padding-top: 23px; 
   padding-bottom: 23px; 
   padding-left: 0px; 
@@ -15,7 +15,7 @@
 
 #quizheader h3 {
   margin-left: -120px; 
-  margin-right: 150px; 
+  margin-right: 70px; 
   font-size: 48px; 
   margin-top: 21px;  
   line-height: normal; 
@@ -34,9 +34,9 @@
 }
 
 #backnext {
-  margin-left: 200px; 
-  padding-bottom: 35px; 
-  margin-top: 15px; 
+  margin-left: 330px; 
+  padding-bottom: 150px; 
+  margin-top: 103px; 
 }
 
 #back {
@@ -85,7 +85,6 @@
   margin-left: 55px; 
   width: 293px; 
   height: 45px; 
-  margin-bottom: 100px; 
  }
 
  #back {

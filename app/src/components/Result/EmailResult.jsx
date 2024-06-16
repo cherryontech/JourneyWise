@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-// import emailjs from 'emailjs-com';
-// import html2canvas from 'html2canvas';
-// import jsPDF from 'jspdf';
+import emailjs from 'emailjs-com';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
 

@@ -16,15 +16,13 @@ return (
 
     <>
      <Header/>
-     <main className="container min-w-[375px] mx-auto px-[40px] py-8">
+     <main>
         <div id = "result-container">  
     <ResultHero/>
     <Content/>
     <TopSoftSkills/>
     <SoftSkillsText/>
     <SoftSkills/>
-    <Skills/>
-    <Characteristics/>
   
     </div>
     <EmailMe/>
