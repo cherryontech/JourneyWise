@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import emailjs from  '@emailjs/browser';
-import html2canvas from 'html2canvas';
+import html2canvas from './../../../node_modules/html2canvas';
 import jsPDF from 'jspdf';
 import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
 
 const EmailResult = () => {
   const [email, setEmail] = useState('');
+  console.log(html2canvas)
 
   const capturePdf = async (element) => {
     const canvas = await html2canvas(element);
@@ -15,6 +16,7 @@ const EmailResult = () => {
     pdf.internal.pageSize.getHeight());
     return pdf;
   };
+  
 
   const uploadFileToCloudinary = async (file) => {
     try {

@@ -1,4 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -6,7 +5,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'emailjs-com',
-        'html2canvas',
+        /^html2canvas($|\/)/,  // Use regex to match html2canvas and its submodules
         'jspdf',
       ],
     },
