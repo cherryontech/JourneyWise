@@ -23,8 +23,6 @@ return (
     <TopSoftSkills/>
     <SoftSkillsText/>
     <SoftSkills/>
-    {/* <Skills/> */}
-    {/* <Characteristics/> */}
   
     </div>
     <EmailMe/>
