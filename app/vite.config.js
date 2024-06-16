@@ -6,7 +6,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'emailjs-com',
-        /^html2canvas($|\/)/,  // Use regex to match html2canvas and its submodules
+        'html2canvas',
         'jspdf',
       ],
     },
