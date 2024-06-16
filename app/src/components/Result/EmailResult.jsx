@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from  '@emailjs/browser';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import axios from 'axios';
@@ -18,7 +18,9 @@ const EmailResult = () => {
 
   const uploadFileToCloudinary = async (file) => {
     try {
+      console.log(import.meta.env.VITE_SERVICE_ID)
       const url = `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUD_NAME}/upload`;
+      console.log(url)
       const formData = new FormData();
       formData.append('file', file);
       formData.append('upload_preset', 'doctyxnj');
