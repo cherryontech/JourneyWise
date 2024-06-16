@@ -1,0 +1,24 @@
+#sectioncontainer {
+  margin-top: 102px; 
+  margin-bottom: 106px; 
+  display: flex; 
+  gap: 124px; 
+}
+
+#skillsheading {
+  padding-left: 138px; 
+}
+
+#skillsheading h3 {
+  font-size: 48px; 
+}
+
+#skillsheading p {
+  font-size: 18px; 
+}
+
+#skillsdescription {
+  font-size: 18px; 
+  padding-right: 138px; 
+  padding-left: 50px;  
+}
