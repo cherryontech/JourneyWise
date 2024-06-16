@@ -1,0 +1,52 @@
+#softskillscontainer {
+  background-color: #E5F0F7; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+#skillsheading {
+  text-align: center;
+  padding-top: 103px; 
+}
+
+#skillsheading h3 {
+  font-size: 48px; 
+}
+
+#skillsheading h4 {
+  font-size: 32px; 
+  margin-top: 28px;
+  margin-bottom: 56px;  
+}
+
+#softskillscards {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  gap: 17px; 
+  padding-left: 128px; 
+  margin-right: 128px; 
+  padding-bottom: 103px; 
+  justify-content: center;
+}
+
+#individualcards {
+  width: 377px; 
+  height: 297px; 
+  border-radius: 29px; 
+  padding-top: 31px; 
+  padding-left: 35px; 
+  padding-right: 35px; 
+  padding-bottom: 32px; 
+}
+
+#cardtext h4 {
+  font-size: 32px; 
+  text-align: start;
+}
+
+#cardtext p {
+  font-size: 18px; 
+  text-align: start; 
+  margin-top: 21px; 
+}

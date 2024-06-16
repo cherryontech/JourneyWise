@@ -5,7 +5,7 @@ const SoftSkillsText = () => {
 
     return (
         <section id="sectioncontainer">
-            <div id="skillsheading">
+            <div id="skillstextheading">
                 <p>YOUR TOP SKILLS</p>
                 <h3>Soft Skills All Around</h3>
             </div>
