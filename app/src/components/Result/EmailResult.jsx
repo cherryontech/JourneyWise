@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from  '@emailjs/browser';
 import html2canvas from './../../../node_modules/html2canvas';
-import jsPDF from 'jspdf';
+import jsPDF from '../../../node_modules/jspdf';
 import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
 
