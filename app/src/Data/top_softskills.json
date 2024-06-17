@@ -1,0 +1,213 @@
+{
+    
+      "The Pioneer": {
+        "TopSkills": [
+          {
+            "skill": "Innovation",
+            "description": "You transform setbacks into growth opportunities, using your unique resilience to innovate and overcome challenges with renewed determination."
+          },
+          {
+            "skill": "Resilience",
+            "description": "Your resilience shines as you consistently turn challenges into chances for development, rebounding from setbacks with increased resolve and insight."
+          },
+          {
+            "skill": "Visionary",
+            "description": "You inspire with your clear, compelling vision, energizing others with your enthusiasm. Your ability to foresee trends motivates collective pursuit of ambitious goals."
+          }
+        ],
+        "Strengths": [
+          {
+            "skill": "Innovation",
+            "details": [
+              "Experimenting with unconventional solutions.",
+              "Embracing change and technological advances.",
+              "Continuously seeking improvement and efficiency."
+            ]
+          },
+          {
+            "skill": "Resilience",
+            "details": [
+              "Maintaining focus under pressure.",
+              "Learning from failures and adjusting plans.",
+              "Staying determined despite obstacles."
+            ]
+          },
+          {
+            "skill": "Visionary",
+            "details": [
+              "Planning long-term with a clear, strategic vision.",
+              "Inspiring others with your enthusiasm and dedication.",
+              "Keeping up with industry trends to inform future visions."
+            ]
+          }
+        ],
+        "Goals": [
+          {
+            "skill": "Innovation",
+            "details": [
+              "Pursue a groundbreaking project or idea.",
+              "Implement a new technology or methodology in your work.",
+              "Foster an environment that encourages creativity and experimentation."
+            ]
+          },
+          {
+            "skill": "Resilience",
+            "details": [
+              "Take on a high-stakes project that tests your limits.",
+              "Develop and follow a personal resilience-building plan.",
+              "Mentor others in developing their resilience skills."
+            ]
+          },
+          {
+            "skill": "Visionary",
+            "details": [
+              "Map out a transformative vision for your team or organization.",
+              "Share your vision in a public or professional forum for feedback.",
+              "Reflect upon a trend you foresaw coming."
+            ]
+          }
+        ]
+      }
+    ,
+   
+      "The Seer": {
+        "TopSkills": [
+          {
+            "skill": "Foresight",
+            "description": "You expertly anticipate future challenges and opportunities, preparing strategically to navigate them with a sharp, forward-thinking mindset."
+          },
+          {
+            "skill": "Realism",
+            "description": "You tackle situations with a practical mindset, accurately assessing challenges and strategically planning efforts to overcome them."
+          },
+          {
+            "skill": "Collaboration",
+            "description": "Your humility enhances your ability to value and integrate diverse opinions, fostering effective teamwork and collective success through open collaboration."
+          }
+        ],
+        "Strengths": [
+          {
+            "skill": "Foresight",
+            "details": [
+              "Continuously learning to stay ahead.",
+              "Applying past insights to future choices.",
+              "Proactively solving problems."
+            ]
+          },
+          {
+            "skill": "Realism",
+            "details": [
+              "Facing facts and adapting strategies accordingly.",
+              "Making decisions based on practical outcomes.",
+              "Evaluating risks realistically before acting."
+            ]
+          },
+          {
+            "skill": "Collaboration",
+            "details": [
+              "Actively seeking input from others.",
+              "Valuing different viewpoints equally.",
+              "Building consensus to achieve common goals."
+            ]
+          }
+        ],
+        "Goals": [
+          {
+            "skill": "Foresight",
+            "details": [
+              "Set ambitious long-term goals for yourself.",
+              "Regularly engage in scenario planning.",
+              "Share insights to boost team readiness."
+            ]
+          },
+          {
+            "skill": "Realism",
+            "details": [
+              "Tackle complex issues with practical solutions.",
+              "Foster a culture of honest feedback in your team.",
+              "Balance optimism with practicality in planning."
+            ]
+          },
+          {
+            "skill": "Collaboration",
+            "details": [
+              "Initiate more team-based projects.",
+              "Encourage equal participation in discussions.",
+              "Leverage your team's diverse strengths in decision-making."
+            ]
+          }
+        ]
+      }
+    ,
+
+      "The Trailblazer": {
+        "TopSkills": [
+          {
+            "skill": "Leadership",
+            "description": "You naturally inspire and lead by example, uniting team members towards shared goals and cultivating a spirit of cooperation and collective achievement."
+          },
+          {
+            "skill": "Adaptability",
+            "description": "Balancing independence with teamwork, you adapt fluidly, knowing when to lead and when to collaborate, optimizing project efficiency and team dynamics."
+          },
+          {
+            "skill": "Pioneering",
+            "description": "As a trailblazer, you push boundaries and explore new possibilities, fostering personal growth, team innovation, and drive continuous improvement."
+          }
+        ],
+        "Strengths": [
+          {
+            "skill": "Leadership",
+            "details": [
+              "Effectively communicating vision and goals.",
+              "Building trust and fostering a collaborative team environment.",
+              "Motivating team members to achieve their best."
+            ]
+          },
+          {
+            "skill": "Adaptability",
+            "details": [
+              "Flexibly adjusting strategies to meet changing circumstances.",
+              "Delegating tasks wisely to optimize team strengths.",
+              "Integrating feedback to improve processes and outcomes."
+            ]
+          },
+          {
+            "skill": "Pioneering",
+            "details": [
+              "Take a project outside your comfort zone to test adaptability.",
+              "Implement a new system that requires adjusting old workflows.",
+              "Encourage open feedback and continuous learning in your team."
+            ]
+          }
+        ],
+        "Goals": [
+          {
+            "skill": "Leadership",
+            "details": [
+              "Lead an initiative involving cross-departmental collaboration.",
+              "Host team-building activities to strengthen connections.",
+              "Develop a leadership workshop or mentoring program within your organization."
+            ]
+          },
+          {
+            "skill": "Adaptability",
+            "details": [
+              "Champion and implement an innovative idea.",
+              "Overcoming resistance to changes within the team.",
+              "Staying ahead of industry trends to guide team efforts."
+            ]
+          },
+          {
+            "skill": "Pioneering",
+            "details": [
+              "Develop/launch a pilot program for an innovative service.",
+              "Create a think tank within your organization to foster new ideas.",
+              "Seek partnerships with tech leaders to enhance your team's capabilities."
+            ]
+          }
+        ]
+      }
+    
+  }
+  
