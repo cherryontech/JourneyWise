@@ -10,10 +10,16 @@ const EmailResult = () => {
   console.log(html2canvas)
 
   const capturePdf = async (element) => {
-    const canvas = await html2canvas(element);
-    const pdf = new jsPDF('p', 'pt', 'a4');
-    pdf.addImage(canvas.toDataURL('image/jpeg'), 'JPEG', 0, 0, pdf.internal.pageSize.getWidth(), 
-    pdf.internal.pageSize.getHeight());
+    const canvas = await html2canvas(element, {
+      width: element.offsetWidth,  // Capture width
+      height: element.offsetHeight, // Capture height
+      scrollY: -window.scrollY,     // Adjust for scroll position
+      scrollX: -window.scrollX,
+    });
+  
+    const pdf = new jsPDF('p', 'pt', [canvas.width, canvas.height]);
+    pdf.addImage(canvas.toDataURL('image/jpeg'), 'JPEG', 0, 0, canvas.width, canvas.height)
+    
     return pdf;
   };
   
