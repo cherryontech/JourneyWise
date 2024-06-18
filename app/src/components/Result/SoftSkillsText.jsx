@@ -10,8 +10,7 @@ const SoftSkillsText = () => {
                 <h3>Soft Skills All Around</h3>
             </div>
             <p id="skillsdescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. 
-                Donec id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut 
+            After analyzing your results, we have identified the three top skills that resonate most with you as an individual. These skills complement your archetype and provide a deeper understanding of your unique and impressive skill set. Recognizing these strengths can empower you to leverage them effectively in your personal and professional life.
             </p>
         </section>
     )

@@ -91,7 +91,7 @@ const TopSoftSkills = () => {
                                 <img  className ={`fill-current text-black ${active === "TopSkills" && i === 2 ? "fill-white" : "fill-black"} ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active ==="TopSkills" && lightbulb) || (active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
                             </div>
                             <div id="cardheadings">
-                                <p className ={`${i===2 && "text-white"}`}>{active ==="TopSkills" && "My TopSkills"}{active ==="Strengths" && "My Strengths"}{active ==="Goals" && "My Goals"}</p>
+                                <p className ={`${i===2 && "text-white"}`}>{active ==="TopSkills" && "MY TOP SKILLS"}{active ==="Strengths" && "MY STRENGTHS"}{active ==="Goals" && "MY GOALS"}</p>
                                 <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
                             </div>
                             <div id="bulletpointcontainer"> 
