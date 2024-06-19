@@ -1,12 +1,13 @@
 #sectioncontainer {
   margin-top: 102px; 
-  margin-bottom: 106px; 
+  padding-bottom: 106px; 
   display: flex; 
-  gap: 124px; 
+  flex-direction: row; 
 }
 
 #skillstextheading {
-  padding-left: 138px; 
+  margin-left: 138px;  
+  width: 1000px; 
 }
 
 #skillstextheading h3 {
@@ -19,6 +20,7 @@
 
 #skillsdescription {
   font-size: 18px; 
-  padding-right: 138px; 
-  padding-left: 50px;  
+  padding-right: 150px; 
+  margin-left: 170px;  
+  line-height: 35px; 
 }

@@ -14,7 +14,7 @@ const ResultHero = () =>    {
                 md:font-normal md:font-style-normal md:font-weight-400 md:line-height-[35px] md:mr[138px]">
 
                     <p className="font-dm-sans text-[18px] font-normal leading-7 text-gray-700 mb-[101px] mr-[159px] mt-[20px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. Donec id erat nunc. Nunc pulvinar, dui ut blandit rutrum, turpis ante lobortis nisl, non varius sem tellus ut purus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a ultricies felis. Pellentesque ut dapibus leo. Donec id erat nunc. 
+                    After a thorough analysis of your quiz assessment, we've uncovered a crucial insight: your self-perception may not fully reflect your true essence. Below, you will find a detailed profile that not only highlights your evolution but also delves deep into your capabilities. Explore your key skills, strengths, and goals, and identify the archetype that genuinely represents your journey. Embrace this chance to see yourself in a new light and step confidently toward your future career path.
                     </p>
                 </div>
             </div>
