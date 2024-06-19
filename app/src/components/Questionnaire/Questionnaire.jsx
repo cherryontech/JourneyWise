@@ -8,15 +8,15 @@ import './questionnaire-custom.css'
 
 
 
-const archeTypeData = {"Attention to detail": 3,
-  "Strong work ethic": 3,
+const archeTypeData = {"Attention To Detail": 3,
+  "Strong Work Ethic": 3,
   "Organized": 2,
   "Reliable": 6,
-  "Self-motivated": 2,
-  "Analytical thinking": 2,
-  "Problem-solving ability": 2,
+  "Self-Motivated": 2,
+  "Analytical Thinking": 2,
+  "Problem-Solving Ability": 2,
   "Autonomy": 4,
-  "Time management": 4,
+  "Time Management": 4,
   "Initiative": 3
 
   }
