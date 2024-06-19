@@ -1,0 +1,25 @@
+#emailResultContainer {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  width: 1000px; 
+}
+
+#emailResultContainer img {
+  padding-top: 103px; 
+}
+
+#emailResultContainer p {
+  font-size: 22px; 
+  margin-top: 21px; 
+  margin-bottom: 21px; 
+  width: 528px; 
+  height: 78px; 
+  text-align: center; 
+}
+
+#emailResultContainer input {
+  width: 494px; 
+  height: 63px;
+  padding: 20px; 
+}

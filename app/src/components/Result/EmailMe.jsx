@@ -19,8 +19,15 @@ const EmailMe = () => {
     <div id="emailMeContainer" className="emailMe-custom">
       <img src="/mdi_email-plus.svg" alt="An envelope with a plus sign in the bottom right corner." /> 
       <h3>Want To Save Your Results?</h3>
-      <p>Input your email below and we’ll email you a printable PDF of your results.</p>
-      <EmailResult /> 
+      <p>Click the button below to input your email and we’ll send you a printable PDF of your results.</p>
+      <Buttons primary rounded className="w-[242px] h-[45px]" onClick={handleClick}>
+        EMAIL ME
+      </Buttons>
+      {isOpen && (
+        <Modal onClose={handleClose}>
+          <EmailResult onClose={handleClose} />
+        </Modal>
+      )}
     </div>
   );
 }
