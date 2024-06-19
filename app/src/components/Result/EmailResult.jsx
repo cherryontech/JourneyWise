@@ -5,10 +5,12 @@ import jsPDF from '../../../node_modules/jspdf';
 import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
 import './emailResult-custom.css'
+import EmailConfirmation from './EmailConfirmation';
 
 const EmailResult = () => {
   const [email, setEmail] = useState('');
   console.log(html2canvas)
+  const [submitButtonClicked, setSubmitButtonClicked] = useState(false);
 
   const capturePdf = async (element) => {
     const canvas = await html2canvas(element, {
@@ -73,6 +75,9 @@ const EmailResult = () => {
         import.meta.env.VITE_PUBLIC_ID,
       );
       console.log('Email sent successfully');
+
+      setSubmitButtonClicked(true);
+
     } catch (error) {
       console.error('Error generating or sending email:', error);
       alert('Failed to generate or send email.');
@@ -80,7 +85,8 @@ const EmailResult = () => {
   };
 
   return (
-      <form onSubmit={handleEmailResult}>
+      submitButtonClicked ? <EmailConfirmation /> : (
+        <form onSubmit={handleEmailResult}>
         <div id="emailResultContainer">
           <img src="mdi_email-plus.svg" /> 
           <p>Input your email below and we’ll email you a printable PDF of your results.</p>
@@ -96,6 +102,7 @@ const EmailResult = () => {
             </Buttons>
         </div>
       </form>
+      )
   );
 };
 
