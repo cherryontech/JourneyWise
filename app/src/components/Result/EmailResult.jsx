@@ -4,10 +4,13 @@ import html2canvas from './../../../node_modules/html2canvas';
 import jsPDF from '../../../node_modules/jspdf';
 import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
+import './emailResult-custom.css'
+import EmailConfirmation from './EmailConfirmation';
 
 const EmailResult = () => {
   const [email, setEmail] = useState('');
   console.log(html2canvas)
+  const [submitButtonClicked, setSubmitButtonClicked] = useState(false);
 
   const capturePdf = async (element) => {
     const canvas = await html2canvas(element, {
@@ -72,6 +75,9 @@ const EmailResult = () => {
         import.meta.env.VITE_PUBLIC_ID,
       );
       console.log('Email sent successfully');
+
+      setSubmitButtonClicked(true);
+
     } catch (error) {
       console.error('Error generating or sending email:', error);
       alert('Failed to generate or send email.');
@@ -79,31 +85,24 @@ const EmailResult = () => {
   };
 
   return (
-    <div className = "">
-      <form onSubmit={handleEmailResult}>
-        <div className ="flex flex-col itesm-center justify-center gap-5">
-        <div className = "px-[20px]">
-          <div className ="mb-[20px] flex justify-center items-center">
-        <label>
-          Enter your email </label>
-          </div>
-          <div>
+      submitButtonClicked ? <EmailConfirmation /> : (
+        <form onSubmit={handleEmailResult}>
+        <div id="emailResultContainer">
+          <img src="mdi_email-plus.svg" /> 
+          <p>Input your email below and we’ll email you a printable PDF of your results.</p>
           <input className ="border border-black"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Enter Email"
           /> 
-         </div>
-        </div >
-        <div className="flex justify-center">
-            <Buttons className="w-[100px]" primary rounded type="submit">
-              Send
+            <Buttons className="w-[242px] h-[42px] mt-[42px]" primary rounded type="submit">
+              SEND RESULTS
             </Buttons>
-          </div>
         </div>
       </form>
-    </div>
+      )
   );
 };
 

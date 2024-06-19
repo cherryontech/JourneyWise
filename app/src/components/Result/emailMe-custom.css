@@ -1,0 +1,22 @@
+#emailMeContainer {
+  padding-top: 103px; 
+  padding-bottom: 103px; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#emailMeContainer h3 {
+  font-size: 48px; 
+  margin-top: 21px; 
+}
+
+#emailMeContainer p {
+  font-size: 22px; 
+  margin-top: 21px; 
+  margin-bottom: 47px; 
+  width: 528px; 
+  height: 78px; 
+  text-align: center; 
+}

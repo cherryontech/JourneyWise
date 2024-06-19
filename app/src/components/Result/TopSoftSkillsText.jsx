@@ -1,8 +1,10 @@
 import React from "react";
 import { Check } from 'lucide-react';
 
-function TopSkillsText ({texts, index}){
-   
+
+const TopSkillsText = ({texts, index}) => {
+    console.log(texts)
+
     return (
         <>
         {

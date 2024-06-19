@@ -93,6 +93,7 @@ const TopSoftSkills = () => {
                             </div>
                             <div id="cardheadings">
                                 <p className ={`${i===2 && "text-white"}`}>{active ==="Strengths" && "MY STRENGTHS"}{active ==="Goals" && "MY GOALS"}</p>
+
                                 <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
                             </div>
                             <div id="bulletpointcontainer"> 

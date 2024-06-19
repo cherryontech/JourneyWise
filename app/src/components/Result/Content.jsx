@@ -6,6 +6,15 @@ import recluse  from "../../assets/archetypes/recluse.svg"
 import soloist from "../../assets/archetypes/soloist.svg"
 
 
+const archetypeText = {
+  "The Pioneer": "As a Pioneer, you channel your drive for excellence into innovative pursuits, setting ambitious goals and pushing boundaries. You embrace challenges with curiosity and adaptability, no longer constrained by the fear of imperfection but fueled by the excitement of exploration and discovery.",
+  "The Perfectionist": "", 
+  "The Seer": "As a Seer, you transcend the confines of self-imposed isolation, embracing vulnerability and authenticity. You see beyond the illusion of effortless competence, recognizing that true growth comes from facing challenges and embracing imperfection. With newfound clarity, you open yourself to diverse experiences and opportunities, guided by intuition and wisdom gained from your journey of self-discovery.", 
+  "The Recluse": "", 
+  "The TrailBlazer": "As a Trailblazer, you harness your independence and initiative to forge new paths and inspire others. While you still value autonomy, you now recognize the power of collaboration and delegation as catalysts for innovation. Instead of fearing reliance on others, you embrace teamwork, leveraging diverse perspectives to achieve shared goals. Your leadership ignites progress and fosters a sense of unity, paving the way for collective success.",
+  "The Soloist": ""
+}
+
 
 
 const Content = () => {
@@ -13,7 +22,7 @@ const Content = () => {
     const location = useLocation();
     const {arcTypeCount:{archeType}} = location.state
     const archsplit = archeType.split(" ")
-     const archToLowerCasea = archsplit[1].toLowerCase();
+    const archToLowerCasea = archsplit[1].toLowerCase();
     
     let archetypeImage;
     let oldArchtype
@@ -67,14 +76,16 @@ const Content = () => {
                 <div className = "text-blackCustom font-features font-serifTex font-normal leading-normal min-w-[295px] min-h-[336px] bg-[#E5F0F7] md:max-w-[574px] md:max-h-[519px] flex:1 rounded-r-[29px] text-wrap">
                     <h3 className = "text-[48px] mt-[84px] mb-[8px] md:min-w-[402px] md:text-[48px] md:mt[126px] md:ml-[59px] md:mr-[112px] md:mb-[27px]" >{active==="Iam"?oldArchtype:archeType}</h3>
                     <p className = "text-[18px] leading-[27px] min-w-[250px] min-h-[217px] mr-[21px] md:ml-[59px] mb-[35px] md:w-[432px]">
+
                     {(active === "Iam" && textIam )|| (active ==="Iwas" && textIwas) }
+
                     </p>
                 </div>
                 </div>
             </figure>
-            <div className="w-[204px] h-[45px] flex-shrink-0 rounded-[55px] border border-black mt-5 mx-auto flex items-center justify-center space-x-2">
+            <div className="w-[204px] h-[45px] flex-shrink-0 rounded-[55px] border border-black mt-5 mx-auto flex items-center justify-center">
                 <button className={`w-[112px] h-[37px] flex-shrink-0 text-black flex items-center justify-center font-dmSans text-[14px] tracking-[2px] ${active ==="Iam" &&  "rounded-[55px] border border-black bg-black text-white"}`} onClick = {()=>handleClick("Iam")}>I AM</button>
-                <button className={`w-[87px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px] ${active ==="Iwas" &&  "rounded-[55px] border border-black bg-black text-white"}`} onClick = {()=>handleClick("Iwas")}>I WAS</button>
+                <button className={`w-[112px] h-[37px] px-[10px] text-black text-center font-dmSans text-[14px] font-bold leading-normal tracking-[2px] ${active ==="Iwas" &&  "rounded-[55px] border border-black bg-black text-white"}`} onClick = {()=>handleClick("Iwas")}>I WAS</button>
             </div>
         </section>
 
