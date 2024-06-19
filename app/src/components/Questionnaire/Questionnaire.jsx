@@ -8,23 +8,23 @@ import './questionnaire-custom.css'
 
 
 
-const archeTypeData = {"Attention to detail": 3,
-  "Strong work ethic": 3,
+const archeTypeData = {"Attention To Detail": 3,
+  "Strong Work Ethic": 3,
   "Organized": 2,
   "Reliable": 6,
-  "Self-motivated": 2,
-  "Analytical thinking": 2,
-  "Problem-solving ability": 2,
+  "Self-Motivated": 2,
+  "Analytical Thinking": 2,
+  "Problem-Solving Ability": 2,
   "Autonomy": 4,
-  "Time management": 4,
+  "Time Management": 4,
   "Initiative": 3
 
   }
   const softSkillsData = {"Adaptability": 3,
   "Passionate": 3,
   "Empathy": 6,
-  "Emotional intelligence": 4,
-  "Goal setting": 5,
+  "Emotional Intelligence": 4,
+  "Goal Setting": 5,
   "Patience": 3,
   "Flexibility": 2,
   "Communication": 6,
@@ -32,9 +32,9 @@ const archeTypeData = {"Attention to detail": 3,
   "Resilience": 2,
   "Independence": 5,
   "Integrity": 2,
-  "Self-reflection": 3,
-  "Critical thinking": 4,
-  "Decision-making": 1,
+  "Self-Reflection": 3,
+  "Critical Thinking": 4,
+  "Decision-Making": 1,
   "Delegation": 1,
   "Creativity": 3}
 

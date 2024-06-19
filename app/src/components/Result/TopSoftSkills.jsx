@@ -70,10 +70,11 @@ const TopSoftSkills = () => {
                             active === "TopSkills" ?
                             <figure id="skillcards" key = {i} className ={ `shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
                                     <div id="cardimage">
-                                        <img  className ={`fill-current text-black ${active === "TopSkills" && i === 2 ? "fill-white" : "fill-black"} ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active ==="TopSkills" && lightbulb) || (active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
+                                        <img  className ={`fill-current text-black ${active === "TopSkills" && i === 2 ? "fill-white" : "fill-black"} `}
+                                        src={(active ==="TopSkills" && lightbulb)} alt="goals" />
                                     </div>
                                     <div id="cardheadings">
-                                        <p className ={`${i===2 && "text-white"}`}>{active ==="TopSkills" && "My TopSkills"}{active ==="Strengths" && "My Strengths"}{active ==="Goals" && "My Goals"}</p>
+                                        <p className ={`${i===2 && "text-white"}`}>{(active ==="TopSkills" && "MY TOP SKILLS")}</p>
                                         <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
                                     </div>
                                     <div id="bulletpointcontainer"> 
@@ -88,10 +89,10 @@ const TopSoftSkills = () => {
                             </figure>:
                             <figure id="skillcards" key = {i} className ={ `shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
                             <div id="cardimage">
-                                <img  className ={`fill-current text-black ${active === "TopSkills" && i === 2 ? "fill-white" : "fill-black"} ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active ==="TopSkills" && lightbulb) || (active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
+                                <img  className ={`fill-current text-black $ ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
                             </div>
                             <div id="cardheadings">
-                                <p className ={`${i===2 && "text-white"}`}>{active ==="TopSkills" && "My TopSkills"}{active ==="Strengths" && "My Strengths"}{active ==="Goals" && "My Goals"}</p>
+                                <p className ={`${i===2 && "text-white"}`}>{active ==="Strengths" && "MY STRENGTHS"}{active ==="Goals" && "MY GOALS"}</p>
                                 <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
                             </div>
                             <div id="bulletpointcontainer"> 

@@ -11,12 +11,12 @@ const SoftSkills = () => {
      const topSkills= entryArray.slice(0,6)
      console.log(topSkills)
      const skillsText = {
-        "Initiative": "You proactively tackle challenges and seize opportunities for improvement, leading the way in new ventures.",
+        "Initiative": "You roactively tackle challenges and seize opportunities for improvement, leading the way in new ventures.",
         "Adaptability": "You adjust to new conditions with ease, seamlessly transitioning between tasks and challenges.",
         "Passionate": "Your enthusiasm and energy inspire others, bringing a positive drive to everything you undertake.",
         "Empathy": "You understand and share the feelings of others, creating an inclusive and supportive environment around you.",
-        "Emotional intelligence": "You manage your emotions intelligently and respond to others sensitively, fostering positive interactions and relationships.",
-        "Goal setting": "You define clear, achievable objectives that guide your path to success and motivate continual progress.",
+        "Emotional Intelligence": "You manage your emotions intelligently and respond to others sensitively, fostering positive interactions and relationships.",
+        "Goal Setting": "You define clear, achievable objectives that guide your path to success and motivate continual progress.",
         "Patience": "You approach situations calmly and are willing to take the necessary time to achieve the best outcome.",
         "Flexibility": "You adapt strategies and thoughts when necessary, showing a great capacity to handle change and uncertainty.",
         "Communication": "You express your thoughts clearly and listen attentively, ensuring effective and constructive exchanges.",
@@ -25,9 +25,9 @@ const SoftSkills = () => {
         "Resilience": "You bounce back from setbacks with determination, learning from each experience and growing stronger.",
         "Independence": "You thrive on self-sufficiency, using your skills and resources to make informed decisions and achieve your goals.",
         "Integrity": "You act with honesty and strong moral principles, earning the respect and trust of those around you.",
-        "Self-reflection": "You regularly evaluate your actions and decisions, always looking for ways to improve and develop.",
-        "Critical thinking": "You think deeply and evaluate situations from multiple perspectives to form well-rounded and thoughtful conclusions.",
-        "Decision-making": "You make informed choices confidently, ensuring that each decision leads towards your desired outcomes.",
+        "Self-Reflection": "You regularly evaluate your actions and decisions, always looking for ways to improve and develop.",
+        "Critical Thinking": "You think deeply and evaluate situations from multiple perspectives to form well-rounded and thoughtful conclusions.",
+        "Decision-Making": "You make informed choices confidently, ensuring that each decision leads towards your desired outcomes.",
         "Delegation": "You effectively distribute tasks, trusting in the abilities of others while enhancing team capability and efficiency.",
         "Creativity": "You think outside the box, bringing unique and innovative ideas to the table that spark inspiration and lead to extraordinary results."
       }

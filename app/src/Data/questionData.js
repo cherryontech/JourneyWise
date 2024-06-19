@@ -7,17 +7,17 @@ export const questionData = {
         {
           "id": "a",
           "answer": "The Perfectionist",
-          "softSkills": ["Attention to detail", "Strong work ethic", "Organized", "Reliable"]
+          "softSkills": ["Attention To Detail", "Strong Work Ethic", "Organized", "Reliable"]
         },
         {
           "id": "b",
           "answer": "The Recluse",
-          "softSkills": ["Self-motivated", "Analytical thinking", "Problem-solving ability"]
+          "softSkills": ["Self-Motivated", "Analytical Thinking", "Problem-Solving Ability"]
         },
         {
           "id": "c",
           "answer": "The Soloist",
-          "softSkills": ["Autonomy", "Time management", "Initiative"]
+          "softSkills": ["Autonomy", "Time Management", "Initiative"]
         }
       ]
     },
@@ -28,7 +28,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Completing a significant personal project",
-          "softSkills": ["Passionate", "Goal setting"]
+          "softSkills": ["Passionate", "Goal Setting"]
         },
         {
           "id": "b",
@@ -38,12 +38,12 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Contributing to a meaningful cause through volunteering",
-          "softSkills": ["Empathy", "Emotional intelligence"]
+          "softSkills": ["Empathy", "Emotional Intelligence"]
         },
         {
           "id": "d",
           "answer": "Taking time",
-          "softSkills": ["Patience", "Flexibility", "Self-reflection"]
+          "softSkills": ["Patience", "Flexibility", "Self-Reflection"]
         }
       ],
       "image": "/Rectangle 232.svg"
@@ -55,7 +55,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Networking and professional connections",
-          "softSkills": ["Empathy", "Patience", "Emotional intelligence"]
+          "softSkills": ["Empathy", "Patience", "Emotional Intelligence"]
         },
         {
           "id": "b",
@@ -70,7 +70,7 @@ export const questionData = {
         {
           "id": "d",
           "answer": "Volunteering or community involvement",
-          "softSkills": ["Empathy", "Emotional intelligence", "Passionate"]
+          "softSkills": ["Empathy", "Emotional Intelligence", "Passionate"]
         }
       ],
       "image": "/Rectangle 232 (1).svg"
@@ -82,7 +82,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Making a positive impact on others' lives and contributing to the community.",
-          "softSkills": ["Empathy", "Patience", "Emotional intelligence"]
+          "softSkills": ["Empathy", "Patience", "Emotional Intelligence"]
         },
         {
           "id": "b",
@@ -92,7 +92,7 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Being recognized and appreciated for my hard work and contributions.",
-          "softSkills": ["Goal setting"]
+          "softSkills": ["Goal Setting"]
         },
         {
           "id": "d",
@@ -109,7 +109,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "I worry about the success of my project.",
-          "softSkills": ["Goal setting"]
+          "softSkills": ["Goal Setting"]
         },
         {
           "id": "b",
@@ -124,7 +124,7 @@ export const questionData = {
         {
           "id": "d",
           "answer": "I can’t take credit for my achievements.",
-          "softSkills": ["Integrity", "Critical thinking", "Creativity"]
+          "softSkills": ["Integrity", "Critical Thinking", "Creativity"]
         }
       ],
       "image": "/Rectangle 232 (3).svg"
@@ -136,7 +136,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Thinking big picture: Creating strategy, goals, and benchmarks for success.",
-          "softSkills": ["Self-reflection", "Critical thinking", "Creativity"]
+          "softSkills": ["Self-Reflection", "Critical Thinking", "Creativity"]
         },
         {
           "id": "b",
@@ -163,7 +163,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "I have to-do lists, schedules, personalized deadlines, and more.",
-          "softSkills": ["Goal setting" , "Independence"]
+          "softSkills": ["Goal Setting" , "Independence"]
         },
         {
           "id": "b",
@@ -190,7 +190,7 @@ export const questionData = {
         {
           "id": "a",
           "answer": "Assessing the situation and dealing with it at the moment.",
-          "softSkills": ["Self-reflection", "Decision-making"]
+          "softSkills": ["Self-Reflection", "Decision-Making"]
         },
         {
           "id": "b",
@@ -205,7 +205,7 @@ export const questionData = {
         {
           "id": "d",
           "answer": "Analyzing the problem to think of different scenarios.",
-          "softSkills": ["Critical thinking", "Creativity"]
+          "softSkills": ["Critical Thinking", "Creativity"]
         }
       ],
       "image": "/Rectangle 232 (6).svg"
