@@ -6,11 +6,13 @@ import axios from 'axios';
 import Buttons from '../Buttons/Buttons';
 import './emailResult-custom.css'
 import EmailConfirmation from './EmailConfirmation';
+import Spinner from './Spinner';
 
 const EmailResult = () => {
   const [email, setEmail] = useState('');
   console.log(html2canvas)
   const [submitButtonClicked, setSubmitButtonClicked] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); 
 
   const capturePdf = async (element) => {
     const canvas = await html2canvas(element, {
@@ -52,6 +54,7 @@ const EmailResult = () => {
   const handleEmailResult = async (e) => {
     e.preventDefault();
     const element = document.getElementById('result-container');
+    setIsLoading(true);
 
     try {
       const pdf = await capturePdf(element);
@@ -81,6 +84,8 @@ const EmailResult = () => {
     } catch (error) {
       console.error('Error generating or sending email:', error);
       alert('Failed to generate or send email.');
+    } finally {
+      setIsLoading(false); 
     }
   };
 
@@ -89,7 +94,8 @@ const EmailResult = () => {
         <form onSubmit={handleEmailResult}>
         <div id="emailResultContainer">
           <img src="mdi_email-plus.svg" /> 
-          <p>Input your email below and we’ll email you a printable PDF of your results.</p>
+          <h3>Review Your Results</h3>
+          <p>Input your email below and we’ll send you a printable PDF of your results.</p>
           <input className ="border border-black"
             type="email"
             value={email}
@@ -101,6 +107,7 @@ const EmailResult = () => {
               SEND RESULTS
             </Buttons>
         </div>
+        {isLoading && <Spinner className="mt-[20px]" />}
       </form>
       )
   );
