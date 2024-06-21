@@ -19,6 +19,7 @@ const Content = () => {
     let oldArchtype
     let textIam;
     let textIwas 
+    let image;
 
     switch (archToLowerCasea ) {
         case "soloist":
@@ -26,7 +27,7 @@ const Content = () => {
           oldArchtype= "The TrailBlazer"
           textIwas= "As the Soloist, you may feel a strong compulsion to handle tasks independently, avoiding dependency on others and struggling with delegation or collaboration. You prefer to work alone, fearing that relying on others will lead to feelings of burden and isolation, ultimately contributing to burnout."
           textIam= "As a Trailblazer, you harness your independence and initiative to forge new paths and inspire others. While you still value autonomy, you now recognize the power of collaboration and delegation as catalysts for innovation. Instead of fearing reliance on others, you embrace teamwork, leveraging diverse perspectives to achieve shared goals. Your leadership ignites progress and fosters a sense of unity, paving the way for collective success."
-          
+          image = trailblazer
 
           break;
         case "perfectionist":
@@ -34,13 +35,14 @@ const Content = () => {
           oldArchtype= "The Pioneer"
           textIwas="As a Perfectionist, you constantly strive for flawlessness, setting exceptionally high standards for yourself and feeling intense pressure to meet or exceed these standards in every aspect of your work and life. You fear any deviation from perfection and often experience significant stress and guilt if you perceive yourself as falling short of your own unrealistic expectations."
           textIam = "As a Pioneer, you channel your drive for excellence into innovative pursuits, setting ambitious goals and pushing boundaries. You embrace challenges with curiosity and adaptability, no longer constrained by the fear of imperfection but fueled by the excitement of exploration and discovery."
-
+           image = pioneer
           break;
         case "recluse":
           archetypeImage = recluse;
           oldArchtype="The Seer"
           textIwas= "As the Recluse, you experience constant pressure to appear effortlessly competent, fearing any indication of struggle or imperfection. You avoid challenges and unfamiliar tasks to uphold the illusion of innate capability, often isolating yourself from opportunities for growth and development."
           textIam= "As a Seer, you transcend the confines of self-imposed  isolation, embracing vulnerability and authenticity. You see beyond the illusion of effortless competence, recognizing that true growth comes from facing challenges and embracing imperfection. With newfound clarity, you open yourself to diverse experiences and opportunities, guided by intuition and wisdom gained from your journey of self-discovery."
+          image = seer
           break
         default:
           archetypeImage = null;
@@ -60,7 +62,7 @@ const Content = () => {
             <figure className = "rounded-[29px] bg-white shadow-lg md:max-w-[1142px] md:max-h-[518px] md:rounded-[29px] md:shadow-[9px_9px_12px_0px_rgba(0,0,0,0.15)] md:mx-[149px]">
                 <div className = "flex flex-col justify-center items-center md:flex-row md:justify-between">
                 <div className="flex justify-center items-center md:flex-1 md:mx-[90px]">
-                        <img className="min-w-[233px] min-h-[239px] pt-[9px] pb-[32px] pl-[18px] pr-[43px] md:max-w-[341px] md:max-h-[308px]" src={active === "Iam" ? pioneer : archetypeImage}
+                        <img className="min-w-[233px] min-h-[239px] pt-[9px] pb-[32px] pl-[18px] pr-[43px] md:max-w-[341px] md:max-h-[308px]" src={active === "Iam" ? image : archetypeImage}
               alt={active === "Iam" ? "pioneer" : "archetype"} />
                     </div>
                 
