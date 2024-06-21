@@ -11,7 +11,7 @@ const SoftSkills = () => {
      const topSkills= entryArray.slice(0,6)
      console.log(topSkills)
      const skillsText = {
-        "Initiative": "You roactively tackle challenges and seize opportunities for improvement, leading the way in new ventures.",
+        "Initiative": "You proactively tackle challenges and seize opportunities for improvement, leading the way in new ventures.",
         "Adaptability": "You adjust to new conditions with ease, seamlessly transitioning between tasks and challenges.",
         "Passionate": "Your enthusiasm and energy inspire others, bringing a positive drive to everything you undertake.",
         "Empathy": "You understand and share the feelings of others, creating an inclusive and supportive environment around you.",

@@ -6,7 +6,7 @@ const HomepageGuide = () => {
     <div id="guideContainer" className="homepageGuide-custom">
       <header id="homepageHeader">
         <div id="headerText">
-          <p className="text-[18px] mb-[21px]">HERE'S HOW IT WORKS</p>
+          <p>HERE'S HOW IT WORKS</p>
           <h3>Welcome To An Interactive & Fun Process</h3>
         </div>
         <img id="guideRectangle" src="/Rectangle 304.svg" alt="A laptop with a pair of hands pointing towards the screen." /> 
