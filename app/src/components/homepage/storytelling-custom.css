@@ -21,36 +21,43 @@
   font-size: 18px; 
   margin-top: 150px;
   margin-right: 0px; 
+  width: 234px; 
+  height: 46px; 
+  padding-right: 20px; 
 }
 
 #storyh3 {
   font-size: 48px; 
   margin-top: 21px; 
   margin-right: 0px; 
-  padding-right: 300px; 
+  padding-right: 0px; 
   position: relative; 
   z-index: 0;
-  line-height: normal;  
+  line-height: normal; 
+  width: 415px; 
+  height: 198px;  
 }
 
 #storyptext {
   font-size: 18px; 
   margin-right: 0px; 
   margin-top: 21px; 
-  padding-right: 270px; 
+  padding-right: 0px; 
   position: relative; 
   z-index: 0;
   line-height: 35px;
+  width: 454px; 
+  height: 209px; 
 }
 
-#storyvector {
+/* #storyvector {
   width: 995px; 
   height: 686px; 
   margin-left: -1550px; 
   margin-top: 10px; 
   position: relative; 
   z-index: -2;
-}
+} */
 
 @media (max-width: 480px) {
 
@@ -71,10 +78,10 @@
     height: 0px;
   }
 
-  #storypjourney {
+  #storypjourney p {
     font-size: 16px; 
     margin-right: 0px; 
-    margin-top: 10px; 
+    margin-top: 10px;  
   }
 
   #storyh3 {

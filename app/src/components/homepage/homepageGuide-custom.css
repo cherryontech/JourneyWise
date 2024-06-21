@@ -10,13 +10,22 @@
 
 #headerText {
   margin-left: 0px; 
-  padding-top: 179px; 
+  padding-top: 160px; 
+}
+
+#headerText p {
+  font-size: 18px; 
+  margin-bottom: 21px;
+  width: 234px; 
+  height: 23px; 
 }
 
 #headerText h3 {
   font-size: 48px; 
-  padding-right: 150px; 
+  padding-right: 90px; 
   line-height: normal; 
+  width: 700px; 
+  height: 132px 
 }
 
 #guideRectangle {
@@ -44,7 +53,7 @@
 #discover1 {
   width: 44px;
   height: 44px;
-  margin-bottom: 37px; 
+  margin-bottom: 37px;  
 }
 
 #discovertext h4 {
@@ -52,8 +61,14 @@
 }
 
 #discovertext p {
-  margin-right: 180px;
+  margin-right: 110px;
   margin-top: 11px; 
+  padding-right: 30px; 
+  width: 347px; 
+  height: 88px; 
+  width: 335px; 
+  height: 168px; 
+  line-height: 35px; 
 }
 
 #engage {
@@ -69,17 +84,23 @@
 
 #engagetext h4 {
   margin-right: 0px; 
+  width: 332px; 
+  height: 88px; 
 }
 
 #engagetext p {
-  margin-right: 450px; 
+  margin-right: 95px; 
   margin-top: 11px; 
+  line-height: 35px; 
+  width: 335px; 
+  height: 139px; 
+  padding-right: 30px; 
 }
 
 #unlock {
   display: flex; 
   flex-direction: column; 
-  margin-left: -300px;
+  margin-left: 0px;
 }
 
 #unlock3 {
@@ -89,12 +110,18 @@
 }
 
 #unlocktext h4 {
-  margin-right: 200px; 
+  padding-right: 100px;  
+  width: 332px; 
+  height: 88px; 
 }
 
 #unlocktext p {
   margin-right: 130px; 
-  margin-top: 11px; 
+  margin-top: 11px;
+  line-height: 35px; 
+  width: 335px;
+  height: 173px; 
+  padding-right: 30px;  
 }
 
 @media (max-width: 480px) {

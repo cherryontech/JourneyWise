@@ -9,6 +9,10 @@
   padding-top: 103px; 
 }
 
+#emailResultContainer h3 {
+  font-size: 48px; 
+}
+
 #emailResultContainer p {
   font-size: 22px; 
   margin-top: 21px; 

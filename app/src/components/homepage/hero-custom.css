@@ -6,10 +6,13 @@
 
 #heroheader h2 {
   font-size: 62px; 
-  margin-right: 600px; 
+  margin-right: 50px; 
   margin-top: 80px;
+  padding-right: 100px; 
   position: relative; 
   line-height: 137.827%;
+  width: 558px; 
+  height: 170px; 
 }
 
 #heading-subheading {
@@ -23,6 +26,9 @@
   font-size: 22px; 
   margin-top: -185px; 
   line-height: normal;
+  width: 451px;
+  height: 57px;
+  padding-right: 100px;
 }
 
 #heroheader {

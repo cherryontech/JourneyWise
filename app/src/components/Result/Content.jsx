@@ -1,20 +1,11 @@
 import React , {useState}from "react";
 import { useLocation } from "react-router-dom";
-import pioneer from "../../assets/pioneer.svg"
-import perfectionist  from "../../assets/archetypes/perfectionist.svg"
-import recluse  from "../../assets/archetypes/recluse.svg"
-import soloist from "../../assets/archetypes/soloist.svg"
-
-
-const archetypeText = {
-  "The Pioneer": "As a Pioneer, you channel your drive for excellence into innovative pursuits, setting ambitious goals and pushing boundaries. You embrace challenges with curiosity and adaptability, no longer constrained by the fear of imperfection but fueled by the excitement of exploration and discovery.",
-  "The Perfectionist": "", 
-  "The Seer": "As a Seer, you transcend the confines of self-imposed isolation, embracing vulnerability and authenticity. You see beyond the illusion of effortless competence, recognizing that true growth comes from facing challenges and embracing imperfection. With newfound clarity, you open yourself to diverse experiences and opportunities, guided by intuition and wisdom gained from your journey of self-discovery.", 
-  "The Recluse": "", 
-  "The TrailBlazer": "As a Trailblazer, you harness your independence and initiative to forge new paths and inspire others. While you still value autonomy, you now recognize the power of collaboration and delegation as catalysts for innovation. Instead of fearing reliance on others, you embrace teamwork, leveraging diverse perspectives to achieve shared goals. Your leadership ignites progress and fosters a sense of unity, paving the way for collective success.",
-  "The Soloist": ""
-}
-
+import pioneer from "/pioneer.svg"
+import perfectionist  from "/perfectionist.svg"
+import recluse  from "/recluse.svg"
+import soloist from "/soloist.svg"
+import trailblazer from "/Trailblazer-Archetype-Illustration.svg"
+import seer from "/Seer-Archetype-Illustration.svg"
 
 
 const Content = () => {
