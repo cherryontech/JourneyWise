@@ -23,7 +23,7 @@ const Hero = () => {
           your story.
         </h6>
         </div>
-        <Buttons id="lets-begin" rounded primary className="w-[223px] h=[45px] text-[14px] px-[58px] py-[13px] mt-[30px]" onClick= {handleClick}>Begin My Journey</Buttons>
+        <Buttons id="lets-begin" rounded primary className="w-[250px] h=[45px] text-[14px] px-[30px] py-[13px] mt-[30px]" onClick= {handleClick}>BEGIN MY JOURNEY</Buttons>
         <ShowSecNotice/>
       </section>
       <section id="collage" className="collage-custom">

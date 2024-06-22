@@ -21,7 +21,7 @@ const Navbar = () => {
         return (
             <>
                 <li>
-                    <NavLink onClick={handleSecNotice} className="font-dm-sans text-base tracking-2 font-normal leading-35" >Begin My Journey</NavLink>
+                    <NavLink onClick={handleSecNotice} className="font-dm-sans text-base tracking-2 font-normal leading-35" >BEGIN MY JOURNEY</NavLink>
                     <ShowSecNotice /> 
                 </li>
             </>
@@ -34,7 +34,7 @@ return (
         <nav id="navigation" className="navbar-custom">
             {/* <LanguageSelection />  */}
             <div className="md:flex">
-                    <Buttons id="navbutton" onClick= {handleSecNotice} primary rounded>Begin My Journey</Buttons>
+                    <Buttons id="navbutton" onClick= {handleSecNotice} primary rounded>BEGIN MY JOURNEY</Buttons>
                     <ShowSecNotice />
             </div>
             

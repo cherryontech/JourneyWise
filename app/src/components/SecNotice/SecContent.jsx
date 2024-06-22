@@ -21,11 +21,11 @@ const SecContent = () => {
   }
   const renderBtn = isChecked ? (
     <Buttons onClick = {handleClick} primary rounded id="buttongroup">
-     Begin My Journey
+     BEGIN MY JOURNEY
     </Buttons>
   ) : (
     <Buttons alternate rounded id="buttongroup">
-    Begin My Journey
+    BEGIN MY JOURNEY
     </Buttons>
   )
   return (
