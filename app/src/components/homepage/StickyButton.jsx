@@ -7,7 +7,7 @@ const StickyButton = () => {
 
   return (
     <div id="stickycontainer" className="sticky-button">
-      <button id="stickybutton" onClick={handleSecNotice} >BEGIN JOURNEY</button>
+      <button id="stickybutton" onClick={handleSecNotice} >Begin My Journey</button>
       <ShowSecNotice /> 
     </div>
   )

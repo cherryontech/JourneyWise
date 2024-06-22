@@ -16,7 +16,7 @@ const HomepageGuide = () => {
             <img id="discover1" src="/journeywise-icon-1.svg" alt="Step 1" />
             <div id="discovertext">
               <h4>Discover Your Archetype</h4>
-              <p>Are you The Perfectionist, The Expert, or The Soloist? Select the one that reflects your journey best.</p>
+              <p>Are you The Perfectionist, The Recluse, or The Soloist? Select the one that reflects your journey best.</p>
             </div>
           </div>
           <div id="engage">
