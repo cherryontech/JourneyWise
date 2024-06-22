@@ -65,7 +65,7 @@ export const questionData = {
         {
           "id": "c",
           "answer": "Personal projects or creative pursuits",
-          "softSkills": ["Goal setting"]
+          "softSkills": ["Goal Setting"]
         },
         {
           "id": "d",
