@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { useLocation } from "react-router-dom";
 import goals from "../../assets/topSkills/goals.svg"
 import lightbulb from "../../assets/topSkills/lightbulb.svg"
-import gear from "../../assets/topSkills/gear.svg"
+import gear from "../../assets/topSkills/gear.svg";
 import { Check } from 'lucide-react';
 import TopSkillsText from "./TopSoftSkillsText";
 import './topSoftSkills-custom.css'
@@ -103,7 +103,7 @@ const TopSoftSkills = () => {
                     </div>
                     <div id="cardcontainer">
                         {data[newArch][active].map((el, i)=>(
-                            active === "TopSkills" ?
+                           
                             <figure id="skillcards" key = {i} className ={ `shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
                                     <div id="cardimage">
                                         <img src={getImage(i, active)} alt={active} />
@@ -113,33 +113,21 @@ const TopSoftSkills = () => {
                                         <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
                                     </div>
                                     <div id="bulletpointcontainer"> 
-                                    <div className = "flex gap-[5px]">
-                                        
-                                        <p className ={`${i===2 && "text-white"}`}>{el.description}</p>
-                                    </div>
                                   
-                                    
-                                    </div>
-
-                            </figure>:
-                            <figure id="skillcards" key = {i} className ={ `shadow-[9px_9px_12px_0_rgba(0,0,0,0.15)] ${i=== 0 && "bg-white"} ${i===1 && "bg-[#F5FF82]"} ${i=== 2 && "bg-[#2C2B2B]"}`} >
-                            <div id="cardimage">
-                                <img  className ={`fill-current text-black $ ${active ==="Strengths" && i === 2 ? "fill-white" : "fill-black"} ${active ==="goals" && i !== 2 ? "fill-black" :  "fill-white" }`}src={(active === "Strengths" && gear) || (active === "Goals" && goals)} alt="goals" />
-                            </div>
-                            <div id="cardheadings">
-                                <p className ={`${i===2 && "text-white"}`}>{active ==="Strengths" && "MY STRENGTHS"}{active ==="Goals" && "MY GOALS"}</p>
-
-                                <h3 className ={`${i===2 && "text-white"}`}>{el.skill}</h3>
-                            </div>
-                            <div id="bulletpointcontainer"> 
-                            {active === "TopSkills" ? (
+                                        
+                                    {active === "TopSkills" ? (
                                     <p className={`${i === 2 && "text-white"}`}>{el.description}</p>
                                 ) : (
                                     <TopSkillsText texts={el.details} index={i} />
                                 )}
-                            </div>
+                                
+                                  
+                                    
+                                    </div>
 
-                    </figure>
+                            </figure>
+                           
+                    
 
                     ))
                     }

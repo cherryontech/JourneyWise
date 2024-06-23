@@ -9,13 +9,14 @@ import './start-custom.css'
 
 const StartQuestionnaire = () => {
     const [index, setIndex] = useState(0)
+    const [arch, setArch] = useState({})
    
     return (
         <div id="startdiv" className="start-custom">
             <CloseQuestionnaire /> 
             <div id="startcontainer">
-                {index === 0 ? <LearnArchetypes /> : <QuestionnairePhotos index={index} questionData={questionData} />}
-                <Questionnaire index={index} setIndex={setIndex} />
+                {index === 0 ? <LearnArchetypes archtype= {arch} /> : <QuestionnairePhotos index={index} questionData={questionData} />}
+                <Questionnaire index={index} setIndex={setIndex} arch={arch} setArch= {setArch} />
             </div>
             <Footer /> 
         </div>

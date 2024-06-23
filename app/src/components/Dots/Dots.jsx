@@ -1,6 +1,9 @@
 import React from "react";
 
-function Dots({ arch, handleClick, activeIndex }) {
+function Dots({ arch, handleClick, activeIndex,selectedArchetype }) {
+    if(selectedArchetype) {
+        return null;
+    }
     const handleDotClick = (nextIndex) => {
         handleClick(nextIndex);
     };

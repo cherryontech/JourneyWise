@@ -1,10 +1,13 @@
 import React from "react";
 import './imageTextCard-custom.css'
 
-const ImageTextCard = ({ img, text, title, alt, isActive }) => {
+const ImageTextCard = ({ img, text, title, alt, isActive, archtype }) => {
+    console.log(archtype)
+    const isSelectedArchetype = archtype && archtype.archeType === title;
+    
     return (
         <div id="archetypecontainer" className={`${
-            isActive ? "block" : "hidden"
+            (isSelectedArchetype || (!archtype.archeType && isActive)) ? "block" : "hidden"
           } imageTextCard-custom`}>
             <div id="subcontainer">
                 <figure>
