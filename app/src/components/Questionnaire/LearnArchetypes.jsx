@@ -5,7 +5,8 @@ import ImageTextCard from "../ImageTextCard/ImageTextCard";
 import archData from "../../Data/archetypesData.json";
 import Img from "../../assets/archetypes/arcetypebg.png";
 
-const LearnArcheTypes = () => {
+const LearnArcheTypes = ({archtype}) => {
+    //console.log(archtype!== null && archtype.archeType)
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handleClick = (nextIndex) => {
@@ -13,8 +14,10 @@ const LearnArcheTypes = () => {
     };
 
     const render = archData.archetype.map((arch, i) => {
+        console.log(arch)
+       
         return (
-            <ImageTextCard key={arch.id} img={arch.image} title={arch.title} text={arch.text} alt={arch.alt} isActive={activeIndex === i} />
+            <ImageTextCard key={arch.id} img={arch.image} title={arch.title} text={arch.text} alt={arch.alt} isActive={activeIndex === i} archtype={archtype} />
         );
     });
 
@@ -25,7 +28,7 @@ const LearnArcheTypes = () => {
                 {render}
 
                 <div className="mt-[250px]">
-                    <Dots arch={archData.archetype} handleClick={handleClick} activeIndex={activeIndex} />
+                    <Dots arch={archData.archetype}  selectedArchetype={archtype.archeType} handleClick={handleClick} activeIndex={activeIndex} />
                 </div>
             
                 </UseCard>

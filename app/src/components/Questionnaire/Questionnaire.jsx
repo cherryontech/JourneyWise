@@ -38,7 +38,7 @@ const archeTypeData = {"Attention To Detail": 3,
   "Delegation": 1,
   "Creativity": 3}
 
-const Questionnaire = ({index, setIndex}) => {
+const Questionnaire = ({index, setIndex, arch, setArch}) => {
   const [questions , setQuestions] = useState( questionData )
   const [selected, setSelected] = useState(null);
   const [selectedId , setSelectedId ]= useState(null)
@@ -58,6 +58,7 @@ const Questionnaire = ({index, setIndex}) => {
 
          newArchTypeCount.skills[skill]= archeTypeData[skill] 
          newArchTypeCount["archeType"]=questions.questions[index].options[selected].answer
+         newArchTypeCount["id"] = questions.questions[index].options[selected].id;
         }else{
           
           newSoftSkillCount[skill] = softSkillsData[skill] + 1;
@@ -68,6 +69,7 @@ const Questionnaire = ({index, setIndex}) => {
       if (index === 0) {
         setArcTypeCount(newArchTypeCount,
         );
+        setArch(newArchTypeCount)
       }
   
       setCount(prevCount => ({
